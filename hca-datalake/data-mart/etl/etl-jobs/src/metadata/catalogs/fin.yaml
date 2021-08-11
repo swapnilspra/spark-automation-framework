@@ -1,0 +1,7 @@
+- Name: mstar_alphabeta
+  TableType: file
+  StorageDescriptor:
+    Location: HarborFundsAlphaAndBeta[0-9]{8}\.csv
+    Delimiter: ","
+    Format: csv
+    SkipHeaderRows: 0

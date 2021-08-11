@@ -1,0 +1,122 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: create base hca datalake infrastructure
+
+Resources:
+  kms: 
+    Type: AWS::KMS::Key
+    Properties:
+      Description: kms key for datalake
+      Enabled: true
+      KeyPolicy:
+        Version: 2012-10-17
+        Id: delegate-to-iam
+        Statement:
+          - Effect: Allow
+            Action: kms:*
+            Resource: '*'
+            Principal:
+              AWS: !Sub arn:aws:iam::${AWS::AccountId}:root
+              
+          # allow hca infra account (fileproc) to use key
+          - Effect: Allow
+            Action: 
+              - kms:Encrypt
+              - kms:Decrypt
+              - kms:ReEncrypt*
+              - kms:GenerateDataKey*
+              - kms:DescribeKey
+            Resource: '*'
+            Principal:
+              AWS: arn:aws:iam::964890379153:root
+
+  kmsalias:
+    Type: AWS::KMS::Alias
+    Properties:
+      AliasName: !Sub alias/hca/${AWS::StackName}
+      TargetKeyId: !Ref kms
+
+  kmspolicy:
+    Type: AWS::IAM::ManagedPolicy
+    Properties:
+      Description: allow encrypt/decrypt with datalake key
+      Path: /
+      PolicyDocument:
+        Version: 2012-10-17
+        Statement:
+          - Effect: Allow
+            Action:
+              - kms:Encrypt
+              - kms:Decrypt
+              - kms:ReEncrypt
+              - kms:GenerateDataKey
+              - kms:DescribeKey
+            Resource: !GetAtt kms.Arn
+
+          - Effect: Allow
+            Action:
+              - kms:List*
+              - kms:Describe*
+              - kms:Get*
+            Resource: '*'
+  
+  # create bucket for fileproc to dump files from hca infra account
+  fileprocbucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      AccessControl: Private
+      VersioningConfiguration:
+        Status: Suspended
+
+  # create bucket policy allowing fileproc to dump files from hca infra account
+  bucketpolicy: 
+    Type: AWS::S3::BucketPolicy
+    Properties:
+      Bucket: !Ref fileprocbucket
+      PolicyDocument: 
+        Statement:
+          # deny unencrypted putobject
+          - Effect: Deny
+            Principal: '*'
+            Action: s3:PutObject
+            Resource: !Sub ${fileprocbucket.Arn}/*
+            Condition:
+              StringNotEquals:
+                 s3:x-amz-server-side-encryption: aws:kms
+
+          # deny putobject unless datalake kms key is used
+          - Effect: Deny
+            Principal: '*'
+            Action: s3:PutObject
+            Resource: !Sub ${fileprocbucket.Arn}/*
+            Condition:
+              StringNotLikeIfExists:
+                s3:x-amz-server-side-encryption-aws-kms-key-id: !GetAtt kms.Arn
+
+          # allow cross account putobject from fileproc
+          - Effect: Allow
+            Principal:
+              AWS: !Sub arn:aws:iam::964890379153:root
+            Action:
+              - s3:PutObject
+              - s3:PutObjectAcl
+            Resource: !Sub ${fileprocbucket.Arn}/*
+
+
+Outputs:
+  kms: 
+    Description: kms key for fileproc
+    Value: !Ref kms
+    Export: 
+      Name: !Sub ${AWS::StackName}-kms-key
+
+  kmspolicy:
+    Description: iam policy for using fileproc kms key
+    Value: !Ref kmspolicy
+    Export:
+      Name: !Sub ${AWS::StackName}-kms-policy
+
+  fileprocbucket:
+    Description: staging area for raw files from fileproc
+    Value: !Ref fileprocbucket
+    Export: 
+      Name: !Sub ${AWS::StackName}-bucket-fileproc-raw

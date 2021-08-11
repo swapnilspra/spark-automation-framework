@@ -1,0 +1,69 @@
+ST_CD,DST_ST_CD,ST_NM
+VI,81,US Virgin Islands
+AL,1,Alabama
+AK,51,Alaska
+AS,127,American Samoa 
+AZ,2,Arizona
+AR,3,Arkansas
+CA,4,California
+CO,5,Colorado
+CT,6,Connecticut
+DE,7,Delaware
+DC,8,District of Columbia
+FL,9,Florida
+GA,10,Georgia
+GU,325,Guam
+HI,52,Hawaii
+ID,11,Idaho
+IL,12,Illinois
+IN,13,Indiana
+IA,14,Iowa
+KS,15,Kansas
+KY,16,Kentucky
+LA,17,Louisiana
+ME,18,Maine
+MD,19,Maryland
+MA,20,Massachusetts
+MI,21,Michigan
+MN,22,Minnesota
+MS,23,Mississippi
+MO,24,Missouri
+MT,25,Montana
+NE,26,Nebraska
+NV,27,Nevada
+NH,28,New Hampshire
+NJ,29,New Jersey
+NM,30,New Mexico
+NY,31,New York
+NC,32,North Carolina
+ND,33,North Dakota
+MP,247,Northern Mariana Islands
+OH,34,Ohio
+OK,35,Oklahoma
+OR,36,Oregon
+PA,37,Pennsylvania
+PR,76,Puerto Rico 
+RI,38,Rhode Island
+SC,39,South Carolina
+SD,40,South Dakota
+TN,41,Tennessee
+TX,42,Texas
+UT,43,Utah
+VT,44,Vermont
+VA,45,Virginia
+WA,46,Washington
+WV,47,West Virginia
+WI,48,Wisconsin
+WY,49,Wyoming
+81,121,Baker Island
+84,182,Howland Island
+86,334,Jarvis Island
+67,208,Johnston Atoll
+89,212,Kingman Reef
+71,232,Midway Islands
+76,239,Navassa Island
+95,250,Palmyra Atoll
+79,296,Wake Island
+AA,99,APO/FPO/DPO US
+NU,,Nunavut
+XX,,Foreign State

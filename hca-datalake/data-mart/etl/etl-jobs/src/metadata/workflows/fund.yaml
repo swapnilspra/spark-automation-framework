@@ -1,0 +1,24 @@
+# Dependent on source_fund workflow
+# Triggered on completion of source jobs
+# Run daily, evening
+workflow:
+  type: ON_DEMAND
+  description: 'fund workflow evening'
+  tasks:
+    fund_dividend:
+      job: fund.fund_dividend
+    fund_composite:
+      job: fund.fund_composite
+    portfolio_manager:
+      job: fund.portfolio_manager
+    sub_advisor:
+      job: fund.sub_advisor
+    fund:
+      job: fund.fund
+      dependencies: [ fund_composite ]
+    fund_manager:
+      job: fund.fund_manager
+      dependencies:
+        - fund_composite
+        - portfolio_manager
+        - sub_advisor

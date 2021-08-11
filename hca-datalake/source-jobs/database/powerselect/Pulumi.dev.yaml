@@ -1,0 +1,9 @@
+config:
+  aws:region: us-west-2
+  source-job-powerselect:db_security_groups: sg-0aaff18bbaccfc85f
+  source-job-powerselect:db_subnet_id: subnet-593fa010
+  source-job-powerselect:jdbc_driver: com.ibm.db2.jcc.DB2Driver
+  source-job-powerselect:jdbc_url: jdbc:db2://PSDTO.DSTCORP.NET:50000/DTO
+  source-job-powerselect:password:
+    secure: AAABADo9nuhxPnvbcj34Jjj6cOwLvV44qajC1cYJFt0WnjMrAYP05g==
+  source-job-powerselect:username: HARHIT

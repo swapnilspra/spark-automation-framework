@@ -1,0 +1,84 @@
+- Name: aml_fincen
+  TableType: file
+  StorageDescriptor:
+    Location: FinCEN_314a[0-9]+\.CSV
+    Format: csv
+- Name: aml_policy_procedure
+  TableType: file
+  StorageDescriptor:
+    Location: Policy_List[0-9]+\.csv
+    Format: csv
+- Name: aml_fbar_filings
+  TableType: "file"
+  StorageDescriptor:
+    Location: FBAR_Filings[0-9]+\.csv
+    Format: csv
+- Name: aml_dealer_contracts
+  TableType: file
+  StorageDescriptor:
+    Location: Dealer_Contract_Requests[0-9]+\.CSV
+    Format: csv
+    Trim: true
+- Name: aml_foreign_corr_banks
+  TableType: file
+  StorageDescriptor:
+    Location: Foreign_Correspondent_Banks[0-9]+\.CSV
+    Format: csv
+- Name: aml_sar
+  TableType: file
+  StorageDescriptor:
+    Location: SARs[0-9]+\.CSV
+- Name: aml_qtrly_dealer_review
+  TableType: "file"
+  StorageDescriptor:
+    Location: Quarterly_Dealer_Reviews[0-9]+\.csv
+- Name: aml_acam_cerfitication
+  TableType: "file"
+  StorageDescriptor:
+    Location: ACAMS_Certifications[0-9]+\.csv
+    Format: csv
+- Name: hsg_call_quality_program
+  TableType: file
+  StorageDescriptor:
+    Location: New_Communications_Call_Quality_Program[0-9]+\.csv
+    Format: csv
+- Name: hsg_call_quality_result
+  TableType: file
+  StorageDescriptor:
+    Location: New_Communications_Call_Quality_Program[0-9]+\.csv
+    Format: csv
+- Name: aml_training_history
+  TableType: file
+  StorageDescriptor:
+      Location: Training_History[0-9]+\.csv
+      Format: csv
+- Name: hsg_call_quality_question
+  TableType: file
+  StorageDescriptor:
+    Location: HSG_CALL_QUALITY_QUESTION_[0-9]+\.csv
+    Format: csv
+- Name: aml_cip_letter
+  TableType: file
+  StorageDescriptor:
+    Location: CIP_Letters_Sent[0-9]+\.CSV
+    Format: csv
+- Name: aml_blacklist_country
+  TableType: file
+  StorageDescriptor:
+    Location: Harbor\'s_Blacklisted_Countries_List[0-9]+\.CSV
+    Format: csv
+- Name: hsg_project_document
+  TableType: file
+  StorageDescriptor:
+    Location: Project_Documents[0-9]+\.csv
+    Format: csv
+- Name: spl_hsg_daily_tasks_lookup
+  TableType: file
+  StorageDescriptor:
+    Location: HSG_Daily_Tasks_-_Details[0-9]+\.csv
+    Format: csv
+- Name: spl_hsg_complaints
+  TableType: file
+  StorageDescriptor:
+    Location: compliment_Log[0-9]+\.CSV
+    Format: csv

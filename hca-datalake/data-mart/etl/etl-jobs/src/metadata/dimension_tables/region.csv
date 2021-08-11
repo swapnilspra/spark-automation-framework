@@ -1,0 +1,311 @@
+REG_KEY,ST_CD,ST_NM,MKTG_REG_ID,MKTG_REG_NM,CRTY_CD,CRTY_NM,GLBL_REG_CD,GLBL_REG_NM,REG_TYPE_CD,REG_TYPE_NM,TOP_LVL_REG_CD,TOP_LVL_REG_NM,ROW_STRT_DTTM,ROW_STOP_DTTM,ETL_LOAD_CYC_KEY,SRC_SYS_ID,CURR_ROW_FLG
+138,XX,Foreign State,-1,Foreign Region,RU,RUSSIA,6,Europe,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+139,XX,Foreign State,-1,Foreign Region,AU,AUSTRALIA,12,Pacific Basin,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+140,XX,Foreign State,-1,Foreign Region,LK,SRI LANKA,12,Pacific Basin,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+141,XX,Foreign State,-1,Foreign Region,AM,ARMENIA,8,Middle East/Central Asia,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+142,XX,Foreign State,-1,Foreign Region,UA,UKRAINE,6,Europe,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+143,XX,Foreign State,-1,Foreign Region,LY,LIBYA,13,Africa,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+144,XX,Foreign State,-1,Foreign Region,NO,NORWAY,6,Europe,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+145,XX,Foreign State,-1,Foreign Region,BF,BURKINA FASO,13,Africa,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+146,XX,Foreign State,-1,Foreign Region,GW,GUINEA-BISSAU,13,Africa,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+147,XX,Foreign State,-1,Foreign Region,VU,VANUATU,12,Pacific Basin,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+148,XX,Foreign State,-1,Foreign Region,VC,SAINT VINCENT AND TH,10,Latin America,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+149,XX,Foreign State,-1,Foreign Region,JE,JERSEY,6,Europe,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+150,XX,Foreign State,-1,Foreign Region,AZ,AZERBAIJAN,8,Middle East/Central Asia,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+151,XX,Foreign State,-1,Foreign Region,ZM,ZAMBIA,13,Africa,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+152,XX,Foreign State,-1,Foreign Region,SB,SOLOMON ISLANDS,12,Pacific Basin,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+153,XX,Foreign State,-1,Foreign Region,LS,LESOTHO,13,Africa,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+154,XX,Foreign State,-1,Foreign Region,CK,COOK ISLANDS,12,Pacific Basin,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+155,XX,Foreign State,-1,Foreign Region,BR,BRAZIL,10,Latin America,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+156,XX,Foreign State,-1,Foreign Region,DZ,ALGERIA,13,Africa,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+157,XX,Foreign State,-1,Foreign Region,TH,THAILAND,12,Pacific Basin,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+158,XX,Foreign State,-1,Foreign Region,NU,NIUE,12,Pacific Basin,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+159,XX,Foreign State,-1,Foreign Region,PR,PUERTO RICO,10,Latin America,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+160,XX,Foreign State,-1,Foreign Region,SG,SINGAPORE,12,Pacific Basin,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+161,XX,Foreign State,-1,Foreign Region,GR,GREECE,6,Europe,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+162,XX,Foreign State,-1,Foreign Region,MZ,MOZAMBIQUE,13,Africa,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+163,XX,Foreign State,-1,Foreign Region,CY,CYPRUS,6,Europe,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+164,XX,Foreign State,-1,Foreign Region,JO,JORDAN,8,Middle East/Central Asia,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+165,XX,Foreign State,-1,Foreign Region,KM,COMOROS,13,Africa,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+166,XX,Foreign State,-1,Foreign Region,BB,BARBADOS,10,Latin America,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+167,XX,Foreign State,-1,Foreign Region,MY,MALAYSIA,12,Pacific Basin,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+168,XX,Foreign State,-1,Foreign Region,HN,HONDURAS,10,Latin America,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+169,XX,Foreign State,-1,Foreign Region,KE,KENYA,13,Africa,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+170,XX,Foreign State,-1,Foreign Region,TZ,TANZANIA,13,Africa,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+171,XX,Foreign State,-1,Foreign Region,MG,MADAGASCAR,13,Africa,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+172,XX,Foreign State,-1,Foreign Region,CO,COLOMBIA,10,Latin America,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+173,XX,Foreign State,-1,Foreign Region,SY,SYRIA,8,Middle East/Central Asia,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+174,XX,Foreign State,-1,Foreign Region,TN,TUNISIA,13,Africa,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+175,XX,Foreign State,-1,Foreign Region,EE,ESTONIA,6,Europe,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+176,XX,Foreign State,-1,Foreign Region,NI,NICARAGUA,10,Latin America,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+177,XX,Foreign State,-1,Foreign Region,GF,FRENCH GUIANA,10,Latin America,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+178,XX,Foreign State,-1,Foreign Region,BI,BURUNDI,13,Africa,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+180,XX,Foreign State,-1,Foreign Region,HK,HONG KONG,12,Pacific Basin,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+181,XX,Foreign State,-1,Foreign Region,NF,NORFOLK ISLAND,12,Pacific Basin,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+182,XX,Foreign State,-1,Foreign Region,LB,LEBANON,8,Middle East/Central Asia,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+184,XX,Foreign State,-1,Foreign Region,NL,NETHERLANDS,6,Europe,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+185,XX,Foreign State,-1,Foreign Region,SC,SEYCHELLES,13,Africa,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+186,XX,Foreign State,-1,Foreign Region,ME,MONTENEGRO,6,Europe,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+187,XX,Foreign State,-1,Foreign Region,SZ,SWAZILAND,13,Africa,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+189,XX,Foreign State,-1,Foreign Region,SL,SIERRA LEONE,13,Africa,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+190,XX,Foreign State,-1,Foreign Region,MM,MYANMAR,8,Middle East/Central Asia,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+191,XX,Foreign State,-1,Foreign Region,BT,BHUTAN,8,Middle East/Central Asia,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+192,XX,Foreign State,-1,Foreign Region,ES,SPAIN,6,Europe,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+193,XX,Foreign State,-1,Foreign Region,CH,SWITZERLAND,6,Europe,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+195,XX,Foreign State,-1,Foreign Region,SI,SLOVENIA,6,Europe,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+196,XX,Foreign State,-1,Foreign Region,BL,SAINT BARTH¿LEMY,10,Latin America,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+197,XX,Foreign State,-1,Foreign Region,BS,BAHAMAS,10,Latin America,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+198,XX,Foreign State,-1,Foreign Region,ZW,ZIMBABWE,13,Africa,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+199,XX,Foreign State,-1,Foreign Region,SE,SWEDEN,6,Europe,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+201,XX,Foreign State,-1,Foreign Region,MU,MAURITIUS,13,Africa,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+202,XX,Foreign State,-1,Foreign Region,LT,LITHUANIA,6,Europe,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+203,XX,Foreign State,-1,Foreign Region,DO,DOMINICAN REPUBLIC,10,Latin America,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+204,XX,Foreign State,-1,,UM,UNITED STATES MINOR ,~,,GLB,Global Regions,ALL,All Regions,11/14/2009 14:47,,,,Y
+205,XX,Foreign State,-1,Foreign Region,DM,DOMINICA,10,Latin America,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+207,XX,Foreign State,-1,Foreign Region,LR,LIBERIA,13,Africa,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+208,XX,Foreign State,-1,Foreign Region,UZ,UZBEKISTAN,8,Middle East/Central Asia,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+209,XX,Foreign State,-1,Foreign Region,VG,BRITISH VIRGIN ISLAN,10,Latin America,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+210,XX,Foreign State,-1,Foreign Region,VA,HOLY SEE (VATICAN CI,6,Europe,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+211,XX,Foreign State,-1,Foreign Region,IM,ISLE OF MAN,6,Europe,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+213,XX,Foreign State,-1,Foreign Region,TG,TOGO,13,Africa,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+214,XX,Foreign State,-1,Foreign Region,ET,ETHIOPIA,13,Africa,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+215,XX,Foreign State,-1,Foreign Region,KP,"KOREA, NORTH",12,Pacific Basin,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+217,XX,Foreign State,-1,Foreign Region,RS,SERBIA,6,Europe,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+218,XX,Foreign State,-1,Foreign Region,PN,PITCAIRN,12,Pacific Basin,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+219,XX,Foreign State,-1,Foreign Region,NZ,NEW ZEALAND,12,Pacific Basin,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+220,XX,Foreign State,-1,Foreign Region,GD,GRENADA,10,Latin America,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+222,XX,Foreign State,-1,Foreign Region,GT,GUATEMALA,10,Latin America,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+223,XX,Foreign State,-1,Foreign Region,BH,BAHRAIN,8,Middle East/Central Asia,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+224,XX,Foreign State,-1,Foreign Region,RW,RWANDA,13,Africa,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+226,XX,Foreign State,-1,Foreign Region,JM,JAMAICA,10,Latin America,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+227,XX,Foreign State,-1,Foreign Region,SN,SENEGAL,13,Africa,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+228,XX,Foreign State,-1,Foreign Region,SA,SAUDI ARABIA,8,Middle East/Central Asia,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+229,XX,Foreign State,-1,Foreign Region,GM,GAMBIA,13,Africa,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+231,XX,Foreign State,-1,Foreign Region,BZ,BELIZE,10,Latin America,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+232,XX,Foreign State,-1,Foreign Region,MW,MALAWI,13,Africa,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+233,XX,Foreign State,-1,Foreign Region,WS,SAMOA,12,Pacific Basin,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+234,XX,Foreign State,-1,Foreign Region,PA,PANAMA,10,Latin America,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+236,XX,Foreign State,-1,Foreign Region,HR,CROATIA,6,Europe,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+237,XX,Foreign State,-1,Foreign Region,SJ,SVALBARD AND JAN MAY,6,Europe,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+238,XX,Foreign State,-1,Foreign Region,IT,ITALY,6,Europe,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+239,XX,Foreign State,-1,Foreign Region,VN,VIETNAM,12,Pacific Basin,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+241,XX,Foreign State,-1,Foreign Region,BM,BERMUDA,7,North America,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+242,XX,Foreign State,-1,Foreign Region,CU,CUBA,10,Latin America,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+243,XX,Foreign State,-1,Foreign Region,YT,MAYOTTE,13,Africa,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+244,XX,Foreign State,-1,Foreign Region,VE,VENEZUELA,10,Latin America,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+246,XX,Foreign State,-1,Foreign Region,MX,MEXICO,10,Latin America,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+247,XX,Foreign State,-1,Foreign Region,AS,AMERICAN SAMOA,12,Pacific Basin,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+248,XX,Foreign State,-1,Foreign Region,VI,"VIRGIN ISLANDS, US",10,Latin America,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+249,XX,Foreign State,-1,Foreign Region,AI,ANGUILLA,10,Latin America,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+251,XX,Foreign State,-1,Foreign Region,DE,GERMANY,6,Europe,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+252,XX,Foreign State,-1,Foreign Region,OM,OMAN,8,Middle East/Central Asia,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+253,XX,Foreign State,-1,Foreign Region,MA,MOROCCO,13,Africa,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+254,XX,Foreign State,-1,Foreign Region,MR,MAURITANIA,13,Africa,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+255,XX,Foreign State,-1,Foreign Region,CV,CAPE VERDE,13,Africa,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+257,XX,Foreign State,-1,Foreign Region,SD,SUDAN,13,Africa,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+258,XX,Foreign State,-1,Foreign Region,KI,KIRIBATI,12,Pacific Basin,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+259,XX,Foreign State,-1,Foreign Region,BV,BOUVET ISLAND,8,Middle East/Central Asia,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+261,XX,Foreign State,-1,Foreign Region,SO,SOMALIA,13,Africa,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+262,XX,Foreign State,-1,Foreign Region,KZ,KAZAKHSTAN,8,Middle East/Central Asia,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+263,XX,Foreign State,-1,Foreign Region,BO,BOLIVIA,10,Latin America,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+265,XX,Foreign State,-1,Foreign Region,BD,BANGLADESH,8,Middle East/Central Asia,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+266,XX,Foreign State,-1,Foreign Region,NP,NEPAL,8,Middle East/Central Asia,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+267,XX,Foreign State,-1,Foreign Region,FI,FINLAND,6,Europe,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+268,XX,Foreign State,-1,Foreign Region,LC,SAINT LUCIA,10,Latin America,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+270,XX,Foreign State,-1,Foreign Region,JP,JAPAN,12,Pacific Basin,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+271,XX,Foreign State,-1,Foreign Region,CC,COCOS (KEELING) ISLA,10,Latin America,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+272,XX,Foreign State,-1,Foreign Region,AF,AFGHANISTAN,8,Middle East/Central Asia,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+274,XX,Foreign State,-1,Foreign Region,IL,ISRAEL,8,Middle East/Central Asia,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+275,XX,Foreign State,-1,Foreign Region,MN,MONGOLIA,8,Middle East/Central Asia,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+276,XX,Foreign State,-1,Foreign Region,TV,TUVALU,12,Pacific Basin,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+278,XX,Foreign State,-1,Foreign Region,CD,"CONGO, THE DEMOCRATI",~,,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+279,XX,Foreign State,-1,Foreign Region,KG,KYRGYZSTAN,8,Middle East/Central Asia,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+280,XX,Foreign State,-1,Foreign Region,SV,EL SALVADOR,10,Latin America,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+282,XX,Foreign State,-1,Foreign Region,AW,ARUBA,10,Latin America,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+283,XX,Foreign State,-1,Foreign Region,HT,HAITI,10,Latin America,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+284,XX,Foreign State,-1,Foreign Region,HM,HEARD ISLAND AND MCD,8,Middle East/Central Asia,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+286,XX,Foreign State,-1,Foreign Region,AO,ANGOLA,13,Africa,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+300,XX,Unassigned,-1,Unassigned,XX,Unassigned,XX,Unassigned,XX,Unassigned,ALL,All Regions,,,,,
+287,XX,Foreign State,-1,Foreign Region,PY,PARAGUAY,10,Latin America,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+288,XX,Foreign State,-1,Foreign Region,LU,LUXEMBOURG,6,Europe,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+289,XX,Foreign State,-1,Foreign Region,PW,PALAU,8,Middle East/Central Asia,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+290,XX,Foreign State,-1,Foreign Region,FJ,FIJI,12,Pacific Basin,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+291,XX,Foreign State,-1,Foreign Region,IN,INDIA,8,Middle East/Central Asia,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+292,XX,Foreign State,-1,Foreign Region,MS,MONTSERRAT,10,Latin America,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+293,XX,Foreign State,-1,Foreign Region,KY,CAYMAN ISLANDS,10,Latin America,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+294,XX,Foreign State,-1,Foreign Region,SK,SLOVAKIA,6,Europe,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+94,XX,Foreign State,-1,Foreign Region,MP,NORTHERN MARIANA ISL,12,Pacific Basin,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+101,XX,Foreign State,-1,Foreign Region,MC,MONACO,6,Europe,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+105,XX,Foreign State,-1,Foreign Region,CR,COSTA RICA,10,Latin America,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+111,XX,Foreign State,-1,Foreign Region,CA,CANADA,7,North America,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+117,XX,Foreign State,-1,Foreign Region,GL,GREENLAND,6,Europe,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+121,XX,Foreign State,-1,Foreign Region,GS,SOUTH GEORGIA AND TH,12,Pacific Basin,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+126,XX,Foreign State,-1,Foreign Region,IR,IRAN,8,Middle East/Central Asia,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+132,XX,Foreign State,-1,Foreign Region,ML,MALI,13,Africa,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+136,XX,Foreign State,-1,Foreign Region,KH,CAMBODIA,12,Pacific Basin,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+179,XX,Foreign State,-1,Foreign Region,GH,GHANA,13,Africa,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+183,XX,Foreign State,-1,Foreign Region,MV,MALDIVES,12,Pacific Basin,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+188,XX,Foreign State,-1,Foreign Region,TF,FRENCH SOUTHERN TERR,8,Middle East/Central Asia,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+194,XX,Foreign State,-1,Foreign Region,UY,URUGUAY,10,Latin America,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+200,XX,Foreign State,-1,Foreign Region,CZ,CZECH REPUBLIC,6,Europe,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+206,XX,Foreign State,-1,Foreign Region,ID,INDONESIA,12,Pacific Basin,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+212,XX,Foreign State,-1,Foreign Region,BJ,BENIN,13,Africa,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+216,XX,Foreign State,-1,Foreign Region,CM,CAMEROON,13,Africa,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+221,XX,Foreign State,-1,Foreign Region,CI,C¿TE D`IVOIRE,13,Africa,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+225,XX,Foreign State,-1,Foreign Region,CX,CHRISTMAS ISLAND,12,Pacific Basin,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+230,XX,Foreign State,-1,Foreign Region,RE,R¿UNION,13,Africa,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+235,XX,Foreign State,-1,Foreign Region,CN,CHINA,12,Pacific Basin,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+240,XX,Foreign State,-1,Foreign Region,MO,MACAO,12,Pacific Basin,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+245,XX,Foreign State,-1,Foreign Region,QA,QATAR,8,Middle East/Central Asia,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+250,XX,Foreign State,-1,Foreign Region,TW,TAIWAN,12,Pacific Basin,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+256,XX,Foreign State,-1,Foreign Region,PH,PHILIPPINES,12,Pacific Basin,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+260,XX,Foreign State,-1,Foreign Region,ER,ERITREA,13,Africa,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+264,XX,Foreign State,-1,Foreign Region,PF,FRENCH POLYNESIA,12,Pacific Basin,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+269,XX,Foreign State,-1,Foreign Region,GY,GUYANA,10,Latin America,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+273,XX,Foreign State,-1,Foreign Region,AX,¿LAND ISLANDS,~,,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+277,XX,Foreign State,-1,Foreign Region,TM,TURKMENISTAN,8,Middle East/Central Asia,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+281,XX,Foreign State,-1,Foreign Region,GU,GUAM,12,Pacific Basin,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+285,XX,Foreign State,-1,Foreign Region,ST,SAO TOME AND PRINCIP,13,Africa,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+308,AS,American Samoa ,5,West Coast,US,UNITED STATES,7,North America,MKT,Marketing Regions (US),ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+309,DC,District of Columbia,3,Northeast,US,UNITED STATES,7,North America,MKT,Marketing Regions (US),ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+310,MP,Northern Mariana Islands,5,West Coast,US,UNITED STATES,7,North America,MKT,Marketing Regions (US),ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+311,81,Baker Island,5,West Coast,UM,UNITED STATES MINOR ,7,North America,MKT,Marketing Regions (US),ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+312,84,Howland Island,5,West Coast,UM,UNITED STATES MINOR ,7,North America,MKT,Marketing Regions (US),ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+313,86,Jarvis Island,5,West Coast,UM,UNITED STATES MINOR ,7,North America,MKT,Marketing Regions (US),ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+314,67,Johnston Atoll,5,West Coast,UM,UNITED STATES MINOR ,7,North America,MKT,Marketing Regions (US),ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+315,89,Kingman Reef,5,West Coast,UM,UNITED STATES MINOR ,7,North America,MKT,Marketing Regions (US),ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+316,71,Midway Islands,5,West Coast,UM,UNITED STATES MINOR ,7,North America,MKT,Marketing Regions (US),ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+317,76,Navassa Island,5,West Coast,UM,UNITED STATES MINOR ,7,North America,MKT,Marketing Regions (US),ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+318,95,Palmyra Atoll,5,West Coast,UM,UNITED STATES MINOR ,7,North America,MKT,Marketing Regions (US),ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+319,79,Wake Island,5,West Coast,UM,UNITED STATES MINOR ,7,North America,MKT,Marketing Regions (US),ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+320,AA,APO/FPO/DPO US,5,West Coast,UM,UNITED STATES MINOR ,7,North America,MKT,Marketing Regions (US),ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+1,AL,Alabama,2,Southeast,US,UNITED STATES,7,North America,MKT,Marketing Regions (US),ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+2,AK,Alaska,5,West Coast,US,UNITED STATES,7,North America,MKT,Marketing Regions (US),ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+3,AZ,Arizona,5,West Coast,US,UNITED STATES,7,North America,MKT,Marketing Regions (US),ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+4,AR,Arkansas,4,South,US,UNITED STATES,7,North America,MKT,Marketing Regions (US),ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+5,CA,California,5,West Coast,US,UNITED STATES,7,North America,MKT,Marketing Regions (US),ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+6,CO,Colorado,5,West Coast,US,UNITED STATES,7,North America,MKT,Marketing Regions (US),ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+7,CT,Connecticut,3,Northeast,US,UNITED STATES,7,North America,MKT,Marketing Regions (US),ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+8,DE,Delaware,3,Northeast,US,UNITED STATES,7,North America,MKT,Marketing Regions (US),ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+9,FL,Florida,2,Southeast,US,UNITED STATES,7,North America,MKT,Marketing Regions (US),ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+10,GA,Georgia,2,Southeast,US,UNITED STATES,7,North America,MKT,Marketing Regions (US),ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+11,GU,Guam,5,West Coast,US,UNITED STATES,7,North America,MKT,Marketing Regions (US),ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+12,HI,Hawaii,5,West Coast,US,UNITED STATES,7,North America,MKT,Marketing Regions (US),ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+13,ID,Idaho,1,Upper Midwest,US,UNITED STATES,7,North America,MKT,Marketing Regions (US),ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+14,IL,Illinois,22,Lower Midwest,US,UNITED STATES,7,North America,MKT,Marketing Regions (US),ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+15,IN,Indiana,22,Lower Midwest,US,UNITED STATES,7,North America,MKT,Marketing Regions (US),ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+16,IA,Iowa,1,Upper Midwest,US,UNITED STATES,7,North America,MKT,Marketing Regions (US),ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+17,KS,Kansas,1,Upper Midwest,US,UNITED STATES,7,North America,MKT,Marketing Regions (US),ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+18,KY,Kentucky,22,Lower Midwest,US,UNITED STATES,7,North America,MKT,Marketing Regions (US),ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+19,LA,Louisiana,4,South,US,UNITED STATES,7,North America,MKT,Marketing Regions (US),ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+20,ME,Maine,3,Northeast,US,UNITED STATES,7,North America,MKT,Marketing Regions (US),ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+21,MD,Maryland,3,Northeast,US,UNITED STATES,7,North America,MKT,Marketing Regions (US),ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+22,MA,Massachusetts,3,Northeast,US,UNITED STATES,7,North America,MKT,Marketing Regions (US),ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+23,MI,Michigan,1,Upper Midwest,US,UNITED STATES,7,North America,MKT,Marketing Regions (US),ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+24,MN,Minnesota,1,Upper Midwest,US,UNITED STATES,7,North America,MKT,Marketing Regions (US),ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+25,MS,Mississippi,4,South,US,UNITED STATES,7,North America,MKT,Marketing Regions (US),ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+26,MO,Missouri,1,Upper Midwest,US,UNITED STATES,7,North America,MKT,Marketing Regions (US),ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+27,MT,Montana,1,Upper Midwest,US,UNITED STATES,7,North America,MKT,Marketing Regions (US),ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+28,NE,Nebraska,1,Upper Midwest,US,UNITED STATES,7,North America,MKT,Marketing Regions (US),ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+29,NV,Nevada,5,West Coast,US,UNITED STATES,7,North America,MKT,Marketing Regions (US),ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+30,NH,New Hampshire,3,Northeast,US,UNITED STATES,7,North America,MKT,Marketing Regions (US),ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+31,NJ,New Jersey,3,Northeast,US,UNITED STATES,7,North America,MKT,Marketing Regions (US),ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+32,NM,New Mexico,5,West Coast,US,UNITED STATES,7,North America,MKT,Marketing Regions (US),ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+33,NY,New York,3,Northeast,US,UNITED STATES,7,North America,MKT,Marketing Regions (US),ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+34,NC,North Carolina,22,Lower Midwest,US,UNITED STATES,7,North America,MKT,Marketing Regions (US),ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+35,ND,North Dakota,1,Upper Midwest,US,UNITED STATES,7,North America,MKT,Marketing Regions (US),ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+36,OH,Ohio,22,Lower Midwest,US,UNITED STATES,7,North America,MKT,Marketing Regions (US),ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+37,OK,Oklahoma,4,South,US,UNITED STATES,7,North America,MKT,Marketing Regions (US),ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+38,OR,Oregon,5,West Coast,US,UNITED STATES,7,North America,MKT,Marketing Regions (US),ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+39,PA,Pennsylvania,3,Northeast,US,UNITED STATES,7,North America,MKT,Marketing Regions (US),ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+40,PR,Puerto Rico ,4,South,US,UNITED STATES,7,North America,MKT,Marketing Regions (US),ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+41,RI,Rhode Island,3,Northeast,US,UNITED STATES,7,North America,MKT,Marketing Regions (US),ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+42,SC,South Carolina,2,Southeast,US,UNITED STATES,7,North America,MKT,Marketing Regions (US),ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+43,SD,South Dakota,1,Upper Midwest,US,UNITED STATES,7,North America,MKT,Marketing Regions (US),ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+44,TN,Tennessee,22,Lower Midwest,US,UNITED STATES,7,North America,MKT,Marketing Regions (US),ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+45,TX,Texas,4,South,US,UNITED STATES,7,North America,MKT,Marketing Regions (US),ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+46,UT,Utah,5,West Coast,US,UNITED STATES,7,North America,MKT,Marketing Regions (US),ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+47,VT,Vermont,3,Northeast,US,UNITED STATES,7,North America,MKT,Marketing Regions (US),ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+48,VA,Virginia,22,Lower Midwest,US,UNITED STATES,7,North America,MKT,Marketing Regions (US),ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+49,WA,Washington,5,West Coast,US,UNITED STATES,7,North America,MKT,Marketing Regions (US),ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+50,WV,West Virginia,22,Lower Midwest,US,UNITED STATES,7,North America,MKT,Marketing Regions (US),ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+51,WI,Wisconsin,1,Upper Midwest,US,UNITED STATES,7,North America,MKT,Marketing Regions (US),ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+52,WY,Wyoming,1,Upper Midwest,US,UNITED STATES,7,North America,MKT,Marketing Regions (US),ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+53,XX,Foreign State,-1,Foreign Region,MH,MARSHALL ISLANDS,12,Pacific Basin,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+54,XX,Foreign State,-1,Foreign Region,GP,GUADELOUPE,10,Latin America,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+55,XX,Foreign State,-1,Foreign Region,CF,CENTRAL AFRICAN REPU,13,Africa,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+56,XX,Foreign State,-1,Foreign Region,IE,IRELAND,6,Europe,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+57,XX,Foreign State,-1,Foreign Region,SH,SAINT HELENA,13,Africa,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+58,XX,Foreign State,-1,Foreign Region,BW,BOTSWANA,13,Africa,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+59,XX,Foreign State,-1,Foreign Region,PE,PERU,10,Latin America,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+60,XX,Foreign State,-1,Foreign Region,IS,ICELAND,6,Europe,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+61,XX,Foreign State,-1,Foreign Region,TO,TONGA,13,Africa,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+62,XX,Foreign State,-1,Foreign Region,FM,MICRONESIA,12,Pacific Basin,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+63,XX,Foreign State,-1,Foreign Region,GN,GUINEA,13,Africa,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+64,XX,Foreign State,-1,Foreign Region,IO,BRITISH INDIAN OCEAN,8,Middle East/Central Asia,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+65,XX,Foreign State,-1,Foreign Region,SR,SURINAME,10,Latin America,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+66,XX,Foreign State,-1,Foreign Region,MD,MOLDOVA,6,Europe,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+67,XX,Foreign State,-1,Foreign Region,IQ,IRAQ,8,Middle East/Central Asia,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+68,XX,Foreign State,-1,Foreign Region,SM,SAN MARINO,6,Europe,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+69,XX,Foreign State,-1,Foreign Region,LA,LAOS,12,Pacific Basin,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+70,XX,Foreign State,-1,Foreign Region,BN,BRUNEI,12,Pacific Basin,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+71,XX,Foreign State,-1,Foreign Region,GB,UNITED KINGDOM,6,Europe,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+72,XX,Foreign State,-1,Foreign Region,GG,GUERNSEY,10,Latin America,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+73,XX,Foreign State,-1,Foreign Region,BG,BULGARIA,6,Europe,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+74,XX,Foreign State,-1,Foreign Region,RO,ROMANIA,6,Europe,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+75,XX,Foreign State,-1,Foreign Region,BY,BELARUS,6,Europe,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+76,XX,Foreign State,-1,Foreign Region,AD,ANDORRA,6,Europe,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+77,XX,Foreign State,-1,Foreign Region,NR,NAURU,12,Pacific Basin,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+78,XX,Foreign State,-1,Foreign Region,MQ,MARTINIQUE,10,Latin America,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+79,XX,Foreign State,-1,Foreign Region,BA,BOSNIA AND HERZEGOVI,6,Europe,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+80,XX,Foreign State,-1,Foreign Region,TK,TOKELAU,8,Middle East/Central Asia,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+81,XX,Foreign State,-1,Foreign Region,LI,LIECHTENSTEIN,6,Europe,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+82,XX,Foreign State,-1,Foreign Region,PG,PAPUA NEW GUINEA,12,Pacific Basin,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+83,XX,Foreign State,-1,Foreign Region,PL,POLAND,6,Europe,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+84,XX,Foreign State,-1,Foreign Region,GA,GABON,13,Africa,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+85,XX,Foreign State,-1,Foreign Region,AL,ALBANIA,6,Europe,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+86,XX,Foreign State,-1,Foreign Region,GI,GIBRALTAR,6,Europe,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+87,XX,Foreign State,-1,Foreign Region,YE,YEMEN,8,Middle East/Central Asia,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+88,XX,Foreign State,-1,Foreign Region,BE,BELGIUM,6,Europe,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+89,XX,Foreign State,-1,Foreign Region,WF,WALLIS AND FUTUNA,12,Pacific Basin,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+90,XX,Foreign State,-1,Foreign Region,AR,ARGENTINA,10,Latin America,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+91,XX,Foreign State,-1,Foreign Region,MK,MACEDONIA,6,Europe,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+92,XX,Foreign State,-1,Foreign Region,GE,GEORGIA,8,Middle East/Central Asia,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+93,XX,Foreign State,-1,Foreign Region,UG,UGANDA,13,Africa,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+95,XX,Foreign State,-1,Foreign Region,FR,FRANCE,6,Europe,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+96,XX,Foreign State,-1,Foreign Region,PT,PORTUGAL,6,Europe,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+97,XX,Foreign State,-1,Foreign Region,PM,SAINT PIERRE AND MIQ,7,North America,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+98,XX,Foreign State,-1,Foreign Region,KR,"KOREA, SOUTH",12,Pacific Basin,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+99,XX,Foreign State,-1,Foreign Region,EH,WESTERN SAHARA,13,Africa,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+100,XX,Foreign State,-1,Foreign Region,TT,TRINIDAD AND TOBAGO,10,Latin America,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+102,XX,Foreign State,-1,Foreign Region,DJ,DJIBOUTI,13,Africa,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+103,XX,Foreign State,-1,Foreign Region,TL,EAST TIMOR,12,Pacific Basin,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+104,XX,Foreign State,-1,Foreign Region,NC,NEW CALEDONIA,12,Pacific Basin,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+106,XX,Foreign State,-1,Foreign Region,EG,EGYPT,13,Africa,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+107,XX,Foreign State,-1,Foreign Region,AT,AUSTRIA,6,Europe,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+108,XX,Foreign State,-1,Foreign Region,LV,LATVIA,6,Europe,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+109,XX,Foreign State,-1,Foreign Region,AG,ANTIGUA,10,Latin America,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+110,XX,Foreign State,-1,Foreign Region,MF,SAINT MARTIN,10,Latin America,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+112,XX,Foreign State,-1,Foreign Region,KW,KUWAIT,8,Middle East/Central Asia,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+113,XX,Foreign State,-1,Foreign Region,TR,TURKEY,6,Europe,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+114,XX,Foreign State,-1,Foreign Region,MT,MALTA,6,Europe,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+115,XX,Foreign State,-1,Foreign Region,CL,CHILE,10,Latin America,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+116,XX,Foreign State,-1,Foreign Region,NE,NIGER,13,Africa,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+118,XX,Foreign State,-1,Foreign Region,AE,UNITED ARAB EMIRATES,8,Middle East/Central Asia,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+119,XX,Foreign State,-1,Foreign Region,PK,PAKISTAN,8,Middle East/Central Asia,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+120,XX,Foreign State,-1,Foreign Region,NA,NAMIBIA,13,Africa,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+122,XX,Foreign State,-1,Foreign Region,ZA,SOUTH AFRICA,13,Africa,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+123,XX,Foreign State,-1,Foreign Region,FO,FAROE ISLANDS,6,Europe,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+124,XX,Foreign State,-1,Foreign Region,NG,NIGERIA,13,Africa,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+125,XX,Foreign State,-1,Foreign Region,AN,NETHERLANDS ANTILLES,10,Latin America,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+127,XX,Foreign State,-1,Foreign Region,CG,CONGO,13,Africa,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+128,XX,Foreign State,-1,Foreign Region,KN,SAINT KITTIS,10,Latin America,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+129,XX,Foreign State,-1,Foreign Region,DK,DENMARK,6,Europe,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+130,XX,Foreign State,-1,Foreign Region,HU,HUNGARY,6,Europe,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+131,XX,Foreign State,-1,Foreign Region,EC,ECUADOR,10,Latin America,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+133,XX,Foreign State,-1,Foreign Region,TD,CHAD,13,Africa,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+134,XX,Foreign State,-1,Foreign Region,TC,TURKS AND CAICOS ISL,10,Latin America,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+135,XX,Foreign State,-1,Foreign Region,TJ,TAJIKISTAN,8,Middle East/Central Asia,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+137,XX,Foreign State,-1,Foreign Region,FK,FALKLAND ISLANDS,10,Latin America,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+321,VI,US Virgin Islands,4,South,US,UNITED STATES,7,North America,MKT,Marketing Regions (US),ALL,All Regions,2/16/2011 15:58,,15278,4,Y
+322,XX,Foreign State,-1,Foreign Region,WE,West Bank,~,,GLB,Global Regions,ALL,All Regions,2/16/2011 15:58,,15278,4,Y

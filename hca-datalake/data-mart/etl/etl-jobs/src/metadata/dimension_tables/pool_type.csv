@@ -1,0 +1,165 @@
+POOL_TYPE_CD,POOL_TYPE_DESC
+2I,Intermediate-Term (15 Years or Less)
+2L,Long-Term  Seconds  Single Family
+2M,Multi-Family  Varying Maturity Dates
+2S,Short-Term (8/Less)
+2X,Conventional Balloon Level Payment
+2Y,Weighted Average Mega
+9L,FNMA Remic Backed/Pools Not for Sale
+A1,1YR Treasury Constant Maturity
+A2,1 YR T-Bill
+AB,Alaska Housing  Conventional Equity
+AC,Convertible to Fixed
+AF,Treasury Constant Maturity1%
+AG,Treasury Constant Maturity 2%
+AJ,11th District Coast of Funds
+AK,11th District Coast of Funds
+AM,Convention Adj. Multi Family
+AQ,Adjustable Payment Mortgage
+AR,Adjusted Payment Mortgage
+AS,Convention Adj. Single Family
+AT,GNMA II - Three year hybrid adjustable rate security
+AU,1% Adjustment
+AX,2% Adjustment
+BD,Buy Down
+BI,Intermediate Term (15years or less)
+BL,Long Term (30 Years or less)
+C3,Growing Equity (3% Annual Pay Increase)
+C4,Growing Equity (4% Annual Pay Increase)
+C5,Growing Equity (5% Annual Pay Increase)
+C7,Growing Equity (7.5% Annual Pay Increase)
+CA,Long Term (16 � 30 Years)
+CI,Intermediate Term (15 years or less)
+CL,Long Term (30 Years or less)
+CN,Short Term (10 Years or less)
+CP,Long Term (15 Years or more)
+CS,Short Term (7 Years or less)
+CT,Intermediate Term (20 Years or less)
+CX,Balloon  Level (7 Years or less)
+CY,Balloon  Level (7 Years or greater)
+DI,Short Term (15 or Less) Partial Buydown
+DL,Long Term (15 or More) Partial Buydown
+DX,Balloon (7 Years or Less)
+EL,Long Term (30 Years or Less) Graduated
+FL,Long Term (30 Years or Less) Government FMHA
+GA,Government  Adj  Single Family
+GC,Government  Graduated  Single Family
+GD,Growing Equity � Variable
+GG,Government  Graduated  Single Family
+GL,Government (FHA/VA)  Long Term (30 Years or Less)
+GM,GNMA-Backed MEGA Pools  15 Years
+GN,GNMA-Backed MEGA-Pools  30 Years
+GO,Gov. Comprised Entirely of Loans
+GP,Graduated Payment � 5 yrs.
+GR,GNMA-Backed MEGA-Pools  Adj.
+H2,Multifamily Second Lien Mortgages
+HA,Conventional Actual/360 Int. Day Basic
+HI,Intermediate (15 Years or Less)  Multifamily
+HL,Long Term  Multifamily Mortgages
+HN,Conventional Multifamily Short Term
+HR,Conventional Supplemental Lien
+HS,Conventional Short Term Level Payment
+HT,Level Payment  Multifamily Mortgages
+HX,Short Term  Balloon  Multifamily
+HY,Balloon  Multifamily  due in 7 Years
+II,Conventional RIM Intermediate
+IL,Conventional RTM Long Term
+JI,Intermediate Term (15 Years or Less)
+JL,Long Term (15 Years or Greater)
+JM,Non-standing  Multifamily
+JP,No description
+K0,Conventional Long Term Level Payment
+K1,Conventional Intermediate Term Payment
+K2,Conventional Long Term Level Payment
+K3,Conventional Intermediate Term Payment
+KI,Intermediate-Term  Mortgages Maturing
+KL,Long-Term  Mortgages Maturing in 30 Years
+LA,Adjustable Rate Mortgage  single family
+LB,Adj. Rate  Libor  Single Family
+LM,First Scheduled Payment More than 24 Months
+LS,Small FHA Project Loans
+MA,Government FHA Long-Term
+MB,Adj. Rate  Balloon  Maturity Dates Vary
+MH,Mobile Homes
+MI,Intermediate-Term (15 Years or Less)
+ML,Conventional  Long Term
+MN,Short-Term (10 or Less)
+MS,Short-Term  Due in 7 Years
+MT,Long-Term (20 Years or Less)
+MX,Conventional  Balloon
+MY,Conventional  Balloon  (7 Years or More)
+NO,Conv. LT Int.-Only Period >3 or <=5 Years
+NP,Conv. LT Int.-Only Period >=10 or <=15 Years
+NQ,Conv. LT Int.-Only Period >10 or <=15 Years
+NR,Conv. LT Int.-Only Period >15 or <=20 Years
+OD,Long Term SF Mat. Greater than 15 years
+OI,Intermediate-Term  Maturing in 15 Years
+PA,Adj.  Co-operative Share
+PI,Inter (15 years or less)  Co-operative Share
+PL,Long-Term  Co-operative Share
+PN,Personal Note  GNMA
+QI,Conventional Intermediate Term Payment
+QN,Conventional Short Term Level Payment
+QT,Conventional Intermediate Term Payment
+QY,Conventional Balloon Level Payment
+RE,Long-Term  Relocation
+RI,Inter (15 years or Less)  Relocation
+RL,Long-Term  Reverse By-Down
+RX,Balloon  (7 Years or Less)  Relocation
+SF,Single Family
+SN,Serial Note Pool
+SP,No description
+TJ,Title I Home Improvement Loans
+TK,(FHA) Title I Home Improvement Loans
+TQ,Title I Home Improvements Loans
+TT,(FHA) Title I Home Improvement Loans
+VL,Long Term  California Variable Rate
+W1,1% Adj.  1 Years Treasure Constant Maturity
+W2,2% Adj.  1 Years Treasure Constant Maturity
+W3,2% Adj.  3 Years Treasure Constant Maturity
+W5,2% Adj.  5 Years Treasure Constant Maturity
+W7,6% Limit  10 Year Treasure Constant Maturity
+WA,2% Adj.  11th District Cost of Funds
+WC,1% Adj.  1 Year Treasury Constant Maturity Convert
+WD,2% Adj.  1 Year Treasury Constant Maturity
+WE,11th District Cost of Funds
+WF,1% Adj.  1 Year Treasury Constant Maturity Convert
+WG,2% Adj.  3 Year Treasury Constant Maturity Convert
+WH,2% Adj.  1 Year Treasury Constant Maturity
+WJ,1% Adj.  11th District Cost of Funds
+WK,1% Adj.  11th District Cost of Funds  Conva.
+WN,1% Adj.  11th District Cost of Funds  Conva.
+WP,2% Adj.  1 Year Treasury Constant Maturity  Convert
+WQ,2% Adj.  11th District Cost of Funds  Conva.
+WS,Conventional  Adj.  Single Family
+WT,1% Adj.  6 Months CD Convertible
+WU,1% Adj.  6 Months CD
+WX,2% Adj.  1 Year Treasury Constant Maturity Convert
+X2,Weighted Average Mega (Lien Mtgs)
+XY,Weighted Average Fixed-Rate Mega
+YB,Weighted Average Mega (Balloon Level)
+YH,Weighted Average Mega (Intermediate)
+YL,Weighted Average Fixed-Rate Mega
+YT,Weighted Average Fixed-Rate Mega
+YX,Weighted Average Fixed-Rate Mega
+YY,Weighted Average Fixed-Rate Mega
+ZG,Remic/SMBS Backed GNMA
+ZL,Remic/SMBS Long-Term (30 Years or Less)
+ZX,Remic/SMBS Long-Term (30 Years or Less)  Balloon
+ZI,Mega security collateralized by REMIC certificates
+ZP,Remic/SMBS
+G6,
+Z6,
+ZT,
+FG,
+1L,
+84,
+A5,
+A6,
+A9,
+E8,
+G0,
+Q0,
+U9,
+Z4,
+Q5,

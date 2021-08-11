@@ -1,0 +1,5 @@
+SLIP_ADDR_CD,SLIP_ADDR_DESC
+"F","Use address of fund group on investment slip"
+"B","Use address of branch on investment slip"
+"M"," Use address of mutual fund on investment slip"
+"Z","No investment slip is included"

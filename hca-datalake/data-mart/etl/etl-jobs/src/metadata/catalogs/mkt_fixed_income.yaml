@@ -1,0 +1,203 @@
+- Name: irm_characteristics
+  TableType: file
+  StorageDescriptor:
+    Location: Characteristics[0-9]{8}\.csv
+    Delimiter: ","
+    Format: csv
+    SkipHeaderRows: 0
+- Name: irm_quality
+  TableType: file
+  StorageDescriptor:
+    Location: Quality[0-9]{8}\.csv
+    Delimiter: ","
+    Format: csv
+    SkipHeaderRows: 0
+- Name: irm_duration
+  TableType: file
+  StorageDescriptor:
+    Location: Duration[0-9]{8}\.csv
+    Delimiter: ","
+    Format: csv
+    SkipHeaderRows: 0
+- Name: irm_issuer
+  TableType: file
+  StorageDescriptor:
+    Location: Issuer[0-9]{8}\.csv
+    Delimiter: ","
+    Format: csv
+    SkipHeaderRows: 0
+- Name: irm_sector
+  TableType: file
+  StorageDescriptor:
+    Location: Sector[0-9]{8}\.csv
+    Delimiter: ","
+    Format: csv
+    SkipHeaderRows: 0
+- Name: pimco_mkt_quality
+  TableType: file
+  StorageDescriptor:
+    Location: PIMCO_MKT_QUALITY_[0-9]{8}\.csv
+    Delimiter: ","
+    Format: csv
+    SkipHeaderRows: 0
+- Name: pimco_quality
+  TableType: file
+  StorageDescriptor:
+    Location: PIMCO_QUALITY_BREAKOUT_[0-9]{2,4}_[0-9]{8}\.csv
+    Delimiter: ","
+    Format: csv
+    SkipHeaderRows: 1
+- Name: pimco_mkt_maturity
+  TableType: file
+  StorageDescriptor:
+    Location: PIMCO_MKT_MATURITY_[0-9]{8}\.csv
+    Delimiter: ","
+    Format: csv
+    SkipHeaderRows: 0
+- Name: pimco_duration
+  TableType: file
+  StorageDescriptor:
+    Location: PIMCO_DURATION_BREAKOUT_[0-9]{2,4}_[0-9]{8}\.csv
+    Delimiter: ","
+    Format: csv
+    SkipHeaderRows: 1
+- Name: pimco_maturity
+  TableType: file
+  StorageDescriptor:
+    Location: PIMCO_MATURITY_BREAKOUT_[0-9]{2,4}_[0-9]{8}\.csv
+    Delimiter: ","
+    Format: csv
+    SkipHeaderRows: 1
+- Name: pimco_country
+  TableType: file
+  StorageDescriptor:
+    Location: PIMCO_COUNTRY_BREAKOUT_[0-9]{2,4}_[0-9]{8}\.csv
+    Delimiter: ","
+    Format: csv
+    SkipHeaderRows: 1
+- Name: pimco_survey
+  TableType: file
+  StorageDescriptor:
+    Location: PIMCO_MKT_SURVEY_[0-9]{8}\.csv
+    Delimiter: ","
+    Format: csv
+    SkipHeaderRows: 0
+- Name: pimco_sector
+  TableType: file
+  StorageDescriptor:
+    Location: PIMCO_SECTOR_BREAKOUT_[0-9]{2,4}_[0-9]{8}\.csv|PIMCO_REALRETURN_BREAKOUT_[0-9]{2,4}_[0-9]{8}\.csv
+    Delimiter: ","
+    Format: csv
+    SkipHeaderRows: 1
+- Name: pimco_mkt_statistics
+  TableType: file
+  StorageDescriptor:
+    Location: PIMCO_MKT_STATISTICS_[0-9]{8}\.csv
+    Delimiter: ","
+    Format: csv
+    SkipHeaderRows: 0
+- Name: pimco_statistics
+  TableType: file
+  StorageDescriptor:
+    Location: PIMCO_STATISTICS_BREAKOUT_BREAKOUT_ALL_ACCOUNTS_[0-9]{8}\.csv|PIMCO_STATISTICS_BREAKOUT_ALL_ACCOUNTS_[0-9]{8}\.csv
+    Delimiter: ","
+    Format: csv
+    SkipHeaderRows: 0
+- Name: pimco_deriv
+  TableType: file
+  StorageDescriptor:
+    Location: PIMCO_DERIV_EXPOSURE_[0-9]{2,4}_[0-9]{8}\.csv
+    Delimiter: ","
+    Format: csv
+    SkipHeaderRows: 0
+- Name: shenkman_characteristics
+  TableType: file
+  StorageDescriptor:
+    Location: characteristics_harbor[a-z]*-FINAL\.csv
+    Delimiter: ","
+    Format: csv
+    SkipHeaderRows: 0
+- Name: shenkman_quality
+  TableType: file
+  StorageDescriptor:
+    Location: quality_harbor[a-z]*-FINAL\.csv
+    Delimiter: ","
+    Format: csv
+    SkipHeaderRows: 0
+- Name: shenkman_sector
+  TableType: file
+  StorageDescriptor:
+    Location: sector_harbor[a-z]*-FINAL\.csv
+    Delimiter: ","
+    Format: csv
+    SkipHeaderRows: 0
+- Name: shenkman_duration
+  TableType: file
+  StorageDescriptor:
+    Location: duration_harbor[a-z]*-FINAL\.csv
+    Delimiter: ","
+    Format: csv
+    SkipHeaderRows: 0
+- Name: shenkman_maturity
+  TableType: file
+  StorageDescriptor:
+    Location: maturity_harbor[a-z]*-FINAL\.csv
+    Delimiter: ","
+    Format: csv
+    SkipHeaderRows: 0
+- Name: shenkman_country
+  TableType: file
+  StorageDescriptor:
+    Location: country_harbor[a-z]*-FINAL\.csv
+    Delimiter: ","
+    Format: csv
+    SkipHeaderRows: 0
+- Name: shenkman_issuer
+  TableType: file
+  StorageDescriptor:
+    Location: issuers_harbor[a-z]*-FINAL\.csv
+    Delimiter: ","
+    Format: csv
+    SkipHeaderRows: 0
+- Name: cst_duration
+  TableType: file
+  StorageDescriptor:
+    Location: duration\.csv
+    Delimiter: ","
+    Format: csv
+    SkipHeaderRows: 0
+- Name: cst_maturity
+  TableType: file
+  StorageDescriptor:
+    Location: maturity\.csv
+    Delimiter: ","
+    Format: csv
+    SkipHeaderRows: 0
+- Name: cst_quality
+  TableType: file
+  StorageDescriptor:
+    Location: credit_quality\.csv
+    Delimiter: ","
+    Format: csv
+    SkipHeaderRows: 0
+- Name: cst_country
+  TableType: file
+  StorageDescriptor:
+    Location: country\.csv
+    Delimiter: ","
+    Format: csv
+    SkipHeaderRows: 0
+- Name: cst_characteristics
+  TableType: file
+  StorageDescriptor:
+    Location: characteristics\.csv
+    Delimiter: ","
+    Format: csv
+    SkipHeaderRows: 0
+- Name: cst_issuer
+  TableType: file
+  StorageDescriptor:
+    Location: top10_issuer\.csv
+    Delimiter: ","
+    Format: csv
+    SkipHeaderRows: 0

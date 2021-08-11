@@ -1,0 +1,14 @@
+{ 
+    "dev": { 
+        "region": "us-west-2",
+        "role": "arn:aws:iam::232930948780:role/pulumi/pulumi-hca-datalake" 
+    },
+    "qa": {
+        "region": "us-east-2",
+        "role": "arn:aws:iam::232930948780:role/pulumi/pulumi-qa"
+    },
+    "master": {
+        "region": "us-east-2",
+        "role": "arn:aws:iam::232930948780:role/pulumi/pulumi-datamart"
+    }
+}

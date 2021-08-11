@@ -1,0 +1,426 @@
+digraph ER {
+	node [shape=box]
+	"j_fund.after_tax_return" [label="fund.after_tax_return"]
+	node [shape=cylinder]
+	t_after_tax_return [label=after_tax_return]
+	"j_fund.after_tax_return" -> t_after_tax_return
+	node [shape=cylinder]
+	t_after_tax_calculation [label=after_tax_calculation]
+	t_after_tax_calculation -> "j_fund.after_tax_return"
+	node [shape=cylinder]
+	t_calendar [label=calendar]
+	t_calendar -> "j_fund.after_tax_return"
+	node [shape=cylinder]
+	t_return_periods [label=return_periods]
+	t_return_periods -> "j_fund.after_tax_return"
+	node [shape=cylinder]
+	t_fund [label=fund]
+	t_fund -> "j_fund.after_tax_return"
+	node [shape=cylinder]
+	t_after_tax_wealth_index [label=after_tax_wealth_index]
+	t_after_tax_wealth_index -> "j_fund.after_tax_return"
+	node [shape=cylinder]
+	t_dividend_tax_rate [label=dividend_tax_rate]
+	t_dividend_tax_rate -> "j_fund.after_tax_return"
+	node [shape=box]
+	"j_fund.after_tax_wealth_index" [label="fund.after_tax_wealth_index"]
+	node [shape=cylinder]
+	t_after_tax_wealth_index [label=after_tax_wealth_index]
+	"j_fund.after_tax_wealth_index" -> t_after_tax_wealth_index
+	node [shape=cylinder]
+	t_fund_valuation [label=fund_valuation]
+	t_fund_valuation -> "j_fund.after_tax_wealth_index"
+	node [shape=cylinder]
+	t_calendar [label=calendar]
+	t_calendar -> "j_fund.after_tax_wealth_index"
+	node [shape=cylinder]
+	t_fund_dividend [label=fund_dividend]
+	t_fund_dividend -> "j_fund.after_tax_wealth_index"
+	node [shape=cylinder]
+	t_fund [label=fund]
+	t_fund -> "j_fund.after_tax_wealth_index"
+	node [shape=cylinder]
+	t_fund_composite [label=fund_composite]
+	t_fund_composite -> "j_fund.after_tax_wealth_index"
+	node [shape=cylinder]
+	t_dividend_tax_rate [label=dividend_tax_rate]
+	t_dividend_tax_rate -> "j_fund.after_tax_wealth_index"
+	node [shape=box]
+	"j_fund.benchmark_index" [label="fund.benchmark_index"]
+	node [shape=cylinder]
+	t_benchmark_index [label=benchmark_index]
+	"j_fund.benchmark_index" -> t_benchmark_index
+	node [shape=folder]
+	f_benchmark [label=benchmark]
+	f_benchmark -> "j_fund.benchmark_index"
+	node [shape=box]
+	"j_fund.calendar" [label="fund.calendar"]
+	node [shape=cylinder]
+	t_calendar [label=calendar]
+	"j_fund.calendar" -> t_calendar
+	node [shape=folder]
+	f_calendar [label=calendar]
+	f_calendar -> "j_fund.calendar"
+	node [shape=box]
+	"j_fund.cash_holding" [label="fund.cash_holding"]
+	node [shape=cylinder]
+	t_cash_holding [label=cash_holding]
+	"j_fund.cash_holding" -> t_cash_holding
+	node [shape=folder]
+	f_full_prc [label=full_prc]
+	f_full_prc -> "j_fund.cash_holding"
+	node [shape=folder]
+	f_pta_ssb_position [label=pta_ssb_position]
+	f_pta_ssb_position -> "j_fund.cash_holding"
+	node [shape=cylinder]
+	t_fund_composite [label=fund_composite]
+	t_fund_composite -> "j_fund.cash_holding"
+	node [shape=cylinder]
+	t_calendar [label=calendar]
+	t_calendar -> "j_fund.cash_holding"
+	node [shape=box]
+	"j_fund.dividend_tax_rate" [label="fund.dividend_tax_rate"]
+	node [shape=cylinder]
+	t_dividend_tax_rate [label=dividend_tax_rate]
+	"j_fund.dividend_tax_rate" -> t_dividend_tax_rate
+	node [shape=folder]
+	f_dividend_tax_rate [label=dividend_tax_rate]
+	f_dividend_tax_rate -> "j_fund.dividend_tax_rate"
+	node [shape=box]
+	"j_fund.expense_ratio_history" [label="fund.expense_ratio_history"]
+	node [shape=cylinder]
+	t_expense_ratio_history [label=expense_ratio_history]
+	"j_fund.expense_ratio_history" -> t_expense_ratio_history
+	node [shape=folder]
+	f_expense_ratio_history [label=expense_ratio_history]
+	f_expense_ratio_history -> "j_fund.expense_ratio_history"
+	node [shape=box]
+	"j_fund.external_fund_balance" [label="fund.external_fund_balance"]
+	node [shape=cylinder]
+	t_external_fund_balance [label=external_fund_balance]
+	"j_fund.external_fund_balance" -> t_external_fund_balance
+	node [shape=folder]
+	f_external_fund_balance [label=external_fund_balance]
+	f_external_fund_balance -> "j_fund.external_fund_balance"
+	node [shape=cylinder]
+	t_fund [label=fund]
+	t_fund -> "j_fund.external_fund_balance"
+	node [shape=cylinder]
+	t_calendar [label=calendar]
+	t_calendar -> "j_fund.external_fund_balance"
+	node [shape=box]
+	"j_fund.external_fund_list" [label="fund.external_fund_list"]
+	node [shape=cylinder]
+	t_external_fund_list [label=external_fund_list]
+	"j_fund.external_fund_list" -> t_external_fund_list
+	node [shape=folder]
+	f_external_fund_list [label=external_fund_list]
+	f_external_fund_list -> "j_fund.external_fund_list"
+	node [shape=box]
+	"j_fund.fund" [label="fund.fund"]
+	node [shape=cylinder]
+	t_fund [label=fund]
+	"j_fund.fund" -> t_fund
+	node [shape=folder]
+	f_fund [label=fund]
+	f_fund -> "j_fund.fund"
+	node [shape=cylinder]
+	t_fund_composite [label=fund_composite]
+	t_fund_composite -> "j_fund.fund"
+	node [shape=box]
+	"j_fund.fund_composite" [label="fund.fund_composite"]
+	node [shape=cylinder]
+	t_fund_composite [label=fund_composite]
+	"j_fund.fund_composite" -> t_fund_composite
+	node [shape=folder]
+	f_fund_composite [label=fund_composite]
+	f_fund_composite -> "j_fund.fund_composite"
+	node [shape=box]
+	"j_fund.fund_dividend" [label="fund.fund_dividend"]
+	node [shape=cylinder]
+	t_fund_dividend [label=fund_dividend]
+	"j_fund.fund_dividend" -> t_fund_dividend
+	node [shape=folder]
+	f_fund_dividend [label=fund_dividend]
+	f_fund_dividend -> "j_fund.fund_dividend"
+	node [shape=cylinder]
+	t_fund [label=fund]
+	t_fund -> "j_fund.fund_dividend"
+	node [shape=cylinder]
+	t_calendar [label=calendar]
+	t_calendar -> "j_fund.fund_dividend"
+	node [shape=box]
+	"j_fund.fund_expense_ratio" [label="fund.fund_expense_ratio"]
+	node [shape=cylinder]
+	t_fund_expense_ratio [label=fund_expense_ratio]
+	"j_fund.fund_expense_ratio" -> t_fund_expense_ratio
+	node [shape=folder]
+	f_fund_expense_ratio [label=fund_expense_ratio]
+	f_fund_expense_ratio -> "j_fund.fund_expense_ratio"
+	node [shape=cylinder]
+	t_fund [label=fund]
+	t_fund -> "j_fund.fund_expense_ratio"
+	node [shape=box]
+	"j_fund.fund_index_rltn" [label="fund.fund_index_rltn"]
+	node [shape=cylinder]
+	t_fund_index_rltn [label=fund_index_rltn]
+	"j_fund.fund_index_rltn" -> t_fund_index_rltn
+	node [shape=folder]
+	f_fund_index_rltn [label=fund_index_rltn]
+	f_fund_index_rltn -> "j_fund.fund_index_rltn"
+	node [shape=cylinder]
+	t_fund_composite [label=fund_composite]
+	t_fund_composite -> "j_fund.fund_index_rltn"
+	node [shape=cylinder]
+	t_perf_run_type [label=perf_run_type]
+	t_perf_run_type -> "j_fund.fund_index_rltn"
+	node [shape=cylinder]
+	t_benchmark_index [label=benchmark_index]
+	t_benchmark_index -> "j_fund.fund_index_rltn"
+	node [shape=box]
+	"j_fund.fund_manager" [label="fund.fund_manager"]
+	node [shape=cylinder]
+	t_fund_manager [label=fund_manager]
+	"j_fund.fund_manager" -> t_fund_manager
+	node [shape=folder]
+	f_fund_manager [label=fund_manager]
+	f_fund_manager -> "j_fund.fund_manager"
+	node [shape=cylinder]
+	t_sub_advisor [label=sub_advisor]
+	t_sub_advisor -> "j_fund.fund_manager"
+	node [shape=cylinder]
+	t_fund_composite [label=fund_composite]
+	t_fund_composite -> "j_fund.fund_manager"
+	node [shape=cylinder]
+	t_portfolio_manager [label=portfolio_manager]
+	t_portfolio_manager -> "j_fund.fund_manager"
+	node [shape=box]
+	"j_fund.fund_return" [label="fund.fund_return"]
+	node [shape=cylinder]
+	t_fund_return [label=fund_return]
+	"j_fund.fund_return" -> t_fund_return
+	node [shape=cylinder]
+	t_fund_valuation [label=fund_valuation]
+	t_fund_valuation -> "j_fund.fund_return"
+	node [shape=cylinder]
+	t_calendar [label=calendar]
+	t_calendar -> "j_fund.fund_return"
+	node [shape=cylinder]
+	t_fund_manager [label=fund_manager]
+	t_fund_manager -> "j_fund.fund_return"
+	node [shape=cylinder]
+	t_fund [label=fund]
+	t_fund -> "j_fund.fund_return"
+	node [shape=cylinder]
+	t_return_periods [label=return_periods]
+	t_return_periods -> "j_fund.fund_return"
+	node [shape=cylinder]
+	t_fund_composite [label=fund_composite]
+	t_fund_composite -> "j_fund.fund_return"
+	node [shape=box]
+	"j_fund.fund_valuation" [label="fund.fund_valuation"]
+	node [shape=cylinder]
+	t_fund_valuation [label=fund_valuation]
+	"j_fund.fund_valuation" -> t_fund_valuation
+	node [shape=folder]
+	f_ssbnav [label=ssbnav]
+	f_ssbnav -> "j_fund.fund_valuation"
+	node [shape=cylinder]
+	t_fund_valuation [label=fund_valuation]
+	t_fund_valuation -> "j_fund.fund_valuation"
+	node [shape=cylinder]
+	t_calendar [label=calendar]
+	t_calendar -> "j_fund.fund_valuation"
+	node [shape=cylinder]
+	t_fund_dividend [label=fund_dividend]
+	t_fund_dividend -> "j_fund.fund_valuation"
+	node [shape=cylinder]
+	t_fund [label=fund]
+	t_fund -> "j_fund.fund_valuation"
+	node [shape=cylinder]
+	t_fund_composite [label=fund_composite]
+	t_fund_composite -> "j_fund.fund_valuation"
+	node [shape=box]
+	"j_fund.fund_yield" [label="fund.fund_yield"]
+	node [shape=cylinder]
+	t_fund_yield [label=fund_yield]
+	"j_fund.fund_yield" -> t_fund_yield
+	node [shape=folder]
+	f_sec_yld [label=sec_yld]
+	f_sec_yld -> "j_fund.fund_yield"
+	node [shape=folder]
+	f_rates [label=rates]
+	f_rates -> "j_fund.fund_yield"
+	node [shape=cylinder]
+	t_yield_types [label=yield_types]
+	t_yield_types -> "j_fund.fund_yield"
+	node [shape=cylinder]
+	t_fund [label=fund]
+	t_fund -> "j_fund.fund_yield"
+	node [shape=cylinder]
+	t_calendar [label=calendar]
+	t_calendar -> "j_fund.fund_yield"
+	node [shape=box]
+	"j_fund.gross_return" [label="fund.gross_return"]
+	node [shape=cylinder]
+	t_gross_return [label=gross_return]
+	"j_fund.gross_return" -> t_gross_return
+	node [shape=cylinder]
+	t_return_periods [label=return_periods]
+	t_return_periods -> "j_fund.gross_return"
+	node [shape=cylinder]
+	t_fund [label=fund]
+	t_fund -> "j_fund.gross_return"
+	node [shape=cylinder]
+	t_fund_index_rltn [label=fund_index_rltn]
+	t_fund_index_rltn -> "j_fund.gross_return"
+	node [shape=cylinder]
+	t_benchmark_index [label=benchmark_index]
+	t_benchmark_index -> "j_fund.gross_return"
+	node [shape=box]
+	"j_fund.gross_wealth_index" [label="fund.gross_wealth_index"]
+	node [shape=cylinder]
+	t_gross_wealth_index [label=gross_wealth_index]
+	"j_fund.gross_wealth_index" -> t_gross_wealth_index
+	node [shape=cylinder]
+	t_fund_expense_ratio [label=fund_expense_ratio]
+	t_fund_expense_ratio -> "j_fund.gross_wealth_index"
+	node [shape=cylinder]
+	t_calendar [label=calendar]
+	t_calendar -> "j_fund.gross_wealth_index"
+	node [shape=cylinder]
+	t_fund_return [label=fund_return]
+	t_fund_return -> "j_fund.gross_wealth_index"
+	node [shape=cylinder]
+	t_fund [label=fund]
+	t_fund -> "j_fund.gross_wealth_index"
+	node [shape=cylinder]
+	t_expense_ratio_history [label=expense_ratio_history]
+	t_expense_ratio_history -> "j_fund.gross_wealth_index"
+	node [shape=cylinder]
+	t_return_periods [label=return_periods]
+	t_return_periods -> "j_fund.gross_wealth_index"
+	node [shape=box]
+	"j_fund.index_return" [label="fund.index_return"]
+	node [shape=cylinder]
+	t_index_return [label=index_return]
+	"j_fund.index_return" -> t_index_return
+	node [shape=cylinder]
+	t_calendar [label=calendar]
+	t_calendar -> "j_fund.index_return"
+	node [shape=cylinder]
+	t_fund_manager [label=fund_manager]
+	t_fund_manager -> "j_fund.index_return"
+	node [shape=cylinder]
+	t_fund [label=fund]
+	t_fund -> "j_fund.index_return"
+	node [shape=cylinder]
+	t_perf_run_type [label=perf_run_type]
+	t_perf_run_type -> "j_fund.index_return"
+	node [shape=cylinder]
+	t_benchmark_index [label=benchmark_index]
+	t_benchmark_index -> "j_fund.index_return"
+	node [shape=cylinder]
+	t_return_periods [label=return_periods]
+	t_return_periods -> "j_fund.index_return"
+	node [shape=cylinder]
+	t_fund_composite [label=fund_composite]
+	t_fund_composite -> "j_fund.index_return"
+	node [shape=cylinder]
+	t_fund_index_rltn [label=fund_index_rltn]
+	t_fund_index_rltn -> "j_fund.index_return"
+	node [shape=box]
+	"j_fund.index_valuation" [label="fund.index_valuation"]
+	node [shape=cylinder]
+	t_index_valuation [label=index_valuation]
+	"j_fund.index_valuation" -> t_index_valuation
+	node [shape=folder]
+	f_bloomberg_idx_data_ml [label=bloomberg_idx_data_ml]
+	f_bloomberg_idx_data_ml -> "j_fund.index_valuation"
+	node [shape=folder]
+	f_bloomberg_idx_data_final [label=bloomberg_idx_data_final]
+	f_bloomberg_idx_data_final -> "j_fund.index_valuation"
+	node [shape=cylinder]
+	t_index_valuation [label=index_valuation]
+	t_index_valuation -> "j_fund.index_valuation"
+	node [shape=cylinder]
+	t_calendar [label=calendar]
+	t_calendar -> "j_fund.index_valuation"
+	node [shape=cylinder]
+	t_benchmark_index [label=benchmark_index]
+	t_benchmark_index -> "j_fund.index_valuation"
+	node [shape=box]
+	"j_fund.money_market_activity_current_day" [label="fund.money_market_activity_current_day"]
+	node [shape=cylinder]
+	t_money_market_activity [label=money_market_activity]
+	"j_fund.money_market_activity_current_day" -> t_money_market_activity
+	node [shape=folder]
+	f_mmkt_info [label=mmkt_info]
+	f_mmkt_info -> "j_fund.money_market_activity_current_day"
+	node [shape=folder]
+	f_rates [label=rates]
+	f_rates -> "j_fund.money_market_activity_current_day"
+	node [shape=cylinder]
+	t_fund [label=fund]
+	t_fund -> "j_fund.money_market_activity_current_day"
+	node [shape=cylinder]
+	t_calendar [label=calendar]
+	t_calendar -> "j_fund.money_market_activity_current_day"
+	node [shape=box]
+	"j_fund.money_market_activity_previous_day" [label="fund.money_market_activity_previous_day"]
+	node [shape=cylinder]
+	t_money_market_activity [label=money_market_activity]
+	"j_fund.money_market_activity_previous_day" -> t_money_market_activity
+	node [shape=folder]
+	f_harbor_mm_web_disclosure [label=harbor_mm_web_disclosure]
+	f_harbor_mm_web_disclosure -> "j_fund.money_market_activity_previous_day"
+	node [shape=folder]
+	f_gb05_comparison_nav_fund_summary [label=gb05_comparison_nav_fund_summary]
+	f_gb05_comparison_nav_fund_summary -> "j_fund.money_market_activity_previous_day"
+	node [shape=cylinder]
+	t_fund [label=fund]
+	t_fund -> "j_fund.money_market_activity_previous_day"
+	node [shape=cylinder]
+	t_calendar [label=calendar]
+	t_calendar -> "j_fund.money_market_activity_previous_day"
+	node [shape=box]
+	"j_fund.perf_run_type" [label="fund.perf_run_type"]
+	node [shape=cylinder]
+	t_perf_run_type [label=perf_run_type]
+	"j_fund.perf_run_type" -> t_perf_run_type
+	node [shape=folder]
+	f_perf_run_type [label=perf_run_type]
+	f_perf_run_type -> "j_fund.perf_run_type"
+	node [shape=box]
+	"j_fund.portfolio_manager" [label="fund.portfolio_manager"]
+	node [shape=cylinder]
+	t_portfolio_manager [label=portfolio_manager]
+	"j_fund.portfolio_manager" -> t_portfolio_manager
+	node [shape=folder]
+	f_portfolio_manager [label=portfolio_manager]
+	f_portfolio_manager -> "j_fund.portfolio_manager"
+	node [shape=box]
+	"j_fund.return_periods" [label="fund.return_periods"]
+	node [shape=cylinder]
+	t_return_periods [label=return_periods]
+	"j_fund.return_periods" -> t_return_periods
+	node [shape=folder]
+	f_return_periods [label=return_periods]
+	f_return_periods -> "j_fund.return_periods"
+	node [shape=box]
+	"j_fund.sub_advisor" [label="fund.sub_advisor"]
+	node [shape=cylinder]
+	t_sub_advisor [label=sub_advisor]
+	"j_fund.sub_advisor" -> t_sub_advisor
+	node [shape=folder]
+	f_sub_advisor [label=sub_advisor]
+	f_sub_advisor -> "j_fund.sub_advisor"
+	node [shape=box]
+	"j_fund.yield_types" [label="fund.yield_types"]
+	node [shape=cylinder]
+	t_yield_types [label=yield_types]
+	"j_fund.yield_types" -> t_yield_types
+	node [shape=folder]
+	f_yield_types [label=yield_types]
+	f_yield_types -> "j_fund.yield_types"
+}

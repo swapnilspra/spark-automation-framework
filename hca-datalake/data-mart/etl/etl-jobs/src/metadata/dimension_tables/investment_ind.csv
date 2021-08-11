@@ -1,0 +1,7 @@
+INVMT_IND_CD,INVMT_IND_DESC,EXTD_DESC
+LT,Long Term,
+ST,Short Term,
+FT,Long Future,
+FS,Short Future,
+OW,Option Written,
+OP,Option Purchased,

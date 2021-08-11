@@ -1,0 +1,10 @@
+config:
+  aws:region: us-west-2
+  source-job-awd:crawl_path: DG_PWHARBO
+  source-job-awd:db_security_groups: sg-051ebf5a92c3be11c
+  source-job-awd:db_subnet_id: subnet-07dc375c
+  source-job-awd:jdbc_driver: oracle.jdbc.driver.OracleDriver
+  source-job-awd:jdbc_url: jdbc:oracle:thin://@170.40.30.137:1528/DG_PWHARBO
+  source-job-awd:password:
+    secure: AAABALK92h1PsSn3ASX5Ay8jrANKStHOmYo+pkz61KMKoA38dCBL0Z7dnSN+rP9pPw==
+  source-job-awd:username: PBICLIENTUSR

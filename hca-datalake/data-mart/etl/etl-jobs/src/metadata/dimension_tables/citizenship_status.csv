@@ -1,0 +1,5 @@
+CITIZENSHIP_STAT_CD,CITIZENSHIP_STAT_NM,CITIZENSHIP_STAT_DESC
+C,Citizen,
+N,Non resident alien,
+R,Resident alien,
+U,Unknown,

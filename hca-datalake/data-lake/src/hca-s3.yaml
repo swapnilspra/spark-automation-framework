@@ -1,0 +1,36 @@
+---
+AWSTemplateFormatVersion: '2010-09-09'
+Resources:
+  s3hcadletl:
+    Type: AWS::S3::Bucket
+    Properties:
+      AccessControl: Private
+      VersioningConfiguration:
+        Status: Enabled
+  s3hcadlraw:
+    Type: AWS::S3::Bucket
+    Properties:
+      AccessControl: Private
+      LifecycleConfiguration:
+        Rules:
+        - Id: raw-to-glacier
+          Status: Enabled
+          Transition:
+            StorageClass: DEEP_ARCHIVE
+            TransitionInDays: '30'
+      VersioningConfiguration:
+        Status: Suspended
+  s3hcadlstaging:
+    Type: AWS::S3::Bucket
+    Properties:
+      AccessControl: Private
+      LifecycleConfiguration:
+        Rules:
+        - Id: staging-to-glacier
+          Status: Enabled
+          Transition:
+            StorageClass: DEEP_ARCHIVE
+            TransitionInDays: '30'
+      VersioningConfiguration:
+        Status: Suspended
+Description: 'hca S3'

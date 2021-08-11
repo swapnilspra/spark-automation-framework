@@ -1,0 +1,116 @@
+##### HBR_MASTER
+
+
+
+###  FUND
+
+FUND
+
+###  ACCOUNT
+
+ACCOUNT
+
+
+###  LOAD_DATE
+
+
+LOAD_DATE
+
+
+
+###  LOAD_TIME
+
+
+LOAD_TIME
+
+
+###  ACCT_SETUP_DTE
+
+
+ACCT_SETUP_DTE
+
+
+
+###  DEALERCNTL
+
+
+DEALERCNTL
+
+
+###  STOPMAILDATE
+
+
+STOPMAILDATE
+
+
+###  OPENCLOSE
+
+
+OPENCLOSE
+
+
+###  SOCIALCODE
+
+
+SOCIALCODE
+
+
+###  SAMGMTEMPL
+
+
+SAMGMTEMPL
+
+
+
+###  STM_EML_ADR_TXT
+
+
+STM_EML_ADR_TXT
+
+
+###  SEND_MKT_MAIL
+
+
+SEND_MKT_MAIL
+
+
+###  CUSTOMER_ID1
+
+
+CUSTOMER_ID1
+
+
+###  CUSTOMER_ID2
+
+CUSTOMER_ID2
+
+
+
+###  TAX_ID_NBR
+
+
+TAX_ID_NBR
+
+
+###  CMR_INFD_CSNT
+
+
+CMR_INFD_CSNT
+
+
+###  INVESTOR_ID
+
+
+INVESTOR_ID
+
+
+
+#### Files Used
+
+HBR_MASTER.csv
+
+
+### File Location
+
+dstprod/HBR_MASTER.csv
+

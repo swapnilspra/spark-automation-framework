@@ -1,0 +1,166 @@
+#!/usr/bin/env python
+import click
+import csv as CSV
+
+IMPORT = '''from typing import Dict, List, Any
+import pyspark.sql
+import common.utils
+import pyspark.sql.functions as F
+from common.etl_job import ETLJob # must be imported after spark has been set up
+'''
+
+CLASS_DEF = '''
+class Job(ETLJob):
+    target_table = "%s"
+    primary_key = {\"PRIMARY_KEY_NAME\": "int"}
+    business_key = ["BUSINESS_KEY_NAME"]
+'''
+
+SOURCE = '''
+    sources:Dict[str, Dict[str, Any]] = {     
+        "%s": {
+            "type": "file",
+            "source": "%s"
+        }
+    }
+'''
+
+JOIN = '''
+    #joins:List[Dict[str,Any]] = [
+    #     {
+    #         "source": "%s"
+    #     },
+    #     {
+    #         "source": "SOURCE_A",
+    #         "conditions": [
+    #             F.col("%s.COLUMN_1") == F.col("SOURCE_A.COLUMN_1"),
+    #             F.col("%s.COLUMN_2") == F.col("SOURCE_A.COLUMN_2")
+    #         ],
+    #         "type": "left_outer" #inner/leftouter/rightouter/outer...
+    #     },
+    # ]
+
+'''
+
+EXTRACT = '''
+    # def extract(self,catalog:Dict[str,Any]) -> Dict[str,pyspark.sql.DataFrame]:
+    #     df_inputs = super().extract(catalog)
+    #     df_transformed = df_inputs["%s"]
+    #
+    #     # extract
+    #     # df_transformed = xxxx
+    #
+    #     # update
+    #     df_inputs["%s"] = df_transformed.alias("%s")
+    #     return df_inputs
+'''
+
+TRANSFORM = '''
+    # def transform(self,df_joined:pyspark.sql.DataFrame) -> pyspark.sql.DataFrame:
+    #     df_transformed = self.calc_transformed(df_joined)
+    #     df_transformed = super().transform(df_joined)
+    #
+    #     return df_transformed
+    #
+    # def calc_transformed(self,df_joined:pyspark.sql.DataFrame) -> pyspark.sql.DataFrame:
+    #     df_transformed = df_joined
+    #
+    #     # transform
+    #     return df_transformed
+'''
+
+@click.command()
+@click.option('--csv', required=True, help='csv file location')
+@click.option('--tbl', required=True, help='target table name')
+@click.option('--path', required=True, help='path to job.py to be created')
+def hello(csv, tbl, path):
+    header = get_header(csv)
+    table = tbl
+    
+    write_file(path, table, header)
+
+# write job.py 
+def write_file(path, table, header):
+    file_name = path + "/job.py"
+    try:
+        f = open(file_name, "w")
+
+        f.write(IMPORT)
+        f.write(CLASS_DEF % (table))
+        f.write(SOURCE % (table, table))
+        f.write(JOIN % (table, table, table))
+
+        # target mapping opening
+        f.write("    target_mappings:List[Dict[str, Any]] = [\n")
+
+        # target mapping for each column
+        for col in header:
+            target = ''
+
+            if col == 'Created':
+                column = 'F.to_timestamp("' + col + '")'
+                target = 'creatn_dt'
+
+            elif col == 'Modified':
+                column = 'F.to_timestamp("' + col + '")'
+                target = 'chg_dt'
+
+            elif col == 'Created By':
+                column = 'F.col("' + col + '")'
+                target = 'creatr'
+
+            elif col == 'Modified By':
+                column = 'F.col("' + col + '")'
+                target = 'modfr'
+
+            elif 'Date' in col:
+                column = 'F.to_timestamp("' + col + '")'
+
+            elif 'Comment' in col or 'Review' in col:
+                # for comment, remove carriage return and trim
+                column = "F.trim(F.regexp_replace(F.col(\"" + col + "\"), '\\r', ' '))"
+
+            else:
+                column = 'F.col("' + col + '")'
+                map = '\t{ "source": ' + column + ', "target": "" },'
+
+            f.write('        { "source": %s, "target": "%s" },\n' % (column, target))
+
+        # default curr_row_flg
+        f.write('        { "source": F.lit("Y"), "target": "curr_row_flg" },\n')
+
+        # sample flag convert
+        f.write('''        # { "source": 
+        #     F.when(F.col("COLUMN_NAME") == True, 1)
+        #     .otherwise(
+        #         F.when(F.col("COLUMN_NAME") == False, 0)
+        #         .otherwise(F.lit(None))
+        #     ), "target": "TARGET_COLUMN_NAME" },\n'''
+        )
+        # mapping closing
+        f.write("    ]\n")
+
+        f.write(EXTRACT % (table, table, table))
+        f.write(TRANSFORM)
+        
+    except OSError as err:
+        print(format(err))
+    else:
+        f.close()
+
+# read csv file and return header
+def get_header(csv_file):    
+    try:
+        f = open(csv_file)
+        reader = CSV.reader(f)
+        header = next(reader)
+    except OSError as err:
+        print("{0}".format(err))
+        header = []
+    else:
+        f.close()
+    return header
+
+
+if __name__ == '__main__':
+    hello()

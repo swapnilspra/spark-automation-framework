@@ -1,0 +1,9 @@
+config:
+  aws:region: us-west-2
+  source-job-hc:crawl_path: hcdev
+  source-job-hc:db_security_groups: sg-051ebf5a92c3be11c
+  source-job-hc:db_subnet_id: subnet-593fa010
+  source-job-hc:jdbc_url: jdbc:oracle:thin://@hcdev.c9rm2ujj95lq.us-west-2.rds.amazonaws.com:1521/HCDEV
+  source-job-hc:password:
+    secure: AAABAF/wUuvKIW6zJAW8XA+yzD3Z8lvl0WYtpcU2JphX7n2mwFhQ
+  source-job-hc:username: appserver

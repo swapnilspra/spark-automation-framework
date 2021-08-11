@@ -1,0 +1,260 @@
+#!/usr/bin/env python
+import hashlib
+import pkgutil
+import configparser
+import click
+from typing import Dict, List, Any
+from pyspark.sql import SparkSession
+import logging
+import importlib
+import sys
+import json
+import os
+import glob
+import re
+sys.path.insert(0, "../src/")
+import common.utils
+import common.pytest_utils
+from common.copybook import CopyBook
+
+class bcolors:
+    HEADER = '\033[95m'
+    OKBLUE = '\033[94m'
+    OKGREEN = '\033[92m'
+    WARNING = '\033[93m'
+    FAIL = '\033[91m'
+    ENDC = '\033[0m'
+    BOLD = '\033[1m'
+    UNDERLINE = '\033[4m'
+
+@click.group()
+def cli():
+    pass
+
+@cli.command(name="test",
+    context_settings=dict(
+        ignore_unknown_options=True,
+        allow_extra_args=True,
+    )
+)
+@click.option('--jobname', required=False,default=None,help='job name to test. If blank and test.ini file exists, will be taken from ini file')
+@click.option('--datafolder', required=True,help="location of 'before' 'after' folders")
+@click.option('--ignore-cols', required=False,default="",help="comma delimited list of columns to ignore for comparison purposes. If blank and test.ini file exists, will be taken from ini file")
+@click.option('--stop-on-failure/--no-stop-on-failure', required=False,default=False,help="whether or not to keep going if a test fails. default is to run all tests")
+@click.pass_context
+def test(ctx,datafolder,jobname,ignore_cols,stop_on_failure):
+    if jobname is None:
+        # try loading an ini file
+        config = configparser.ConfigParser()
+        config.read(os.path.join(datafolder,'test.ini'))
+        jobname = config["default"]["jobname"]
+        ignore_cols = config["default"].get("ignore_cols","")
+        job_arguments = {k:v for k,v in config["default"].items() if k.startswith("p_")}
+    else:
+        #
+        # read extra job arguments
+        #
+        job_arguments:Dict[str,str] = {ctx.args[i][2:]: ctx.args[i+1] for i in range(0, len(ctx.args), 2) if ctx.args[i][2:].startswith("p_")}
+    spark = SparkSession \
+        .builder \
+        .appName("superglue test tool") \
+        .config("spark.jars", "../lib/postgresql-42.2.8.jar") \
+        .config("spark.sql.decimalOperations.allowPrecisionLoss",False) \
+        .getOrCreate()
+    spark.sparkContext.addFile('../src/common',recursive=True)
+    common.pytest_utils.run_integration_test(jobname,spark,datafolder,job_arguments,ignore_cols,stop_on_failure)
+
+#
+# recursively run all tests in all subfolders
+#
+@cli.command(name="test-all")
+@click.option('--datafolder', required=True,help="location of 'before' 'after' folders")
+def test_all(datafolder):
+    spark = SparkSession \
+        .builder \
+        .appName("Python Spark SQL basic example") \
+        .config("spark.jars", "../lib/postgresql-42.2.8.jar") \
+        .getOrCreate()
+    spark.sparkContext.addFile('../src/common',recursive=True)    
+    spark.sparkContext.setLogLevel("ERROR")
+    all_tests: List[str] = glob.glob(os.path.join(datafolder,"**","test.ini"),recursive=True)
+    print(f"found {len(all_tests)} tests")
+    for test in all_tests:
+        base_dir = os.path.dirname(test)
+
+        print(f"processing tests in {base_dir}")
+
+        # try loading an ini file
+        config = configparser.ConfigParser()
+        config.read(test)
+
+        # read all tests
+        for test_name in config.sections():
+            test_config = config[test_name]
+            jobname = test_config["jobname"]
+            job_args = {}
+            for key,item in test_config.items():
+                if key not in ["jobname","ignore_cols"]:
+                    # add to args
+                    job_args[key] = item
+
+            ignore_cols = test_config.get("ignore_cols","")
+            print(f"{bcolors.HEADER}running test: {test_name}. job name: {jobname}{bcolors.ENDC}")
+            try:
+                common.pytest_utils.run_integration_test(
+                    jobname,spark,
+                    base_dir,
+                    job_args,
+                    ignore_cols=ignore_cols,
+                    stop_on_failure=True,
+                    loglevel="ERROR"
+                )
+                print(f"{bcolors.OKGREEN}success{bcolors.ENDC}")
+            except AssertionError as ae:
+                print(f"{bcolors.WARNING}failed{bcolors.ENDC}")
+                print(ae)
+
+
+@click.option('--source', required=True,help='source from catalog to use for input parsing')
+@click.option('--file', required=True,help="location of input file")
+@click.option('--outfile', required=False,default=None,help="location of output file. If not specified a .redacted file will be placed in same location as input file")
+@click.option('--encode-cols', required=False,default="",help="comma separated list of columns to encode. If this is a multiline file (with REDEFINES) should be <group>.<field>")
+@click.option('--redact-cols', required=False,default="",help="comma separated list of columns to redact. If this is a multiline file (with REDEFINES) should be <group>.<field>")
+@click.option('--max-rows', required=False,default=None,help="maximum rows to process. good for debugging")
+@cli.command(name="redact")
+def redact(source,file,encode_cols,redact_cols,max_rows,outfile):
+    if outfile is None:
+        outfile_location = file+".redacted"
+    else:
+        outfile_location = outfile
+
+    # read the source spec from the catalog
+    catalog = common.utils.get_catalog()
+    source = catalog[source]
+    # read the copybook spec
+    copybook_lines:str = pkgutil.get_data("metadata.copybooks",source.get("copybook",None)).decode("utf-8") # type: ignore
+    copybook_spec = CopyBook.parse(copybook_lines.split("\n")) 
+
+    encode_cols_list = encode_cols.split(",")
+    redact_cols_list = redact_cols.split(",")
+    columns_list = encode_cols_list + redact_cols_list
+
+    if (source.get("multiline",False)):
+        record_selector_field=copybook_spec.fields[source.get("record_selector_field",None)]
+
+    # first, we have to figure out number of lines to ignore footer lines. ugh.
+    with open(file) as f:
+        for line_number, l in enumerate(f):
+            pass
+    total_lines:int = line_number+1
+
+    i:int=0
+    outf = open(outfile_location,'w')
+    with open(file) as f:
+        for line in f:
+            i += 1
+            if i<=source.get("skip_header_rows",0) or i>total_lines-source.get("skip_footer_rows"):
+                outf.write(line)
+                continue
+            # limit rows
+            if max_rows and i>int(max_rows):
+                break
+
+            newline = line
+            # loop over fields to redact
+            for column in filter(None,columns_list):
+                if (source.get("multiline",False)):
+                    # if has a row prefix this is multiline file
+                    colspec = copybook_spec.fields[column.split(".")[1]]
+                    record_type = line[record_selector_field.offset:record_selector_field.offset+record_selector_field.length]
+                    if not source.get("record_types")[record_type]==column.split(".")[0]:
+                        # wrong record type. skip to next line
+                        continue
+                else:
+                    if column not in copybook_spec.fields:
+                        print(f"Column not found: {column}. Skipping")
+                    else:
+                        colspec = copybook_spec.fields[column]
+
+                # redact or hash
+                if column in encode_cols_list:
+                    masked_value = hash_encode(line[colspec.offset:colspec.offset+colspec.length],colspec.length)
+                elif column in redact_cols_list:
+                    masked_value:str = re.sub(r'\S','X',line[colspec.offset:colspec.offset+colspec.length])
+                else:
+                    raise ValueError(f"Internal error. column {column} not recognized")
+
+                newline = newline[0:colspec.offset] + masked_value + newline[colspec.offset+colspec.length:]
+
+            outf.write(newline)
+    outf.close()
+
+def hash_encode(input,length) -> str:
+    # uuid is used to generate a random number
+    salt = '99888771352064'
+    # these sometimes have whitespace. strip and replace only the numeric part
+    if type(input)==str:
+        stripped_input = input.strip()
+        encode_length = len(stripped_input)
+    else:
+        encode_length = length
+    # force numeric
+    hashed = str(int(hashlib.sha256(salt.encode() + str(int(input)).encode()).hexdigest()  +  salt,16)% (10 ** encode_length) ).ljust(encode_length,'0')    
+
+    # hashed = str(int(hashlib.sha256(salt.encode() + str(int(input)).encode()).hexdigest()  +  salt,16))[0:encode_length].ljust(encode_length,'0')    
+    # replace the numeric part
+    if type(input)==str:
+        return input.replace(stripped_input,hashed)
+    else:
+        return hashed
+
+@cli.command(name="sync-table")
+@click.option('--schema', required=True,help='DB schema of the target table')
+@click.option('--table', required=True,help="table name to sync")
+def sync_table(table,schema):
+    #
+    # read settings from file
+    #
+    config = configparser.ConfigParser()
+    config.read('environment.ini')
+
+    #
+    # set up spark
+    #
+    spark = SparkSession \
+        .builder \
+        .appName("Python Spark SQL basic example") \
+        .config("spark.jars", "../lib/postgresql-42.2.8.jar") \
+        .getOrCreate()
+    spark.sparkContext.addFile('../src/common',recursive=True)
+    env:Dict[str,Any] = {
+        "jdbc":
+            {"url": config['db']['url'],
+            "database":config['db']['database'],
+            "user":config['db']['user'],
+            "password":config['db']['password'],
+            "schema": schema
+            },
+        "folders": {},
+    }
+    host,port,database = common.utils.parse_jdbc_url(env["jdbc"]["url"])
+    env["jdbc"]["host"] = host
+    env["jdbc"]["port"] = port
+
+    # use parquet files at global level. defined in ini file
+    env["folders"]["datamart"] = config['folders']['datamart']
+    #
+    # initialize logger
+    #
+    logging.basicConfig()
+    logger = logging.getLogger("cli")
+    loglevel = "INFO"
+    level = logging.getLevelName(loglevel)
+    logger.setLevel(loglevel)
+
+    common.utils.sync_jdbc_to_parquet(table,"overwrite","",env,spark,logger)
+
+if __name__ == '__main__':
+    cli()
+
+

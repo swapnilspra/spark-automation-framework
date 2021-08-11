@@ -1,0 +1,8 @@
+REP_HNDLG_CD,HNDLG_DESC
+"R","Reject"
+"D","Default"
+"B","Bypass"
+"E","Establish-Reject"
+"F","Establish?Bypass"
+"G","Establish-Default"
+"Z","Not Applicable"

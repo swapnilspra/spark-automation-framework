@@ -1,0 +1,56 @@
+version: '3.0'
+services:
+  postgres:
+    image: postgres:11
+    restart: unless-stopped
+    ports:
+      - "5432:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U hca_dev"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    environment:
+      POSTGRES_PASSWORD: hca_dev
+      POSTGRES_USER: hca_dev
+      POSTGRES_DB: hca_dev
+
+  flyway:
+    image: boxfuse/flyway:latest
+    volumes:
+      - ./data-mart/databases/datamart:/flyway/sql/datamart
+    depends_on:
+      - postgres
+    command:
+      [
+        "migrate",
+        "-url=jdbc:postgresql://postgres/hca_dev",
+        "-schemas=hdm,ods",
+        "-user=hca_dev",
+        "-password=hca_dev",
+        "-connectRetries=60",
+        "-locations=filesystem:/flyway/sql/datamart",
+      ]
+
+
+  # don't run this from here, mocking up a sample for reference
+  #samplejob:
+  #  image: 232930948780.dkr.ecr.us-east-2.amazonaws.com/hca-datalake-jhagen:latest
+  #  depends_on:
+  #    - postgres
+  #  volumes:
+  #    # overlay local jobs directory into container
+  #    - ./data-mart/etl/etl-jobs/src:/etl-jobs/src
+  #    # override environment.ini with docker settings
+  #    - ./environment.ini:/etl-jobs/scripts/environment.ini
+  #    # overlay global datalake directory from local so we can statefully store datalake files
+  #    - ./data:/data
+  #  command:
+  #    - ./local_job_runner
+  #    - '--help'
+  #    # use local_job_runner commands normally
+
+  #pyspark:
+  #  image: jupyter/pyspark-notebook
+  #  ports:
+  #    - '8888:8888'

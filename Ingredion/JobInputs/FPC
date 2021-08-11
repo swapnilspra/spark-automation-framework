@@ -1,0 +1,48 @@
+{
+  "stage": {
+  "adls": "dlenterpriseanalytics.dfs.core.windows.net/",
+  "adlsfolder": "sharepoint/Quality Metrics/",
+  "delimiter": "|",
+  "inferSchema":"True",
+  "file_type": "CSV",
+  "quote_char": "",
+  "replace_char": "",
+  "escape_char":"",
+  "tsFormat":"yyyy-mm-dd HH:MM:SS.SSS",
+  "dateFormat":"yyyy-MM-dd",
+  "tableName": "FPC",
+  "tableAppend": "N"
+ },
+  "transform": {
+ "adlsPath": "dlenterpriseanalytics.dfs.core.windows.net",
+ "adlsfolder":"sharepoint/Quality Metrics/",
+ "date_column": "current_date",
+ "outputDB":"deltatransform",
+ "hour_partition": "False",
+ "inputTable": "FPC",
+ "loadstrategy": "overwrite",
+ "outputTable": "FPC",
+ "outputExtract":"Table",
+ "bussiness_keys": [
+  ""
+  ],
+  "partition_keys": [
+   "region",
+   "year",
+   "month"
+  ],
+  "primary_key": {
+
+	},
+   "sort_key": {
+  },
+  "non_align_columns": [
+   "DateInserted",
+   "DateUpdated"
+  ],
+  "query": "select * from deltastage.FPC",
+  "sources": {   
+  }
+ }
+
+}

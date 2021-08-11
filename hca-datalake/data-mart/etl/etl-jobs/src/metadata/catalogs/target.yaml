@@ -1,0 +1,107 @@
+- Name: target_performance_type
+  TableType: file
+  StorageDescriptor:
+    Location: target_performance_type.csv
+    Format: csv
+    Delimiter: ","
+    SkipHeaderRows: 0
+    SkipFooterRows: 0
+- Name: target_weights
+  TableType: file
+  StorageDescriptor:
+    Location: target_fund_weights.csv
+    Format: csv
+    Delimiter: ","
+    SkipHeaderRows: 0
+    SkipFooterRows: 0
+- Name: ssb_hlds
+  TableType: file
+  StorageDescriptor:
+    Location: ssb_hlds_050820.txt
+    Delimiter: "|"
+    Header: false
+    SkipHeaderRows: 1
+    SkipFooterRows: 1
+    Columns:
+    - Name: TYPE
+    - Name: FUND_ID
+    - Name: BASE_CNTRY_CD
+    - Name: CRNCY_CD_BASE
+    - Name: CALEN_DT
+      Type: date
+      Format: yyyyMMdd
+    - Name: ASSET_ID
+    - Name: ALT_ASSET_ID_TYPE_CD1
+    - Name: ALT_ASSET_ID1
+    - Name: ALT_ASSET_ID_TYPE_CD2
+    - Name: ALT_ASSET_ID2
+    - Name: DTC_CUSIP
+    - Name: TICKER_SYMB
+    - Name: ISSUE_LONG_NM
+    - Name: INVEST_IND
+    - Name: ASSET_GRP_CD
+    - Name: POS_TYPE_CD
+    - Name: INVEST_TYPE_CD
+    - Name: STATE_CD
+    - Name: INCORP_CNTRY_CD
+    - Name: ISSUE_CNTRY_CD
+    - Name: TRD_CNTRY_CD
+    - Name: NRATAX_CNTRY_CD
+    - Name: ISSUE_DT
+    - Name: POS_MTRTY_DT
+    - Name: DAYS_TOMAT_CNT
+    - Name: ORIG_CPN_RT
+    - Name: POS_INT_RT
+    - Name: VAR_RT_CHG_DT
+    - Name: VAR_RT_FREQ_CD
+    - Name: MOODY_RTG
+    - Name: SNP_RTG
+    - Name: MJR_INDSTY_CD
+    - Name: MNR_INDSTY_CD
+    - Name: POOL_TYPE_CD
+    - Name: LOT_ACCT_NUM
+    - Name: REPO_NUM
+    - Name: TOT_LOTS
+    - Name: TRD_DT
+    - Name: SETTLE_DT
+    - Name: ISSUE_CLS_CD
+    - Name: RPT_CLS_CD
+    - Name: CALL_PUT_IND
+    - Name: ORG_STRIKE_PRC
+    - Name: CRNT_STRIKE_PRC
+    - Name: SHRPAR_QTY
+    - Name: CONTRACTS_QTY
+    - Name: ORG_FACE_POS_QTY
+    - Name: UNTCST_BTL
+    - Name: UNTCST_LTL
+    - Name: CST_ORG_BTL
+    - Name: CST_ORG_LTL
+    - Name: CST_BTL
+    - Name: CST_LTL
+    - Name: AMTZD_BTL
+    - Name: AMTZD_LTL
+    - Name: ACCRD_BTL
+    - Name: ACCRD_LTL
+    - Name: MKTVAL_BTL
+    - Name: MKTVAL_LTL
+    - Name: UNRLZD_GNLS_BTL
+    - Name: UNRLZD_GNLS_LTL
+    - Name: MKTPRC_BAM
+    - Name: MKTPRC_LAM
+    - Name: MKTPRC_EAM
+    - Name: CRNT_XCHRT
+    - Name: CRNTEXCH_RT_SRC_CD
+    - Name: FASPRC_SRC_CD
+    - Name: MKTPRC_CRNCY_CD
+    - Name: MKTPRC_CRNCYCD_EUR
+    - Name: MKT_VAL_CD
+    - Name: DAY_61_PRICE
+    - Name: DAY_61_DAY
+    - Name: DAY_61_YLD
+    - Name: FILLER
+    - Name: BRKR_FINS
+    - Name: SW_CLOSING_FX
+    - Name: SSB_TRADE_ID
+    - Name: INCM_CRNCY_CD
+    - Name: FVM_CD
+

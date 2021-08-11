@@ -1,0 +1,100 @@
+- Name: dealer_fee_type
+  TableType: file
+  StorageDescriptor:
+    Location: dealer_fee_type\.csv
+    Format: csv
+- Name: dealer_invoice
+  TableType: file
+  StorageDescriptor:
+    Location: invoice.csv
+    Format: csv
+- Name: DTO.HCA.MTF.R00858
+  TableType: file
+  StorageDescriptor:
+    Location: DTO\.HCA\.MTF\.R00858\.[0-9]{8}\.[0-9]{6}\.zip\.pgp\.txt
+    SkipHeaderRows: 0
+    SkipFooterRows: 1
+    UseHeader: true
+    Format: cobol
+    Columns: []
+    Copybook: MTF.R00858.CBL
+    Trim: true
+    RecordSelectorField: RECORD-TYPE-CD
+    RecordTypes:
+      'H': HEADER-RECORD-AREA
+      'D': DETAIL-RECORD-AREA
+- Name: R00857_TRIAL
+  TableType: file
+  StorageDescriptor:
+    Location: DTO\.HCA\.MTF\.R00857\.TRIAL\.[0-9]{8}\.[0-9]{6}\.zip\.pgp\.txt
+    SkipHeaderRows: 0
+    SkipFooterRows: 1
+    UseHeader: true
+    Format: cobol
+    Columns: []
+    Copybook: R00857.CBL
+    RecordSelectorField: RECORD-TYPE-CD
+    RecordTypes:
+      'H': HEADER-RECORD-AREA
+      'D': DETAIL-RECORD-AREA
+- Name: R00857
+  TableType: file
+  StorageDescriptor:
+    Location: DTO\.HCA\.MTF\.R00857\.[0-9]{8}\.[0-9]{6}\.zip\.pgp\.txt
+    SkipHeaderRows: 0
+    SkipFooterRows: 1
+    UseHeader: true
+    Format: cobol
+    Columns: []
+    Copybook: R00857.CBL
+    RecordSelectorField: RECORD-TYPE-CD
+    RecordTypes:
+      'H': HEADER-RECORD-AREA
+      'D': DETAIL-RECORD-AREA
+- Name: dealer_invoice_rule
+  TableType: file
+  StorageDescriptor:
+    Location: dealer_invoice_rule.csv
+    Format: csv
+- Name: invoice_tracking_summary
+  TableType: file
+  StorageDescriptor:
+    Location: HSG_IntermediaryInvoiceTracking.csv
+    Delimiter: ","
+    SkipHeaderRows: 0
+    SkipFooterRows: 0
+- Name: eligible_asset_list
+  TableType: file
+  StorageDescriptor:
+    Location: eligible_asset_list.csv
+    Format: csv
+- Name: dealer_invoice_trial
+  TableType: file
+  StorageDescriptor:
+    Location: invoice_trial.csv
+    Delimiter: ","
+    SkipHeaderRows: 0
+    SkipFooterRows: 0
+- Name: HSG_IntermediaryPaymentInformation
+  TableType: file
+  StorageDescriptor:
+    Location: HSG_IntermediaryPaymentInformation.csv
+    Delimiter: ","
+    SkipHeaderRows: 0
+    SkipFooterRows: 0
+    SkipFooterRows: 0
+- Name: intermediary_issue_type
+  TableType: file
+  StorageDescriptor:
+    Location: intermediary_issue_type.csv
+    Format: csv
+    Delimiter: ","
+    SkipHeaderRows: 0
+    SkipFooterRows: 0
+- Name: invoice_tracking_fee_type
+  TableType: file
+  StorageDescriptor:
+    Location: HSG_IntermediaryInvoiceTrackingFeeType.csv
+    Delimiter: ","
+    SkipHeaderRows: 0
+    SkipFooterRows: 0

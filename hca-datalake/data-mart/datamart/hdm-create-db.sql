@@ -1,0 +1,4 @@
+CREATE SCHEMA hdm;
+CREATE SCHEMA ods;
+GRANT ALL ON SCHEMA hdm TO hca_dev;
+GRANT ALL ON SCHEMA ods TO hca_dev;

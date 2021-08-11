@@ -1,0 +1,15 @@
+VARB_RT_FREQ_CD,VARB_RT_FREQ_DESC
+D,Daily
+W1,Weekly Mondays
+W2,Weekly Tuesdays
+W3,Weekly Wednesdays
+W4,Weekly Thursdays
+W5,Weekly Fridays
+MX,Monthly
+MA,Monthly on anniversary of maturity date
+QA,Quarterly on anniversary of maturity date
+QX,Quarterly
+SX,Semi-annually
+P,Based on Prime changes
+XX,Unscheduled changes
+CS,

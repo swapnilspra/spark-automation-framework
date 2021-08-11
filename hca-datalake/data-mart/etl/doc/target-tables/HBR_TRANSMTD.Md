@@ -1,0 +1,36 @@
+##### HBR_TRANSMTD
+
+
+#### TRANS_ID1	
+
+
+TRANS_ID1			
+
+
+##### TRANS_ID2	
+
+TRANS_ID2
+
+
+
+#### BLUESKY_NEW_REPEAT	
+
+
+BLUESKY_NEW_REPEAT
+
+
+##### BLUESKY_REOPEN_ACCOUNT_CDE
+
+
+BLUESKY_REOPEN_ACCOUNT_CDE
+
+
+
+#### Files Used
+
+HBR_TRANSMTD.csv
+
+
+#### Files Location
+
+dstprod/HBR_TRANSMTD.csv

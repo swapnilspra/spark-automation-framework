@@ -1,0 +1,11 @@
+TIN_CD,TIN_DESC
+0,"SSN missing"
+1,"SSN not certified"
+2,"SSN certified"
+3,"TIN not certified"
+4,"TIN certified"
+5,"SSN applied"
+6,"SSN IRS offender"
+7,"TIN IRS offender"
+8,"SSN exempt"
+9,"TIN exempt"

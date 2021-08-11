@@ -1,0 +1,52 @@
+- Name: mstr_fund_incremental
+  TableType: file
+  StorageDescriptor:
+    Location: mstr_fund_incremental.csv
+    Delimiter: ","
+    SkipHeaderRows: 1
+    SkipFooterRows: 0
+    Header: false
+    Columns:
+    - Name: Date
+      Type: date
+      Format: MM/dd/yyyy
+    - Name: FundId
+    - Name: FirmName
+    - Name: FundStandardName
+    - Name: Name
+    - Name: EnhancedIndex
+    - Name: IndexFund
+    - Name: InceptionDate
+    - Name: FundofFunds
+    - Name: InvestmentType
+    - Name: MorningstarCategory
+    - Name: GlobalCategory
+    - Name: USCategory
+    - Name: ObsoleteDate
+      Type: date
+      Format: MM/dd/yyyy  
+    - Name: ObsoleteType
+    - Name: FundSize
+    - Name: EstimatedNetFlow
+    - Name: TotalReturn1Year
+    - Name: TotalReturn3Year
+    - Name: ExcessReturn1Year
+    - Name: ExcessReturn3Year
+    - Name: Beta
+    - Name: TrackingError
+    - Name: MorningstarQRating
+    - Name: HoldingsCount
+    - Name: MorningstarOverallRating
+    - Name: MorningstarAnalystRating
+    - Name: MorningstarParentAnalystRating
+    - Name: MorningstarParentQRating
+    - Name: MorningstarPeopleAnalystRating
+    - Name: MorningstarPeopleQRating
+    - Name: MorningstarPerformanceAnalystRating
+    - Name: MorningstarPerformanceQRating
+    - Name: MorningstarPriceAnalystRating
+    - Name: MorningstarPriceQRating
+    - Name: MorningstarProcessAnalystRating
+    - Name: MorningstarProcessQRating
+    - Name: AnnualReportNetExpRatio
+    - Name: ManagementFee    

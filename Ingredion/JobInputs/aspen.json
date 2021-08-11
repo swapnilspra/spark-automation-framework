@@ -1,0 +1,56 @@
+{
+ "stage": {
+  "adls": "dlenterpriseanalytics.dfs.core.windows.net",
+  "adlsfolder": "",
+  "delimiter": ",",
+  "file_type": "CSV",
+  "tsFormat":"dd-MMM-yy HH:mm:ss.S",
+  "dateFormat":"yyyy-MM-dd",
+  "quote_char": "\"",
+  "escape_char": "\"",
+  "inferSchema": "False",
+  "replace_char": "N",
+  "tableName": "aspen",
+  "tableAppend":"N"
+ },
+ "transform": {
+  "adlsPath": "dlenterpriseanalytics.dfs.core.windows.net",
+  "adlsfolder": "",
+  "date_column": "DateSubmitted",
+  "hour_partition": "False",
+  "inputTable": "aspen",
+  "loadstrategy": "upsert",
+  "tsFormat":"dd-MMM-yy HH:mm:ss.S",
+  "dateFormat":"yyyy-MM-dd",
+  "outputDB": "deltadatamart",
+  "outputTable": "fact_production_measures",
+  "outputExtract":"table",
+  "bussiness_keys": [
+   "DateSubmitted",
+   "MeasureName",
+   "PlantID"
+  ],
+  "partition_keys": [
+	"region",
+   "plant",
+   "year",
+   "month",
+   "date"
+  ],
+  "primary_key": {
+   "FactID": "int"
+  },
+  "sort_key":["ReportDate"],
+  "non_align_columns": [
+   "DateInserted",
+   "DateUpdated"
+  ],
+  "query": "select dp.PlantID PlantID, to_date(TS,'dd-MMM-yy HH:mm:ss.SSS') ReportDate, to_timestamp(TS ,'dd-MMM-yy HH:mm:ss.SSS') DateSubmitted, NAME MeasureName, VALUE MeasureValue, 'ASPEN Historian' SourceName, 'sa' as region, 'Mogi-Guaçu' as plant, year, month, date from deltastage.aspen aspen inner join dp where dp.PlantName = 'Mogi-Guaçu' and dp.ClientCode = '100'",  
+  "sources": {
+   "dp": {
+    "type": "sqltable",
+    "source": "Dim_Plant"
+   }
+  }
+ }
+}

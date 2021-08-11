@@ -1,0 +1,21 @@
+- Name: position_type
+  TableType: file
+  StorageDescriptor:
+    Location: position_type\.csv
+    Delimiter: ","
+    Format: csv
+    SkipHeaderRows: 0
+- Name: broker
+  TableType: file
+  StorageDescriptor:
+    Location: IntAcct\.csv
+    Delimiter: ","
+    Format: csv
+    SkipHeaderRows: 0
+- Name: broker_position
+  TableType: file
+  StorageDescriptor:
+    Location: brkconfirms\.csv
+    Delimiter: ","
+    Format: csv
+    SkipHeaderRows: 0

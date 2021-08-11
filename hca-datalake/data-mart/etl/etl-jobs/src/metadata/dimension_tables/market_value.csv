@@ -1,0 +1,15 @@
+MKT_VAL_CD,MKT_VAL_DESC
+C,Evaluated Vendor Price
+I,Amortized Cost (Maturity date < 60 days)
+M,Evaluated Vendor Price for fixed income options
+X,pre-set price will be utilized until entire position is sold or price manually changed
+0,pre-set price will be utilized for a specified number of month ends 
+1,pre-set price will be utilized for a specified number of month ends 
+2,pre-set price will be utilized for a specified number of month ends 
+3,pre-set price will be utilized for a specified number of month ends 
+4,pre-set price will be utilized for a specified number of month ends 
+5,pre-set price will be utilized for a specified number of month ends 
+6,pre-set price will be utilized for a specified number of month ends 
+7,pre-set price will be utilized for a specified number of month ends 
+8,pre-set price will be utilized for a specified number of month ends 
+9,pre-set price will be utilized for a specified number of month ends 

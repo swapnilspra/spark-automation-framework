@@ -1,0 +1,22 @@
+workflow:
+  type: SCHEDULED # or 'ON_DEMAND'
+  schedule_interval: 0 0 7 * ? *  # change to cron(XXXX) for cloudformation
+  description: 'fund workflow run every 7th calendar day'
+  tasks:
+    fund_valuation:
+      job: fund.fund_valuation
+    money_market_activity:
+      job: fund.money_market_activity_current_day
+    cash_holding:
+      job: fund.cash_holding
+    benchmark_index:
+      job: fund.benchmark_index
+    fund_index_rltn:
+      job: fund.fund_index_rltn
+      dependencies: [benchmark_index]
+    index_valuation:
+      job: fund.index_valuation
+      dependencies: [fund_index_rltn]
+    index_return:
+      job: fund.index_return
+      dependencies: [index_valuation]

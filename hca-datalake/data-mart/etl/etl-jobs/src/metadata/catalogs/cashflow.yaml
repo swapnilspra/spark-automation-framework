@@ -1,0 +1,19 @@
+- Name: DTO.HCA.SDCM.POSITION
+  TableType: file
+  StorageDescriptor:
+    Location: DTO\.HCA\.SDCM\.POSITION\.[0-9]{8}\.[0-9]{6}\.zip\.pgp\.txt
+    SkipHeaderRows: 1
+    SkipFooterRows: 1
+    Format: cobol
+    Columns: []
+    Copybook: SDCM.POSITION.CBL
+
+- Name: DTO.HCA.SDCM.BALANCE
+  TableType: file
+  StorageDescriptor:
+    Location: DTO\.HCA\.SDCM\.BALANCE\.[0-9]{8}\.[0-9]{6}\.zip\.pgp\.txt
+    SkipHeaderRows: 1
+    SkipFooterRows: 1
+    Format: cobol
+    Columns: []
+    Copybook: SDCM.BALANCE.CBL

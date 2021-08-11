@@ -1,0 +1,27 @@
+[{
+    "Name": "hsg_quality_control_oversight",
+    "TableType": "file",
+    "StorageDescriptor": {
+        "Location": "spl_hsg_quality_oversight\\.deduped\\.csv",
+        "Format":"csv"
+    }
+},
+{
+    "Name": "ldap_users",
+    "TableType": "file",
+    "StorageDescriptor": {
+        "Location": "ITListUsers\\.csv",
+        "Format":"csv"
+    }
+},
+    {
+    "Name": "dealer_fee_type",
+    "TableType": "file",
+    "StorageDescriptor": {
+        "Location": "dealer_fee_type.csv",
+        "Delimiter": ",",
+        "Format":"csv",
+        "SkipHeaderRows": 0
+    }
+}
+]

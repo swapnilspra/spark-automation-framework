@@ -1,0 +1,13 @@
+"POSN_TYPE_KEY","POSN_CD","POSN_DESC"
+1,UNS,Unsettled Trade
+2,FOR,Forward/FX
+3,OPT,Option/Swaption/FVA
+4,FUT,Futures
+5,SWP,Swap
+6,COL,Collateral
+7,PRC,Pricing
+8,FT,Failed Trades
+9,"3repo",Third Party Repos
+10,BLK,Bank Loans
+11,MgteD,Mortgage Derivatives
+12,BLO,Bank Loan Obligation

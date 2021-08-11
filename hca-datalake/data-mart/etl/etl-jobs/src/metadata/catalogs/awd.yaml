@@ -1,0 +1,101 @@
+# validated
+- Name: awd_privilege_type
+  TableType: file
+  StorageDescriptor: 
+    Location: awd_role_privilege_type.csv
+    Delimiter: ","
+    SkipHeaderRows: 0
+    SkipFooterRows: 0
+
+# validated
+- Name: awd_queue
+  TableType: file
+  StorageDescriptor:
+    Location: awd_queue.csv
+    Delimiter: ","
+    SkipHeaderRows: 0
+    SkipFooterRows: 0
+
+# validated
+- Name: awd_record_type
+  TableType: file
+  StorageDescriptor:
+    Location: awd_record_type.csv
+    Delimiter: ","
+    SkipHeaderRows: 0
+    SkipFooterRows: 0
+    Format: csv
+
+# validated
+- Name: awd_role
+  TableType: file
+  StorageDescriptor:
+    Location: awd_role.csv
+    Delimiter: ","
+    SkipHeaderRows: 0
+    SkipFooterRows: 0
+    Format: csv
+
+# validated
+- Name: awd_role_privilege
+  TableType: file
+  StorageDescriptor:
+    Location: awd_role_privilege_type.csv
+    Delimiter: ","
+    SkipHeaderRows: 0
+    SkipFooterRows: 0
+
+
+# validated
+- Name: awd_user
+  TableType: file
+  StorageDescriptor:
+    Location: awd_user_group.csv
+    Delimiter: ","
+    SkipHeaderRows: 0
+    SkipFooterRows: 0
+
+# validated: Should UT_CD be user.ut_cd or Null?
+- Name: awd_user_queue
+  TableType: file
+  StorageDescriptor:
+    Location: awd_user_service.csv
+    Delimiter: ","
+    SkipHeaderRows: 0
+    SkipFooterRows: 0
+    Format: csv
+
+# validated
+- Name: awd_user_role
+  TableType: file
+  StorageDescriptor:
+    Location: awd_user_role.csv
+    Delimiter: ","
+    SkipHeaderRows: 0
+    SkipFooterRows: 0
+    Format: csv
+
+# validated
+- Name: awd_user_work_type 
+  TableType: file
+  StorageDescriptor: 
+    Location: awd_user_work_type.csv
+    Delimiter: ","
+    SkipHeaderRows: 0
+    SkipFooterRows: 0   
+
+# validated 
+- Name: awd_work_type 
+  TableType: file
+  StorageDescriptor: 
+    Location: awd_work_type.csv
+    Delimiter: ","
+    SkipHeaderRows: 0
+    SkipFooterRows: 0     
+
+
+
+
+
+
+

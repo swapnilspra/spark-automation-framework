@@ -1,0 +1,5 @@
+MBRS_TYPE_CD,TYPE_DESC
+"00","Broker"
+"01","Trustee"
+"02","Third Party Administrator"
+"NN","Unknown"

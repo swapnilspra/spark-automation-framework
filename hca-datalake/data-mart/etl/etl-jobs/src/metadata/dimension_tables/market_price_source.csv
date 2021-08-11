@@ -1,0 +1,141 @@
+MKT_PR_SRC_CD,MKT_PR_SRC_DESC,MKT_PR_SRC_VEND
+WM,Harbor's Exchange Rate Provider,Reuters
+K5,JPM Emstar Mean,JP Morgan
+VK,Market Mean for bank loans,Markit
+CJ,PIMCO Commodity TRS Prices      ,Pimco
+Z3,Markit mean price source code For Bank Loans,Markit
+GU,IDC adjusted MBS price,IDC
+LJ,PIMCO USIS Main,Pimco
+ON,"Last (overnight price), Reuters",Reuters
+R0,"Last, Reuters",Reuters
+R1,"Last/Bid, Reuters",Reuters
+R3,"Last/Mean, Reuters",Reuters
+R9,"Last/Ask, Reuters",Reuters
+RB,"Bid, Reuters",Reuters
+RD,"Mean/Last, Reuters",Reuters
+RK,"Ask, Reuters",Reuters
+RM,"Mean, Reuters",Reuters
+RN,"NAV, Reuters",Reuters
+RS,"Settle, Reuters",Reuters
+SE,RFI Eval Bid - Early,Reuters Fixed Inc
+SM,RFI Eval Mean - Late,Reuters Fixed Inc
+SP,RFI Eval Mean - Early,Reuters Fixed Inc
+ZB,Reuters EMEA Fixed Income,Reuters Fixed Inc
+KM,SPSE Muni Evaluated Mean ,SPSE
+MB,SPSE Muni Evaluated Bid  ,SPSE 
+SJ,SPSE Eval Bid -Early ,SPSE 
+SK,SPSE Eval Mean - Early ,SPSE
+SQ,SPSE Eval Bid - Late    ,SPSE
+SR,SPSE Eval Mean - Late,SPSE
+O1,"Official Market Px1, Reuters",Reuters
+O2,"Official Market Px2, Reuters",Reuters
+O3,"Official Market Px1, Mean",Reuters
+OI,Options Intraday 1600 Mean,Reuters
+SB,RFI Eval Bid - Late ,Reuters Fixed Inc
+LH,Barclay�s Cap US Agg,Barclay�s Capital 
+BT,Bloomberg Generic Bid,Bloomberg
+BU,Bloomberg Generic Ask,Bloomberg
+BV,Bloomberg Generic Mean,Bloomberg
+U0,World Close Bloomberg Bid,Bloomberg
+U1,World Close Bloomberg Ask,Bloomberg
+U2,World Close Bloomberg Mean,Bloomberg
+U3,Iboxx World Close Bid,Bloomberg/Iboxx
+U5,Iboxx World Close Mean,Bloomberg/Iboxx
+PY,RTA FOF,FOF
+AB,FT IDC Eq/ADR Eval Bid   ,FT Interactive (IDC)
+CB,FT IDC Dom Evaluated Bid ,FT Interactive (IDC)
+CE,FT IDC Eq/ADR Eval Mean  ,FT Interactive (IDC)
+CM,FT IDC Dom Evaluated Mean,FT Interactive (IDC)
+FA,FT IDC 16:00 Ask ,FT Interactive (IDC)
+FB,FT IDC ISMA Mean,FT Interactive (IDC)
+FC,FT IDC 16:00 Bid ,FT Interactive (IDC)
+FM,FT IDC 16:00 Mean,FT Interactive (IDC)
+FT,FT IDC ISMA Bid             ,FT Interactive (IDC)
+IB,FT IDC Intl Evaluated Bid,FT Interactive (IDC)
+ID,FT IDC Muni Eval Bid,FT Interactive (IDC)
+IM,FT IDC Intl Eval Mean    ,FT Interactive (IDC)
+ME,FT IDC Muni Eval Mean    ,FT Interactive (IDC)
+YB,FT IDC Conv Eval Bid 4 PM,FT Interactive (IDC)
+YM,FT IDC Conv Eval Mean 4PM,FT Interactive (IDC)
+GM,Mid Market Close,GEMMA
+JA,JP Morgan Emstar - Ask   ,JP Morgan Emstar
+JB,JP Morgan Emstar - Bid   ,JP Morgan Emstar
+JZ,JP Morgan Emstar - Mean,JP Morgan Emstar
+B4,JPMorgan 4pm Mean,JPMorgan
+B5,JPMorgan 5pm Mean,JPMorgan
+B8,JPMorgan 3pm Mean,JPMorgan
+BF,JPMorgan 4pm Bid,JPMorgan
+JC,Statpro Evaluated Bid        ,StatPro Canada (FRI)
+JS,Statpro Evaluated Ask     ,StatPro Canada (FRI)
+JW,Statpro Evaluated Mean,StatPro Canada (FRI)
+50,WM London close - Mean,WM Company
+77,WM Early Close - Mean (WMEC),WM Company
+83,WM 3:00AM EST Exch Rates,WM Company
+84,WM 4:00AM EST Exch Rates,WM Company
+88,WM 8:00AM EST Exch Rates,WM Company
+90,WM 10:00 EST - Mean,WM Company
+92,WM 12:00 EST - Mean,WM Company
+93,WM 13:00 EST - Mean,WM Company
+94,WM 14:00 EST - Mean,WM Company
+95,WM 15:00 EST - Mean,WM Company
+96,WM 16:00 EST - Mean,WM Company
+97,WM 17:00 EST - Mean,WM Company
+DI,Market Indicator_Dummy Ind,Reuters
+RC,Market Indicator,Reuters
+BX,System Default - Bonds,Manual
+MX,System Default - Equity,Manual
+MP,Manual Quotes,Manual
+PP,Manual Quotes,Manual
+BS,JPMorgan 3pm Bid,JPMorgan
+BY,JPMorgan 5pm Bid,JPMorgan
+QE,PC Bond Bid,PC Bond
+QF,PC Bond Ask,PC Bond
+QG,PC Bond Mean,PC Bond
+QH,PC Bond FQM Dirty Mean,PC Bond
+QJ,PC Bond FQM Dirty Ask,PC Bond
+QK,PC Bond FQM Dirty Bid,PC Bond
+QL,PC Bond Penmore Dirty Mean,PC Bond
+QN,PC Bond Dirty Bid,PC Bond
+QO,PC Bond Dirty Ask,PC Bond
+QP,PC Bond Dirty Mean,PC Bond
+RY,"Last/Settle, Reuters",Reuters
+HM,Reuters Asia Fixed Income,Reuters Fixed Inc
+QA,Reuters Fixed Income Intl Ask,Reuters Fixed Inc
+QB,Reuters Fixed Income Intl Bid,Reuters Fixed Inc
+QM,Reuters Fixed Income Intl Mean,Reuters Fixed Inc
+SA,Cash Settle Mean - Early,Reuters Fixed Inc
+OP,Manual Price Source Code used usually for Group Trust Funds,Manual
+GS,Interest rate swaptions source for JPM,JPM
+JY,JPM EMD 4pm Mean,JPM
+TF,TORONTO MANUAL PRICES - FUTURES,"REUTERS, BBG"
+4L,Pimco USIS Main,Pimco
+QU,JPM EMD EOD Dirty Mean,JPMorgan
+4Z,Bloomberg BVAL 4pm Tier 1 Mean,Bloomberg
+UX,Toronto Exchange Dirty Prices,
+7M,MICEX Lst Sale WM16,
+XH,"Credits and Interest Rates (LCH, ICE and CME)",Exchange (Clean prices)
+LP,,
+TP,TORTP,
+YU,OTC options,Markit
+OL,"IRS/CDS Swaptions, IRS/CDS - CLEAN prices (4 PM snap)",JPM
+BR,TORONTO MANUAL PRICES - FUTURES,"REUTERS, BBG"
+7W,TORONTO MANUAL PRICES - FIXED INCOME,IDC
+G7,JPM EMD 3pm Mean,JPM
+NQ,BOA Merrill Lynch Mn,IDC
+OV,Loan Mean,Reuters 
+UI,Toronto JPM 4PM Options,
+WS,,
+1H,Harbor Manuals,Manual
+OJ,"OTC Options, incl Equity Options (3 PM snap)",JPM
+QC,QR derivatives Toronto source code ,Markit
+BD,JPM IRS/CDS - DIRTY prices (3 PM snap),JP Morgan
+K8,FT IDC MBS 4pm Mean,FT Interactive (IDC)
+OH,TRS Swaps,Markit 
+QD,SWAPs Dirty,MarkIt
+KG,NA,NA
+5F,OTC Hub,OTC Hub
+YQ,Toronto Manual Price for one JPY bond, IDC source
+DR,Foreign IDC mean bond, IDC source
+MW,TORMW,
+S9,,
+9L,,

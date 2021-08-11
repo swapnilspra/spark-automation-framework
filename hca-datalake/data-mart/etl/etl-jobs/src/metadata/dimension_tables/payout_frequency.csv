@@ -1,0 +1,7 @@
+FREQ_CD,FREQ_DESC,FREQ_NBR
+A,Annually,1
+M,Monthly,2
+Q,Quarterly,3
+S,Semi-annually,4
+Z, Not Applicable,5
+N, Not Available,6

@@ -1,0 +1,53 @@
+# HCA CLI Testing
+This documentation will go over the process of testing ETL's using the hca_cli testing functionality. The background will be discussed and a example will be provided for the **fund.fund** ETL.
+
+## Background and requirements
+The hca_cli testing function requires three folders for each ETL - raw, before, and after. Each folder contains files that will be used to generate the in-memory tables that will be used for comparison, and the files will remain unchanged. 
+```text
+|-- ETL_name
+	|-- after
+	|-- before
+	|-- raw
+```
+`after` - contains the *source of truth* table as a CSV. This is what the ETL should produce if it runs correctly.
+`before` - contains the *source of truth* table before the ETL is run and any tables that the ETL is dependent on. To represent an empty database (i.e. a first time load) the before file should contain only the header of the *after* CSV. 
+`raw` - contains the data to be ingested by the ETL that is being tested as a CSV.
+
+To run the test, use the hca_cli within the `scripts` folder:
+
+```
+(venv) vagrant@ubuntu-bionic:~/etl-jobs/scripts$ ./hca_cli test --help
+Usage: hca_cli test [OPTIONS]
+
+Options:
+  --jobname TEXT      job name to test. If blank and test.ini file exists,
+                      will be taken from ini file
+  --datafolder TEXT   location of 'before' 'after' folders  [required]
+  --ignore-cols TEXT  comma delimited list of columns to ignore for comparison
+                      purposes. If blank and test.ini file exists, will be
+                      taken from ini file
+  --help              Show this message and exit.
+```
+
+## Example
+The following is an example of running the test on the **fund.fund** ETL. 
+The file structure:
+```
+|-- fund
+	|-- after 
+		|-- fund.csv
+	|-- before
+		|-- fund.csv
+		|-- fund_composite.csv
+	|-- raw
+		|-- fund.csv
+```
+
+`after` - contains the fund table exported from Oracle. 
+`before` - contains the header of fund table exported from Oracle, and the fund_composite table exported from the PostgreSQL database.
+`raw` - contains the raw fund data to be ingested by the fund ETL
+
+To run the test (assuming the datafolder location is stored in `hca-datalake/data/test/fund/`):
+```
+(venv) vagrant@ubuntu-bionic:~/etl-jobs/scripts$ ./hca_cli test --jobname fund.fund --datafolder ../../data/test/fund/
+```

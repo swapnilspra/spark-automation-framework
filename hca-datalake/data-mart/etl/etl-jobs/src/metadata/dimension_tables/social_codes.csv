@@ -1,0 +1,388 @@
+ACCT_TYPE_CD,CUST_ACCT_TYPE_NM
+3,KEOGH                                         
+10,WOMEN                                         
+11,DO NOT USE ACCOUNT
+21,CUST   OTHER                                  
+22,POWER OF ATTORNEY                             
+25,NON REPORTABLE ACCOUNTS                       
+28,MGMT CO RET PLAN                              
+31,COLLATERAL ACCT-REPORTABLE (IE-SGL
+32,COLLATERAL ACCT-NONREPORTABLE (IE-CORP)       
+35,FIDUCIARY-NON REPORTABLE ACCOUNTS             
+37,MEDICAL SAVINGS ACCOUNT                       
+38,LIMITED LIABILITY COMPANY                     
+44,INSURANCE COMPANIES                           
+45,OTHER FINANCIAL ORG.                          
+49,CREDIT UNIONS                                 
+51,THRIFT (SALARY SAVINGS) PLAN                  
+53,BROKER SELF DIRECTED IRA                      
+54,BROKER/TRUSTEE - SELF DIR IRA                 
+55,SSBT - SELF-DIRECTED IRA                      
+57,CUSTODIAN OTHER-SERP                          
+58,CUST OTHER-KEOGH/HR-10                        
+66,SCHOOL DISTRICTS                              
+69,BROKER/TRUSTEE SELF DIRECTED KEOGH            
+71,CHARITABLE ANNUITY TRUST                      
+72,CHARITABLE UNITRUSTS                          
+73,REVERSIONARY TRUSTS                           
+74,PRIVATE ANNUITY                               
+75,INSTALLMENT SALES                             
+77,PAYROLL DEDUCTION PLANS                       
+78,GOVERNMENT ALLOTMENT                          
+80,FOREIGN BANK & BROKER                         
+83,INTERNATIONAL ORGANIZATION                    
+89,PRUDENTIAL BACHE DUMMY DEALER ACCT.           
+91,OFFICERS                                      
+92,DIRECTORS                                     
+93,EMPLOYEE-NAV                                  
+94,CLIENT DIVIDENDS                              
+95,CLIENT DIVIDENDS                              
+96,REDUCED RATE ACCOUNT                          
+98,PROFIT SHARING NON-CORP                       
+100,MP PENSION PL NON-CORP                        
+101,KEOGH   MASTER                                
+102,KEOGH   EMPLOYEE                              
+103,KEOGH   VOLUNTARY                             
+104,KEOGH MASTER - CUST                           
+105,KEOGH EMPLOYER - CUST                         
+106,KEOGH VOLUNTARY - CUST                        
+107,KEOGH-DEDUCTIBLE VOL CONTRIB                  
+108,FLEXI-PLAN PROF SH-SHORT FORM                 
+109,FLEXI-PLAN PROF SH-LONG FORM                  
+110,FLEXI-PLAN PENSION SHORT FORM                 
+111,SSBT FIXED BENEFIT  MASTER                    
+112,SSBT FIXED BENEFIT  EMPLOYER                  
+113,SSBT FIXED BENEFIT  EMPLOYEE                  
+114,FLEXI-PLAN PENSION LONG FORM                  
+115,UNION ADMINISTRATION                          
+116,UNION LEADER                                  
+117,NON-UNION MEMBER                              
+118,UNION FAMILY MEMBER                           
+119,UNION PENSION FUNDS                           
+120,UNION STRIKE FUNDS                            
+121,SSBT MONEY PURCHASE MASTER                    
+122,SSBT MONEY PURCHASE EMPLOYER                  
+123,SSBT MONEY PURCHASE EMPLOYEE                  
+131,SSBT PROFIT SHARING MASTER                    
+132,SSBT PROFIT SHARING EMPLOYER                  
+133,SSBT PROFIT SHARING EMPLOYEE                  
+140,SSBT MONEYLINE                                
+141,SSBT THRIFT - MASTER                          
+142,SSBT THRIFT - EMPLOYER                        
+143,SSBT THRIFT - EMPLOYEE                        
+144,STD NONINT PROFIT SH PL & TR                  
+145,STD NONINT MONEY PUR PL & TR                  
+146,STD INT MONEY PUR PL & TR                     
+147,STD INT PROFIT SH PL & TR                     
+148,STD TARGET BENE PL & TR                       
+149,TARGET BENEFIT PL & TR                        
+150,NON INT MONEY PUR PL & TR                     
+151,INT MONEY PUR PL & TR                         
+152,NON INT PROFIT SH PL & TR                     
+153,INT PROFIT SH PL & TR                         
+154,STD INT DEFINED BENE PLAN                     
+180,FOREIGN FINANCIAL INST                        
+181,FOREIGN FINANCIAL BROKER/DLR                  
+182,FOREIGN PRIVATE BANKING                       
+202,PROFIT SHARING   EMPLOYER                     
+203,PROFIT SHARING   VOLUNTARY                    
+211,PROFIT SHARING   MASTER                       
+212,PROFIT SHARING   EMPLOYER                     
+213,PROFIT SHARING   VOLUNTARY                    
+217,PROFIT SHARING   EMPLOYER                     
+218,PROFIT SHARING   EMPLOYEE                     
+219,PROFIT SHARING   VOLUNTARY                    
+220,MONEY PURCH PENSION EMPLOYER                  
+221,MONEY PURCH PENSION EMPLOYEE                  
+222,MONEY PURCH PENSION VOLUNTARY                 
+310,ADMINISTERED CORPORATE PROFIT SHARING PLAN    
+320,ADMINISTERED CORPORATE MONEY PURCHASE PLAN    
+330,ADMINISTERED CORPORATE DEFINED BENEFIT        
+340,ADMINISTERED 401                              
+377,ADMINISTERED 457                              
+390,DEALER ACCT/AM CAP STERLING NON FID           
+401,PRUDENTIAL BACHE 401K PLAN                    
+402,PRUDENTIAL BACHE 401K PLAN                    
+420,CPI MONEY PURCH VOL DEDUCT                    
+421,CPI MONEY PURCH VOL NONDED                    
+422,CPI MONEY PURCH EMPLOYER                      
+423,CPI MONEY PURCH EMPLOYEE                      
+424,CPI MONEY PURCH FROZEN ER                     
+425,CPI MONEY PURCH FROZEN EE                     
+426,CPI MONEY PURCH POOLED                        
+427,CPI MONEY PURCH FORFEITURE                    
+430,CPI PROFIT SHAR VOL DEDUCT                    
+431,CPI PORFIT SHAR VOL NONDED                    
+432,CPI PROFIT SHAR EMPLOYER                      
+433,CPI PROFIT SHAR EMPLOYEE                      
+434,CPI PROFIT SHAR FROZEN ER                     
+435,CPI PROFIT SHAR FROZEN EE                     
+436,CPI PROFIT SHAR POOLED                        
+437,CPI PROFIT SHAR FORFEITURE                    
+450,NON-TAXABLE IRA TRANSFER                      
+601,KEOGH MASTER                                  
+602,KEOGH EMPLOYER                                
+603,KEOGH VOLUNTARY CONTRIBUTION                  
+620,NON-PROTOTYPE KEOGH - WTHD                    
+621,NON-PROTOTYPE IRA - WTHD                      
+622,NON-PROTOTYPE 403-B - WTHD                    
+623,NON-PROTOTYPE - WTHD                          
+670,STERLING TRUST CO. IRA                        
+703,IRA ROLLOVER ACCOUNT                          
+704,IRA TRADE UNION ESTABLISHED                   
+705,IRA SPOUSAL                                   
+706,IRA MINOR                                     
+707,IRA EMPLOYER ESTABLISHED NEW                  
+708,IRA ROLLOVER ACCOUNT NEW                      
+709,IRA SPOUSAL ACCOUNT NEW                       
+711,IRA IND EST SPLIT FUNDED                      
+712,IRA EMP EST SPLIT FUNDED                      
+713,IRA ROLLOVER SPLIT FUNDED                     
+714,IRA TRADE UNION SPLIT FUNDED                  
+715,IRA PAYROLL DEDUCTION                         
+716,IRA PAYROLL DEDUCT - SPOUSAL                  
+717,IRA PAYROLL DEDUCTION                         
+718,IRA PAYROLL DEDUCT - SPOUSAL                  
+724, NON-PROTOTYPE PSP                            
+0,Unknown
+5,Unknown
+725, NON-PROTOTYPE PENSION PLAN                   
+728,CUSTODIAN OTHER-401(K)                  
+733,403(B) BENEFICIARY DUE TO DEATH               
+734,QUALIFIED PLAN BENEFICIARY DUE TO DEATH       
+736,ROTH 403(B)                                   
+737, NON-PROTOTYPE IRA                            
+738,THRIFT                                        
+739,IRA COMBINATION ACCOUNT NEW                   
+740,IRA INDIV ESTAB NEW MSA                       
+741,IRA EMPLOYER ESTAB NEW MSA                    
+742,IRA ROLLOVER ACCT NEW MSA                     
+743,IRA SPOUSAL ACCOUNT NEW MSA                   
+744,IRA COMBINATION ACCT NEW MSA                  
+745,IRA INDIV EST NEW DISC BROK                   
+746,IRA EMPLOYER ESTAB NEW DB                     
+747,IRA ROLLOVER NEW DISC BROK                    
+748,IRA SPOUSAL NEW DISC BROK                     
+749,IRA COMBINATION NEW DISC BROK                 
+750,IRA EMPLOYER ESTABLISHED                 
+753,SEP - NON-IRS PROTOTYPE                       
+755,PLGIT - INTERMEDIATE UNIT                     
+756,PLGIT - AREA VOC. TECH.                       
+757,PLGIT - MUNICIPAL AUTHORITY                   
+758,ROTH IRA -BENEFICIARY BY TO DEATH             
+759,EDUCATION IRA - BENEFICIARY BY TO DEATH       
+760,TRADITIONAL IRA-BENEFICIARY BY DEATH          
+761,5304 SIMPLE IRA EMPLOYER                      
+762,5304 SIMPLE IRA EMPLOYEE                      
+763,5304 SIMPLE IRA EE TRANSFER-IN                
+764,5305 SIMPLE IRA EMPLOYER                      
+765,5305 SIMPLE IRA EMPLOYEE                      
+766,5305 SIMPLE IRA EE TRANSFER-IN                
+767,SIMPLE 401K - EMPLOYER MASTER                 
+768,SIMPLE 401K - EMPLOYEE                        
+769,SIMPLE 401K - EMPLOYEE TRANSFER               
+770,SIMPLE IRA -DISTRIBUTION BY TO DEATH          
+771,403-B INDIVIDUALLY ESTBLSHED                  
+772,403-B GROUP                                   
+773,403-B SALARY REDUCTION                        
+774,NON-PROTOTYPE 403B                            
+791,ROTH IRA                                      
+792,CONVERTED TO ROTH IRA                         
+793,EDUCATION IRA                                 
+800, TRAC 401(K) PLANS                            
+801, TRAC DEFERRED COMPENSATION PLANS             
+802, TRAC MONEY PURCHASE PLANS                    
+803, TRAC2000 NT1 403B PLANS                      
+804, TRAC PROFIT SHARING PLANS                    
+805, TRAC2000 T1 403B PLANS                       
+806, TRAC2000 SAR SEP PLANS                       
+807, TRAC2000 SEP PLANS                           
+808, TRAC2000 PLN DRCT SSB TTEE NO FEE SWEEP      
+809, TRAC2000 PLN DRCT SSB TTEE W/FEE SWEEP       
+810, TRAC2000 PLN DRCT SELF TTEE NO FEE SWEEP     
+811, TRAC2000 PLN DRCT SELF TTEE W/FEE SWEEP      
+812, TRUSTEE DIRECTED                             
+813, POOLED TRUSTEE DIRECTED                      
+819, MONEY PURCH EMPLOYER PROTOTYPE               
+820, MONEY PURCH VOL DEDUCTIBLE                   
+821, MONEY PURCH VOL NONDEDUCT                    
+822, MONEY PURCH FBO EMPLOYER                     
+823, MONEY PURCH FBO EMPLOYEE                     
+824, MONEY PURCH FROZEN ER                        
+825, MONEY PURCH FROZEN EE                        
+826, MONEY PURCH POOLED                           
+827, MONEY PURCH FORFEITURE                       
+828, MONEY PURCH CORPORATE                        
+829, PROFIT SHAR EMPLOYER PROTOTYPE               
+830, PROFIT SHAR VOL DEDUCTIBLE                   
+831, PROFIT SHAR VOL NONDEDUCT                    
+832, PROFIT SHAR FBO EMPLOYER                     
+833, PROFIT SHAR FBO EMPLOYEE                     
+834, PROFIT SHAR FROZEN ER                        
+835, PROFIT SHAR FROZEN EE                        
+836, PROFIT SHAR POOLED                           
+837, PROFIT SHAR FORFEITURE                       
+838, PROFIT SHAR CORPORATE                        
+839, 401M ACCOUNT                                 
+841, STATE ESCHEATMENT ACCT                       
+842, NOMINEE - 12B1 EXCLUSION                     
+850,SIMPLIFIED EMPLOYEE PENSION                   
+860,IMS - KEOGH EMPLOYER                          
+863,IMS - IRA INDIVIDUAL EST                      
+864,IMS - IRA ROLLOVER                            
+881,IMF - INDIVIDUAL SINGLE PYMT                  
+882,IMF - GROUP SINGLE PYMT                       
+883,IMF - INDIVIDUAL INSTALLMENT                  
+884,IMF - GROUP INSTALLMENT                       
+885,MPP-CORP-EMPLOYEE                             
+887,ESTATES CONDUIT                               
+888,TRAN ON DEATH/PAY ON DEATH CONDUIT            
+889,IRA BENE CONDUIT                              
+890,ROTH IRA BENE CONDUIT                         
+891,SIMPLE IRA BENE CONDUIT                       
+892,403-B BENE CONDUIT                            
+893,QUALIFIED PLAN BENE CONDUIT                   
+900,SPAC - MASTER                                 
+917,IRA PAYROLL DEDUCTION                         
+918,IRA PAYROLL DEDUCT - SPOUSAL                  
+919,SPAC - PS-CORP-ROLLOVER                       
+920,NON-PROTO KEOGH SPAC - WTHD                   
+921,NON-PROTO IRA SPAC - WTHD                     
+922,NON-PROTO 403-B SPAC - WTHD                   
+923,NON-PROTO SPAC - WTHD                         
+924, NON-PROTOTYPE PSP-SPAC                       
+925, NON-PROTOTYPE PENSION PLAN-SPAC              
+926, NON-PROTOTYPE OTHER SPAC                     
+927,SPAC - PS SELF EMPLOYED TRANSFER              
+928,401K SPAC                                     
+929,SPAC - PS-CORP-TRANSFER                       
+930,FLEXI-PLAN PROF SH-SHORT FORM                 
+931,PROFIT SHARING MASTER                         
+932,PROFIT SHARING EMPLOYEE                       
+933,PROFIT SHARING VOLUNTARY                      
+934,FLEXI-PLAN PROF SH-LONG PDPS                  
+935,FULL SERVICE ACCOUNT                          
+936,FLEXI-PLAN PROF SH-LONG FORM                  
+937, NON-PROTOTYPE IRA SPAC                       
+938,THRIFT SPAC                                   
+939,401(K) - PROTOTYPE                            
+940,FLEXI-PLAN PROF SH-SHORT PDPS                 
+941,MONEY PURCH PENSION MASTER                    
+942,MONEY PURCH PENSION EMPLOYEE                  
+943,MONEY PURCH PENSION VOLUNTRY                  
+944,SELF EMPLOYED EMPLOYER                        
+945,CORP. - EMPLOYER                              
+946,SELF EMPLOYED EMPLOYEE                        
+947,EMR. - EMPLOYEE                               
+948,SELF EMPLOYED ROLLOVER                        
+949,CORP. - ROLLOVER                              
+950,SIMPLIFIED EMPLOYEE PENSION                   
+951,SELF EMPLOYED TRANSER                         
+952,SPAC - MPP-CORP-TRANSFER                      
+953,403(B) EMPLOYER SELECT                        
+954,SPAC CLIENT DIVIDENDS                         
+955,SPAC CLIENT DIVIDENDS                         
+956,FLEXI-PLAN PENSION SHORT FORM                 
+957,FLEXI-PLAN PENSION LONG FORM                  
+958,MP/PS-EMPLOYER CONTRIB                        
+959,MP/PS-VOLUNTARY                               
+960,SPAC - IRA BROKER/DEALER                      
+961,SPAC - IRA INDIV. ESTBLSHED                   
+962,SPAC - IRA EMPLOY. ESTBLSHED                  
+9,9
+201,Individual
+726,Joint  TENANTS
+963,SPAC - IRA ROLLOVER ACCOUNT                   
+964,SPAC - IRA TRADE UNION ESTB.                  
+965,SPAC - IRA INDV. EST. SPLIT                   
+966,SPAC - IRA EMPL. EST. SPLIT                   
+967,SPAC - IRA ROLLOVER SPLIT                     
+968,SPAC - IRA TRD. UNION SPLIT                   
+969,IRA SPOUSAL                                   
+970,SELF-DIRECTED IRA                             
+971,403-B SCHOOL DISTRICTS                        
+972,SPAC 403-B GROUP                              
+973,SPAC 403-B SAL. REDUCTION                     
+974,NON-PROTOTYPE 403B (SPAC)                     
+975,NON-PROTOTYPE 403(B)                          
+976,KEOGH BENEFICIARY                             
+977,MP/PS-ROLLOVER                                
+978,MP/PS-TRANSFER                                
+979,FLEXI-PLAN PENSION-SHORT PDPS                 
+980,FLEXI-PLAN PENSION-LONG PDPS                  
+981,SPAC - IMF INDV. SINGLE PYMT                  
+982,SPAC - IMF GROUP SINGLE PYMT                  
+983,SPAC - IMF INDV. INSTALLMENT                  
+984,SPAC - IMF GROUP INSTALLMENT                  
+985,SPAC - 401K EMPLOYER CONTRIBUTION             
+986,SPAC - 401K EMPLOYEE CONTRIBUTION             
+987,MATCHED SALARY REDUCTION                      
+988,457 RETIREMENT PLANS                          
+989,EMPLOYER MATCHED SAL REDUCTION                
+990,SPAC - LA KEOGH - EMP. CONTR                  
+991,SPAC - LA KEOGH - EMP. CONTR                  
+992,SPAC - LA KEOGH - VOL. CONTR                  
+993,EMPLOYER DISCRETIONARY                        
+994,SPAC - (SPECIAL DIV. REPORT)                  
+995,SPAC - (SPECIAL DIV. REPORT)                  
+996,401K - VOLUNTARY DEFERRED COMPENSATION        
+997,401K - EMPLOYER DEFERRED COMPENSATION         
+998,401K - NON-SSBT 401K PLAN ACCT                
+999,EMPLOYER VOLUNTARY                            
+440,S CORPORATIONS                                
+33,DEFINED CONTRIBUTION PLAN                     
+34,DEFINED BENEFITS PLAN                         
+6,Individual
+15,Joint TENANTS
+70,Trusts
+24,TRAN ON DEATH/PAY ON DEATH
+30,Estates
+20,CUST   UNIF GIFT MIN ACT
+64,Investment Club
+50,Pension Plans
+99,MP Pension PL Corp
+67,Other Exempt Organization/Institution
+76,Deferred Compensation Plans
+52,Unclassified Retirement Plan
+56,CUSTODIAN OTHER-401(K)
+97,Profit Sharing Corporate
+39,Sole Proprietor
+59,Broker Designated FBO/FAO Accts
+47,Cemeteries
+43,Banks & TRUST Companies
+68,Non Exempt Organazation / Institution
+23,Misc Organizations
+40,Corporations
+63,Clubs & FRATERNAL Org
+62,Colleges & UNIVERSITIES
+41,Partnerships
+60,Charitable & WELFARE Org
+61,Chruches & RELIGIOUS Inst.
+65,Townships 
+46,Hospitals & MEDICAL Inst
+42,Nominees
+48,Unions
+701,IRA INDIVIDUALLY ESTABLISHED
+702,Simplified Employee Pension
+798,COMBINED ROTH IRA
+901,Merrill Lynch Special for SPAC Reporting
+902,Charles Schwab
+903,SPECIAL ACCOUNT   VOLUNTARY
+904,Citistreet Retirement Services
+905,Ameriprise Trust Co
+906,Davenport & CO
+907,The Vanguard Group
+908,SunGard Investment Products
+909,EDWARD JONES & CO
+910,LPL FINANCIAL CORPORATION
+911,AMERITRADE INC
+912,MORGAN STANLEY SMITH BARNEY LLC
+913,PRUDENTIAL INVESTMENT MGMT SERVICE
+914,AMERIPRISE TRUST CO
+915,NYLIFE DISTRIBUTORS
+916,FIRST TRUST CORPORATION - DATALYNX
+90,Dealer ACCOUNT
+1,OUTPUT AUDIT ACCOUNTS
+2,Audit Accounts - Fiduciary
+710,Decedent IRA
+729,Individual

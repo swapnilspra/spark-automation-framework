@@ -1,0 +1,22 @@
+source_characteristics,target_characteristics
+Total Net Assets - All Classes,Total Net Assets - All Classes
+Fixed Income Assets,Fixed Income Assets
+Cash & Other Assets Less Liabilities,Cash & Other Assets Less Liabilities
+Number of Issues - Fund,Number of Issues
+Number of Issues - Benchmark,Number of Issues
+Average Market Coupon - Benchmark,Average Market Coupon (%)
+Weighted Avg. Maturity - Benchmark,Weighted Avg. Maturity (yrs)
+Mkt Val Total,Total Market Value
+Qtrly contrib,Quarterly Contrib
+Estimated Income,Estimated Income
+Estimated YTM,Estimated YTM
+Duration,Modified Duration (yrs)
+Avg Maturity,Weighted Avg. Maturity (yrs)
+Avg Qlty,Avg. Quality
+Avg Coupon,Average Market Coupon (%)
+Current Yield,Current Yield (%)
+Bogie Avg Qlty,Avg. Quality
+Duration,Modified Duration (yrs)
+Benchmark - Current Yield(%),Current Yield (%)
+Benchmark Duration - PIMCO(yrs),Duration - PIMCO (yrs)
+Benchmark Estimated YTM,Estimated YTM

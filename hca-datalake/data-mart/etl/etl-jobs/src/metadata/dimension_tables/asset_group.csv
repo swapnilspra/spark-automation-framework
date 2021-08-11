@@ -1,0 +1,10 @@
+ASSET_GRP_CD,ASSET_GRP_NM,ASSET_GRP_DESC,CONFL_ASSET_GRP_ID,CONFL_ASSET_GRP_NM,INVMT_MKT_VAL_FLG,CURR_ROW_FLG,ROW_STOP_DTTM,SRC_SYS_DEL_FLG,SRC_SYS_USERID,SRC_SYS_ID,ETL_LOAD_CYC_KEY,DQ_LVL_CD
+B,B,Bond,1,Fixed Income,Y,Y,,,,,271590,
+C,C,Short Term,2,Cash Equivalent,Y,Y,,,,,271590,
+F,F,Future,,,Y,Y,,,,,,
+S,S,Stock,7,Equities,N,Y,,,,,271590,
+O,O,Option,5,Options,Y,Y,,,,,271590,
+M,M,Cash,4,Cash,N,Y,,,,,271590,
+W,W,Forward,,,N,Y,,,,,,
+P,P,Spots,6,Options Purchased -- Puts,N,Y,,,,,271590,
+L,L,Long,3,Options Purchased--Calls,N,Y,,,,,271590,

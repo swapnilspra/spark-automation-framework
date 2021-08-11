@@ -1,0 +1,102 @@
+#!/usr/bin/env python
+import click
+from typing import Dict, List, Any
+from pyspark.sql import SparkSession
+import logging
+import importlib
+import sys
+import os
+import json
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.realpath(__file__)),'..','src'))
+import common.utils
+
+
+@click.command(context_settings=dict(
+    ignore_unknown_options=True,
+    allow_extra_args=True,
+))
+@click.argument('job_name', required=True)
+@click.option('--schema', required=True, help='DB schema of the target table')
+@click.option('--datalake', required=False, default='global',
+              help="'local' to use job data folder; 'global' to use project data folder")
+@click.option('--raw-folder', required=False, default='global',
+              help="'local' to use job data folder; 'global' to use project data folder")
+@click.option('--loglevel', required=False, default='INFO', help="DEBUG/INFO/ERROR/WARNING. default INFO")
+@click.option('--spark-eventlog/--no-spark-eventlog', required=False, default=False,
+              help="whether or not to store the spark event log for diagnostics. Needs a /tmp/spark-events folder created")
+@click.pass_context
+def run_job(ctx, job_name, schema, datalake, loglevel, raw_folder, spark_eventlog):
+    #
+    # read settings from file
+    #
+    import configparser
+    config = configparser.ConfigParser()
+    config.read(os.path.join(os.path.dirname(os.path.realpath(__file__)),'environment.ini'))
+
+    #
+    # read extra job arguments
+    #
+    job_arguments: Dict[str, str] = {ctx.args[i][2:]: ctx.args[i + 1] for i in range(0, len(ctx.args), 2) if
+                                     ctx.args[i][2:].startswith("p_")}
+
+    #
+    # read the catalog
+    #
+    catalog: Dict[str, Any] = common.utils.get_catalog()
+
+    #
+    # set up spark
+    #
+    spark = SparkSession \
+        .builder \
+        .appName("etl") \
+        .config("spark.jars", os.path.join(os.path.dirname(os.path.realpath(__file__)),'..','lib','postgresql-42.2.8.jar')) \
+        .config("spark.eventLog.enabled", spark_eventlog) \
+        .getOrCreate()
+    spark.sparkContext.addFile(os.path.join(os.path.dirname(os.path.realpath(__file__)),'..','src','common'), recursive=True)
+    env: Dict[str, Any] = {
+        "jdbc":
+            {"url": config['db']['url'],
+             "database": config['db']['database'],
+             "user": config['db']['user'],
+             "password": config['db']['password'],
+             "schema": schema
+             },
+        "folders": {},
+        "catalog": catalog
+    }
+    host, port, database = common.utils.parse_jdbc_url(env["jdbc"]["url"])
+    env["jdbc"]["host"] = host
+    env["jdbc"]["port"] = port
+    if datalake == 'local':
+        # use parquet files at the job level
+        env["folders"]["datamart"] = "../src/jobs/%s/tests/data/datamart/" % job_name
+    else:
+        # use parquet files at global level. defined in ini file
+        env["folders"]["datamart"] = config['folders']['datamart']
+
+    if raw_folder == 'local':
+        # use parquet files at the job level
+        env["file_prefix"] = "../src/jobs/%s/tests/data/" % job_name
+    else:
+        # use parquet files at global level. defined in ini file
+        env["file_prefix"] = config['folders']['raw']
+
+    #
+    # initialize logger
+    #
+    logging.basicConfig()
+    logger = logging.getLogger(job_name)
+    level = logging.getLevelName(loglevel)
+    logger.setLevel(loglevel)
+
+    from common.etl_job import ETLJob  # must be imported after spark has been set up
+    job_module = importlib.import_module("jobs.%s.job" % sys.argv[1])
+    job_class = getattr(job_module, "Job")
+    job: ETLJob = job_class(spark, env, logger, job_arguments)
+
+    job.run()
+
+
+if __name__ == '__main__':
+    run_job()

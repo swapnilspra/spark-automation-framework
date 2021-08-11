@@ -1,0 +1,62 @@
+---
+AWSTemplateFormatVersion: '2010-09-09'
+Resources:
+  rdshcadldata:
+    Type: AWS::RDS::DBInstance
+    Properties:
+      AllocatedStorage: '0'
+      AllowMajorVersionUpgrade: 'false'
+      AutoMinorVersionUpgrade: 'true'
+      DBInstanceClass: db.r4.4xlarge
+      Port: '5432'
+      StorageType: aurora
+      BackupRetentionPeriod: '0'
+      MasterUsername: hcadata
+      MasterUserPassword: MyPassword
+      PreferredBackupWindow: 09:23-09:53
+      PreferredMaintenanceWindow: sun:18:00-sun:19:00
+      DBName: MyDatabase
+      Engine: aurora-postgresql
+      EngineVersion: '10.7'
+      LicenseModel: postgresql-license
+      DBSubnetGroupName:
+        Ref: dbsubnetdefault
+      VPCSecurityGroups:
+      - Ref: sgdefault
+      Tags:
+      - Key: workload-type
+        Value: other
+  dbsubnetdefault:
+    Type: AWS::RDS::DBSubnetGroup
+    Properties:
+      DBSubnetGroupDescription: default
+      SubnetIds:
+      - subnet-d2ba83ba
+      - subnet-ea304690
+      - subnet-d8ff2194
+  sgdefault:
+    Type: AWS::EC2::SecurityGroup
+    Properties:
+      GroupDescription: default VPC security group
+      VpcId: vpc-6ac5d402
+  dbsgdefault:
+    Type: AWS::RDS::DBSecurityGroup
+    Properties:
+      GroupDescription: default
+  ingress4:
+    Type: AWS::EC2::SecurityGroupIngress
+    Properties:
+      GroupId:
+        Ref: sgdefault
+      IpProtocol: "-1"
+      SourceSecurityGroupId:
+        Ref: sgdefault
+      SourceSecurityGroupOwnerId: '372182811352'
+  egress4:
+    Type: AWS::EC2::SecurityGroupEgress
+    Properties:
+      GroupId:
+        Ref: sgdefault
+      IpProtocol: "-1"
+      CidrIp: 0.0.0.0/0
+Description: hca-postgres

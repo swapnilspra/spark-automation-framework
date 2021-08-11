@@ -1,0 +1,53 @@
+# validated (needs null filter)
+- Name: cct_city_tax_list
+  TableType: file
+  StorageDescriptor: 
+    Location: taxlist.txt
+    Delimiter: "~"
+    SkipHeaderRows: 0
+    SkipFooterRows: 0
+
+# validated
+- Name: cct_harbor_group
+  TableType: file
+  StorageDescriptor: 
+    Location: company.txt
+    Delimiter: "~"
+    SkipHeaderRows: 0
+    SkipFooterRows: 0
+
+# validated  
+- Name: cct_spend_category
+  TableType: file
+  StorageDescriptor: 
+    Location: spendcategory.txt
+    Delimiter: "~"
+    SkipHeaderRows: 0
+    SkipFooterRows: 0
+
+# validated
+- Name: cct_supplier
+  TableType: file
+  StorageDescriptor: 
+    Location: supplier.txt
+    Delimiter: "~"
+    SkipHeaderRows: 0
+    SkipFooterRows: 0
+
+# in progress 
+- Name: cct_tax_detail
+  TableType: file
+  StorageDescriptor: 
+    Location: tax.txt
+    Delimiter: "~"
+    SkipHeaderRows: 0
+    SkipFooterRows: 0
+
+# in progress 
+- Name: cct_tax_summary
+  TableType: file
+  StorageDescriptor: 
+    Location: invoice.txt
+    Delimiter: "~"
+    SkipHeaderRows: 0
+    SkipFooterRows: 0

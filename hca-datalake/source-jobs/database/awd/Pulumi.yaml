@@ -1,0 +1,3 @@
+name: source-job-awd
+runtime: python
+description: create glue jobs and connection to crawl + export data from dst awd oracle db

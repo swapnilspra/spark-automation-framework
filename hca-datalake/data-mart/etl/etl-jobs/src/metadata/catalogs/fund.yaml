@@ -1,0 +1,307 @@
+- Name: calendar
+  TableType: file
+  StorageDescriptor:
+    Location: calendar\.csv
+    Format: csv
+- Name: yield_types
+  TableType: file
+  StorageDescriptor:
+    Location: yield_types\.csv
+    Format: csv
+- Name: sec_yld
+  TableType: file
+  StorageDescriptor:
+    Location: SEC_YLD_[0-9]{6}\.CSV
+    Format: csv
+- Name: fund_dividend
+  TableType: file
+  StorageDescriptor:
+    Location: fund_dividend\.csv
+    Format: csv
+- Name: ssbnav
+  TableType: file
+  StorageDescriptor:
+    Location: ssbnav_[0-9]{8}\.txt
+    SkipHeaderRows: 1
+    SkipFooterRows: 1
+    Format: cobol
+    Columns:
+    - Name: PRICE_EFF_DATE
+      Type: date
+      Format: yyyyMMdd
+    Copybook: SSBNAV.CBL
+- Name: dividend_tax_rate
+  TableType: file
+  StorageDescriptor:
+    Location: dividend_tax_rate.csv
+    Delimiter: ","
+    SkipHeaderRows: 0
+    SkipFooterRows: 0
+    Format: csv
+- Name: return_periods
+  TableType: file
+  StorageDescriptor:
+    Location: return_periods.csv
+    Delimiter: ","
+    SkipHeaderRows: 0
+    SkipFooterRows: 0
+- Name: pta_ssb_position
+  TableType: file
+  StorageDescriptor:
+    Location: PTA_SSB_POSITION_[0-9]{6}\.txt
+    Delimiter: "|"
+    Header: false
+    SkipHeaderRows: 1
+    SkipFooterRows: 0
+    Columns:
+    - Name: TYPE
+    - Name: FUND_ID
+    - Name: BASE_CNTRY_CD
+    - Name: CRNCY_CD_BASE
+    - Name: CALEN_DT
+      Type: date
+      Format: yyyyMMdd
+    - Name: ASSET_ID
+    - Name: ALT_ASSET_ID_TYPE_CD1
+    - Name: ALT_ASSET_ID1
+    - Name: ALT_ASSET_ID_TYPE_CD2
+    - Name: ALT_ASSET_ID2
+    - Name: DTC_CUSIP
+    - Name: TICKER_SYMB
+    - Name: ISSUE_LONG_NM
+    - Name: INVEST_IND
+    - Name: ASSET_GRP_CD
+    - Name: POS_TYPE_CD
+    - Name: INVEST_TYPE_CD
+    - Name: STATE_CD
+    - Name: INCORP_CNTRY_CD
+    - Name: ISSUE_CNTRY_CD
+    - Name: TRD_CNTRY_CD
+    - Name: NRATAX_CNTRY_CD
+    - Name: ISSUE_DT
+      Type: date
+      Format: yyyyMMdd
+    - Name: POS_MTRTY_DT
+      Type: date
+      Format: yyyyMMdd
+    - Name: DAYS_TOMAT_CNT
+    - Name: ORIG_CPN_RT
+    - Name: POS_INT_RT
+    - Name: VAR_RT_CHG_DT
+      Type: date
+      Format: yyyyMMdd
+    - Name: VAR_RT_FREQ_CD
+    - Name: MOODY_RTG
+    - Name: SNP_RTG
+    - Name: MJR_INDSTY_CD
+    - Name: MNR_INDSTY_CD
+    - Name: POOL_TYPE_CD
+    - Name: LOT_ACCT_NUM
+    - Name: REPO_NUM
+    - Name: TOT_LOTS
+    - Name: TRD_DT
+      Type: date
+      Format: yyyyMMdd
+    - Name: SETTLE_DT
+      Type: date
+      Format: yyyyMMdd
+    - Name: ISSUE_CLS_CD
+    - Name: RPT_CLS_CD
+    - Name: CALL_PUT_IND
+    - Name: ORG_STRIKE_PRC
+    - Name: CRNT_STRIKE_PRC
+    - Name: SHRPAR_QTY
+    - Name: CONTRACTS_QTY
+    - Name: ORG_FACE_POS_QTY
+    - Name: UNTCST_BTL
+    - Name: UNTCST_LTL
+    - Name: CST_ORG_BTL
+    - Name: CST_ORG_LTL
+    - Name: CST_BTL
+    - Name: CST_LTL
+    - Name: AMTZD_BTL
+    - Name: AMTZD_LTL
+    - Name: ACCRD_BTL
+    - Name: ACCRD_LTL
+    - Name: MKTVAL_BTL
+    - Name: MKTVAL_LTL
+    - Name: UNRLZD_GNLS_BTL
+    - Name: UNRLZD_GNLS_LTL
+    - Name: MKTPRC_BAM
+    - Name: MKTPRC_LAM
+    - Name: MKTPRC_EAM
+    - Name: CRNT_XCHRT
+    - Name: CRNTEXCH_RT_SRC_CD
+    - Name: FASPRC_SRC_CD
+    - Name: MKTPRC_CRNCY_CD
+    - Name: MKTPRC_CRNCYCD_EUR
+    - Name: MKT_VAL_CD
+    - Name: DAY_61_PRICE
+    - Name: DAY_61_DAY
+    - Name: DAY_61_YLD
+    - Name: FILLER
+    - Name: BRKR_FINS
+    - Name: SW_CLOSING_FX
+    - Name: SSB_TRADE_ID
+    - Name: INCM_CRNCY_CD
+    - Name: FVM_CD
+- Name: benchmark
+  TableType: file
+  StorageDescriptor:
+    Location: benchmark\.csv
+    Format: csv
+- Name: full_prc
+  TableType: file
+  StorageDescriptor:
+    Location: full_prc_[0-9]{6}\.CSV
+    Format: csv
+    Columns:
+    - Name: date
+      Type: date
+      Format: MM/dd/yyyy HH:mm
+- Name: perf_run_type
+  TableType: file
+  StorageDescriptor:
+    Location: perf_run_type.csv
+    Delimiter: ","
+    SkipHeaderRows: 0
+    SkipFooterRows: 0
+    Format: csv
+- Name: fund_index_rltn
+  TableType: file
+  StorageDescriptor:
+    Location: fund_index_rltn\.csv
+    Format: csv
+- Name: portfolio_manager
+  TableType: file
+  StorageDescriptor:
+    Location: portfolio_manager.csv
+    Delimiter: ","
+    SkipHeaderRows: 0
+    SkipFooterRows: 0
+    Format: csv
+- Name: sub_advisor
+  TableType: file
+  StorageDescriptor:
+    Location: sub_advisor.csv
+    Delimiter: ","
+    SkipHeaderRows: 0
+    SkipFooterRows: 0
+    Format: csv
+- Name: fund_manager
+  TableType: file
+  StorageDescriptor:
+    Location: fund_manager.csv
+    Delimiter: ","
+    SkipHeaderRows: 0
+    SkipFooterRows: 0
+    Format: csv
+    Columns:
+    - Name: sba_efftv_strt_dt
+      Type: date
+      Format: MM/dd/yyyy
+    - Name: efftv_end_dt
+      Type: date
+      Format: MM/dd/yyyy
+    - Name: pm_efftv_strt_dt
+      Type: date
+      Format: MM/dd/yyyy
+    - Name: pm_efftv_end_dt
+      Type: date
+      Format: MM/dd/yyyy
+    - Name: fund_mgr_efftv_strt_dt
+      Type: date
+      Format: MM/dd/yyyy
+    - Name: fund_mgr_efftv_end_dt
+      Type: date
+      Format: MM/dd/yyyy
+- Name: fund_expense_ratio
+  TableType: file
+  StorageDescriptor:
+    Location: fund_expense_ratio.csv
+    Delimiter: ","
+    SkipHeaderRows: 0
+    SkipFooterRows: 0
+    Format: csv
+- Name: external_fund_balance
+  TableType: file
+  StorageDescriptor:
+    Location: external_fund_balance\.csv
+    Delimiter: ","
+    SkipHeaderRows: 0
+    SkipFooterRows: 0
+    Format: csv
+- Name: external_fund_list
+  TableType: file
+  StorageDescriptor:
+    Location: external_fund_list\.csv
+    Delimiter: ","
+    SkipHeaderRows: 0
+    SkipFooterRows: 0
+    Format: csv
+- Name: bloomberg_idx_data_ml
+  TableType: file
+  StorageDescriptor:
+    Location: harbor-bb-idx-data-ml\.gz
+    Format: custom
+- Name: bloomberg_idx_data_final
+  TableType: file
+  StorageDescriptor:
+    Location: harbor-bb-idx-data-final
+    Format: custom
+- Name: expense_ratio_history
+  TableType: file
+  StorageDescriptor:
+    Location: EXPENSE_RATIO_HISTORY.csv
+    Delimiter: ","
+    SkipHeaderRows: 0
+    SkipFooterRows: 0
+    Format: csv
+- Name: fund_composite
+  TableType: file
+  StorageDescriptor:
+    Location: fund_composite.csv
+    Delimiter: ","
+    SkipHeaderRows: 0
+    SkipFooterRows: 0
+    Format: csv
+- Name: harbor_mm_web_disclosure
+  TableType: file
+  StorageDescriptor:
+    Location: harbor_mm_web_disclosure_[0-9]{8}\.txt
+    Delimiter: "|"
+    SkipHeaderRows: 1
+    SkipFooterRows: 1
+    Format: csv
+    Columns:
+    - Name: business_date
+      Type: date
+      Format: yyyyMMdd
+- Name: gb05_comparison_nav_fund_summary
+  TableType: file
+  StorageDescriptor:
+    Location: GB05_Comparison_NAV_Fund_Summary_[0-9]{2}-[0-9]{2}-[0-9]{4}\.csv
+    Format: csv
+    Columns:
+    - Name: period end date
+      Type: date
+      Format: MM/dd/yyyy
+- Name: mmkt_info
+  TableType: file
+  StorageDescriptor:
+    Location: MMKT_info_[0-9]{6}.CSV
+    Format: csv
+    Columns:
+    - Name: date
+      Type: date
+      Format: MM/dd/yyyy HH:mm
+- Name: fund
+  TableType: file
+  StorageDescriptor:
+    Location: fund.csv
+    Format: csv
+- Name: rates
+  TableType: file
+  StorageDescriptor:
+    Location: RATES_[0-9]{6}.CSV
+    Format: csv

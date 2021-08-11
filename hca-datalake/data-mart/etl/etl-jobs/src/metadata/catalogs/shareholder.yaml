@@ -1,0 +1,285 @@
+- Name: gender
+  TableType: file
+  StorageDescriptor:
+    Location: gender.csv
+    Delimiter: ","
+    SkipHeaderRows: 0
+    SkipFooterRows: 0
+- Name: account_category
+  TableType: file
+  StorageDescriptor:
+    Location: account_category.csv
+    Delimiter: ","
+    SkipHeaderRows: 0
+    SkipFooterRows: 0
+    Format: csv
+- Name: region
+  TableType: file
+  StorageDescriptor:
+    Location: region.csv
+    Delimiter: ","
+    SkipHeaderRows: 0
+    SkipFooterRows: 0
+- Name: social_security_status
+  TableType: file
+  StorageDescriptor:
+    Location: social_security_status.csv
+    Delimiter: ","
+    SkipHeaderRows: 0
+    SkipFooterRows: 0
+- Name: state
+  TableType: file
+  StorageDescriptor:
+    Location: state.csv
+    Delimiter: "|"
+    SkipHeaderRows: 0
+    SkipFooterRows: 0
+- Name: DTO.HCA.CLO.TIP42
+  TableType: file
+  StorageDescriptor:
+    Location: DTO\.HCA\.CLO\.TIP42\.[0-9]{8}\.[0-9]{6}\.zip\.pgp\.txt
+    SkipHeaderRows: 1
+    SkipFooterRows: 1
+    Format: cobol
+    Columns: []
+    Copybook: CLO.TIP42.CUST_POSITION.CBL
+- Name: DTO.HCA.CLO.TIP39
+  TableType: file
+  StorageDescriptor:
+    Location: DTO\.HCA\.CLO\.TIP39\.[0-9]{8}\.[0-9]{6}\.zip\.pgp\.txt
+    SkipHeaderRows: 1
+    SkipFooterRows: 1
+    Format: cobol
+    Columns: []
+    Copybook: CLO.TIP39.ACCT_POSITION.CBL
+- Name: DTO.HCA.BSK.TIP88
+  TableType: file
+  StorageDescriptor:
+    Location: DTO\.HCA\.BSK\.TIP88\.[0-9]{8}\.[0-9]{6}\.zip\.pgp\.txt
+    SkipHeaderRows: 2
+    SkipFooterRows: 2
+    Format: cobol
+    Columns: []
+    Copybook: BSK.TIP88.CBL
+    Multiline: true
+    RowPrefix: '1'
+    RecordSelectorField: RECORD-CODE
+    RecordTypes:
+      '1': DETAIL-DATA-AREA
+      '2': TRAILER-DATA-AREA
+- Name: DTO.HCA.APR.TIP03
+  TableType: file
+  StorageDescriptor:
+    Location: DTO\.HCA\.APR\.TIP03\.[0-9]{8}\.[0-9]{6}\.zip\.pgp\.txt
+    SkipHeaderRows: 1
+    SkipFooterRows: 1
+    Format: cobol
+    Columns: []
+    Copybook: APR.TIP03.MODIFIED.CBL
+    Multiline: true
+    RowPrefix: APR001
+    RecordSelectorField: SEQUENCE-NUMBER
+    RecordTypes:
+      '001': DETAIL-RECORD-1
+      '002': DETAIL-RECORD-2
+      '003': DETAIL-RECORD-3
+      '004': DETAIL-RECORD-4-AREA
+- Name: DTO.HCA.DVRA.TIP01
+  TableType: file
+  StorageDescriptor:
+    Location: DTO\.HCA\.DVRA\.TIP01\.[0-9]{8}\.[0-9]{6}\.zip\.pgp\.txt
+    SkipHeaderRows: 1
+    SkipFooterRows: 1
+    Format: custom
+    Copybook: DVRA.TIP01.CBL
+    Multiline: true
+    RowPrefix: DVH001
+    RecordSelectorField: RECORD-TYPE-AND-SEQUENCE
+    RecordTypes:
+      CGH001: HEADER-RECORD-1
+      DVH001: HEADER-RECORD-1
+      DVR001: DETAIL-RECORD-1
+      DVR002: DETAIL-RECORD-2
+      DVR003: DETAIL-RECORD-3
+      DVR004: DETAIL-RECORD-4
+- Name: DTO.HCA.AMP.TIP09
+  TableType: file
+  StorageDescriptor:
+    Location: DTO\.HCA\.AMP\.TIP09\.[0-9]{8}\.[0-9]{6}\.zip\.pgp\.txt
+    SkipHeaderRows: 1
+    SkipFooterRows: 1
+    Format: cobol
+    Columns: []
+    Copybook: AMP.TIP09.CBL
+    Multiline: true
+    RowPrefix: AMP001
+    RecordSelectorField: SEQUENCE-NUMBER
+    RecordTypes:
+      '001': DETAIL-RECORD-1
+      '002': DETAIL-RECORD-2
+      '003': DETAIL-RECORD-3
+      '004': DETAIL-RECORD-4
+      '005': DETAIL-RECORD-5
+- Name: transaction_type
+  TableType: file
+  StorageDescriptor:
+    Location: transaction_type.csv
+    Delimiter: ","
+    SkipHeaderRows: 0
+    SkipFooterRows: 0
+- Name: reason_code
+  TableType: file
+  StorageDescriptor:
+    Location: reason_code.csv
+    Delimiter: ","
+    SkipHeaderRows: 0
+    SkipFooterRows: 0
+- Name: payment_method
+  TableType: file
+  StorageDescriptor:
+    Location: payment_method.csv
+    Delimiter: ","
+    SkipHeaderRows: 0
+    SkipFooterRows: 0
+- Name: cost_type
+  TableType: file
+  StorageDescriptor:
+    Location: cost_type.csv
+    Delimiter: ","
+    SkipHeaderRows: 0
+    SkipFooterRows: 0
+- Name: distribution_code
+  TableType: file
+  StorageDescriptor:
+    Location: distribution_code.csv
+    Delimiter: ","
+    SkipHeaderRows: 0
+    SkipFooterRows: 0
+- Name: distribution_type
+  TableType: file
+  StorageDescriptor:
+    Location: distribution_type.csv
+    Delimiter: ","
+    SkipHeaderRows: 0
+    SkipFooterRows: 0
+- Name: trade_entry_method
+  TableType: file
+  StorageDescriptor:
+    Location: trade_entry_method.csv
+    Delimiter: ","
+- Name: DTO.HCA.FBP.TIP55
+  TableType: file
+  StorageDescriptor:
+    Location: DTO\.HCA\.FBP\.TIP55\.[0-9]{8}\.[0-9]{6}\.zip\.pgp\.txt
+    SkipHeaderRows: 1
+    SkipFooterRows: 1
+    Format: cobol
+    Copybook: FBP.TIP55.CBL
+    Multiline: true
+    RowPrefix: FBP001
+    Trim: true
+    RecordSelectorField: SEQUENCE-NUMBER-ID
+    RecordTypes:
+      '001': DETAIL-RECORD-1-AREA
+      '002': DETAIL-RECORD-2-AREA
+      '003': DETAIL-RECORD-3-AREA
+      '004': DETAIL-RECORD-4-AREA
+- Name: DTO.HCA.DFA.TIP02
+  TableType: file
+  StorageDescriptor:
+    Location: DTO\.HCA\.DFA\.TIP02\.[0-9]{8}\.[0-9]{6}\.zip\.pgp\.txt
+    SkipHeaderRows: 1
+    SkipFooterRows: 1
+    Format: cobol
+    Copybook: DFA.TIP02.CBL
+    Multiline: true
+    RowPrefix: DFA001
+    Trim: true
+    RecordSelectorField: SEQUENCE-NUMBER
+    RecordTypes:
+      '001': DETAIL-RECORD-1
+      '002': DETAIL-RECORD-2
+      '003': DETAIL-RECORD-3
+      '004': DETAIL-RECORD-4
+      '005': DETAIL-RECORD-5
+      '006': DETAIL-RECORD-6-AREA
+      '007': DETAIL-RECORD-7-AREA
+      008: DETAIL-RECORD-8-AREA
+      009: DETAIL-RECORD-9-AREA
+      '010': DETAIL-RECORD-10-AREA
+- Name: dealer_payout_type
+  TableType: file
+  StorageDescriptor:
+    Location: dealer_payout_type.csv
+    Delimiter: ","
+    Format: csv
+- Name: dealer_level_control
+  TableType: file
+  StorageDescriptor:
+    Location: dealer_level_control.csv
+    Delimiter: ","
+    Format: csv
+- Name: DTO.HCA.FDP.TIP56
+  TableType: file
+  StorageDescriptor:
+    Location: DTO\.HCA\.FDP\.TIP56\.[0-9]{8}\.[0-9]{6}\.zip\.pgp\.txt
+    SkipHeaderRows: 1
+    SkipFooterRows: 1
+    Format: cobol
+    Copybook: FDP.TIP56.CBL
+    Multiline: true
+    RowPrefix: FDP001
+    RecordSelectorField: SEQUENCE-NUMBER-ID
+    Trim: true
+    RecordTypes:
+        '001': DETAIL-RECORD-1-AREA
+        '002': DETAIL-RECORD-2-AREA
+        '003': DETAIL-RECORD-3-AREA
+- Name: dst_st_country
+  TableType: file
+  StorageDescriptor:
+    Location: dst_st_country.csv
+    Delimiter: ","
+    SkipHeaderRows: 0
+    SkipFooterRows: 0
+- Name: shareholder_bluesky_transaction
+  TableType: file
+  StorageDescriptor:
+    Location: shareholder_bluesky_transaction.csv
+    Delimiter: ","
+    SkipHeaderRows: 0
+    SkipFooterRows: 0
+- Name: trade_origin
+  TableType: file
+  StorageDescriptor:
+    Location: trade_origin.csv
+    Delimiter: ","
+    SkipHeaderRows: 0
+    SkipFooterRows: 0
+- Name: shareholder_consent_data
+  TableType: file
+  StorageDescriptor:
+    Location: shareholder_consent_data.csv
+    Delimiter: ","
+    SkipHeaderRows: 0
+    SkipFooterRows: 0
+- Name: shareholder_tradeinfo
+  TableType: file
+  StorageDescriptor:
+    Location: shareholder_tradeinfo.csv
+    Delimiter: ","
+    Format: csv
+- Name: dealer_payment_method
+  TableType: file
+  StorageDescriptor:
+    Location: dealer_payment_method.csv
+    Delimiter: ","
+    SkipHeaderRows: 0
+    SkipFooterRows: 0
+- Name: dealer
+  TableType: file
+  StorageDescriptor:
+    Location: dealer.csv
+    Delimiter: ","
+    SkipHeaderRows: 0
+    SkipFooterRows: 0

@@ -1,0 +1,67 @@
+{
+ "jointransform": {
+  "adlsPath": "dlenterpriseanalytics.dfs.core.windows.net",
+  "adlsfolder": "",
+  "date_column": "ReportDateID",
+  "hour_partition": "False",
+  "inputTable": "",
+  "sort_key":["ReportDateID"],
+  "tsFormat": "",
+  "dateFormat": "yyyyMMdd",
+  "loadstrategy": "upsert",
+  "outputDB": "deltadatamart",
+  "outputTable": "fact_calculated_production_measure_wetmillYield",
+  "outputExtract": "table",
+  "sqlrefresh": "False",
+  "sqlconnectionFile":"sqlconnection/SQL_SERVER_cred_NKC.json",
+  "reports_input":"wetmill_NKC.csv",
+  "bussiness_keys": [
+   "PlantID","ReportDateID","CalcCategory","CalcFrequency","CalcName"
+  ],
+  "partition_keys": [
+   "year",
+   "month",
+   "date"
+  ],
+  "primary_key": {
+  },
+  "non_align_columns": [
+   "DateInserted",
+   "DateUpdated"
+  ],
+  "query":"SELECT * FROM  final_table_temp",
+  "sources": { 
+	"tblGrindDailyProduction": {
+    "type": "sqltable",
+    "source": "dbo.tblGrindDailyProduction",
+	"sqlconnection":"sqlconnection/SQL_SERVER_cred_NKC.json"}
+   },
+  "start_dt": {
+	  	"value": "2021-02-10",
+	  	"python_format": "%Y-%m-%d"
+	  },
+  "end_dt": {
+  		"value": "2021-02-10",
+		"python_format": "%Y-%m-%d"
+	  },     
+  "SP": {               
+        "step1": {
+			"temptable": "NKCDB",
+            "query": "select date, `Waxy Grind` as Grind_Waxy_lbs_CB, `Regular Grind` as Grind_Regular_lbs_CB, `A5 Grind` Grind_A5_lbs_CB,`A7HTSGrind` Grind_A7_lbs_CB,`TotalPoundsWaxy` WetStarch_Waxy_lbs_CB,`TotalPoundsRegular`  WetStarch_Regular_lbs_CB,`TotalPoundsA5` Starch_A5_lbs_CB,`TotalPoundsA7HTS` Starch_A7_lbs_CB, `Meal Avg Moisture` GlutenMeal_moisture, `Germ Avg Moisture` Germ_moisture, `Wet Feed Avg Moisture` WetFiber_moisture, `Germ Avg Moisture` Finished_Germ_Moisture, `Wet Feed Avg Moisture` Finished_Gluten_Wet_Feed_Moisture, `Wet Feed Avg Protein` Finished_Gluten_Wet_Feed_Protein, `Meal Avg Protein` Gluten_Meal_Protein_Content_CB, `Meal Avg Moisture` Finished_Gluten_Meal_Moisture from tblGrindDailyProduction where Date = cast('{0}' as string)"
+        },
+		"step2": {
+            "temptable": "NKCDBUnpivot",
+            "query": "select date_format(date,'yyyyMMdd') as ReportDateID, stack(16, 'Grind_Waxy_lbs_CB' ,`Grind_Waxy_lbs_CB`,  'Grind_Regular_lbs_CB' ,`Grind_Regular_lbs_CB`,  'Grind_A5_lbs_CB' ,`Grind_A5_lbs_CB`, 'Grind_A7_lbs_CB' ,`Grind_A7_lbs_CB`,'WetStarch_Waxy_lbs_CB' ,`WetStarch_Waxy_lbs_CB`,  'WetStarch_Regular_lbs_CB' ,`WetStarch_Regular_lbs_CB`, 'Starch_A5_lbs_CB' ,`Starch_A5_lbs_CB`, 'Starch_A7_lbs_CB' ,`Starch_A7_lbs_CB`,  'GlutenMeal_moisture' ,`GlutenMeal_moisture`,  'Germ_moisture',`Germ_moisture`,  'WetFiber_moisture' ,`WetFiber_moisture`,  'Finished_Germ_Moisture' ,`Finished_Germ_Moisture`,  'Finished_Gluten_Wet_Feed_Moisture' ,`Finished_Gluten_Wet_Feed_Moisture`,  'Finished_Gluten_Wet_Feed_Protein' ,`Finished_Gluten_Wet_Feed_Protein`,  'Gluten_Meal_Protein_Content_CB' ,`Gluten_Meal_Protein_Content_CB`,  'Finished_Gluten_Meal_Moisture' ,`Finished_Gluten_Meal_Moisture`) as (CalcName, CalcValue) from NKCDB" 
+        },
+		
+        "step3": {
+            "temptable": "SAPMSEG",
+            "query": "with mseg_0257jAN as ( select *  from deltatransform.MSEG where mandt='200' and WERKS='0257' and BUDAt_mkpf = cast('{0}' as string)    and matnr in ('13895000AO', '13895000AP','13600011AO','13010008AO')),MSEG_0257 as (select MATNR,MEINS,MENGE,BWART,shkzg,BUDAt_mkpf,case when BWART in('102','132','522','524','526') then -1*MENGE when BWART in ('101','131','521','523','525') then MENGE END GROSS,case WHEN BWART in('261','262','309','531','532','310') and shkzg = 'H' then -1*MENGE WHEN BWART in('261','262','309','531','532','310') then MENGE end Mat2Mat, case WHEN BWART in('552','554','556') then -1*MENGE WHEN BWART in('551','553','555') then MENGE end Scrap from mseg_0257jAN where (BWART not in('101', '102') OR (BWART in ('101','102') and KZBEW ='F') )),mseg_prodmaster as (select MATNR,MEINS,BUDAt_mkpf,case when MEINS='LB' then Gross else Gross*KGConversion*2.205 end Gross,case when MEINS='LB' then Mat2Mat else Mat2Mat*KGConversion*2.205 end Mat2Mat,case when MEINS='LB' then Scrap else Scrap*KGConversion*2.205 end Scrap,b.ProductName,b.prodfamily,b.ProductType,b.prodgroup from MSEG_0257  a left join deltadatamart.dim_productmaster b on a.MATNR=b.product where b.SAPInstance='NA') select date_format(BUDAt_mkpf,'yyyyMMdd') as ReportDateID ,case when  MATNR in ('13895000AO', '13895000AP') then 'GlutenMeal_lbs_CB' when MATNR in ('13600011AO') then 'Germ_lbs_CB' when MATNR = '13010008AO' then 'WetFiber_lbs_CB' end as CalcName, sum(coalesce(Gross,0)) CalcValue  from mseg_prodmaster  group by MATNR,BUDAt_mkpf order by BUDAt_mkpf desc" 
+        },
+		"step4": {
+            "temptable": "NKCJOINSAP",
+            "query": "select ReportDateID, CalcName, coalesce(CalcValue, 0) as CalcValue from NKCDBUnpivot union select ReportDateID, CalcName, coalesce(CalcValue, 0) as CalcValue  from SAPMSEG" 
+        }
+	}  
+ }
+}

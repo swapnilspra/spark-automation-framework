@@ -1,0 +1,128 @@
+- Name: bb_country_threshold
+  TableType: file
+  StorageDescriptor:
+    Format: custom
+    Location: BB_COUNTRY_THRESHOLD
+- Name: harbcust
+  TableType: file
+  StorageDescriptor:
+    Location: HARBCUST_[0-9]{6}\.txt
+    Delimiter: "|"
+    Header: false
+    SkipHeaderRows: 1
+    SkipFooterRows: 0
+    Columns:
+    - Name: REC_TYPE
+    - Name: FUND_ID
+    - Name: AGENT_BANK_FINS_NUM
+    - Name: ASSET_ID
+    - Name: ALT_ASSET_ID_TYPE_CD1
+    - Name: ALT_ASSET_ID1
+    - Name: CP_CUSIP
+    - Name: ISSUE_LONG_NM
+    - Name: ASSET_GRP_CD
+    - Name: INVEST_TYPE_CD
+    - Name: SETTLE_LOC_CD
+    - Name: MAT_DT
+      Type: date
+      Format: yyyyMMdd
+    - Name: COUPON
+    - Name: SETTLE_ACCT_ID
+    - Name: SEC_TYPE_CD
+    - Name: ISSUE_DT
+    - Name: DATED_DT
+    - Name: TRD_DT_LONG_QTY
+    - Name: SAFEKEEP_QTY
+    - Name: OUT_FOR_XFER_QTY
+    - Name: SEGREG_QTY
+    - Name: PND_SALE_QTY
+    - Name: PND_BUY_QTY
+    - Name: TRD_DT_SHORT_QTY
+    - Name: FREE_QTY
+    - Name: ON_LOAN_QTY
+    - Name: PLDGD_QTY
+    - Name: REPO_CLTRL_QTY
+    - Name: OUT_FOR_COLL_QTY
+    - Name: PND_WTHDRL_QTY
+    - Name: PND_DEPST_QTY
+    - Name: PND_XFER_QTY
+    - Name: PND_COLL_QTY
+    - Name: BORROWED_QTY
+    - Name: PND_LOAN_QTY
+    - Name: PND_LOAN_RTN_QTY
+    - Name: PND_BORROW_QTY
+    - Name: PND_BORROW_RTN_QTY
+    - Name: MEMO_PLDGD_QTY
+    - Name: RSTRCT_QTY
+    - Name: REPO_IN_QTY
+    - Name: REPO_OUT_QTY
+    - Name: SECURITIES_ACCT
+    - Name: CNTRCL_STLMNT_QTY
+    - Name: AVAIL_QTY
+    - Name: AVAIL_PERCENT
+    - Name: CALC_AVAIL_QTY
+    - Name: REGSTD_QTY
+    - Name: UNREGSTD_OTHER_QTY
+    - Name: UNREGSTD_VOL_QTY
+    - Name: BORROWED_SSB_QTY
+    - Name: BORROWED_3RD_QTY
+    - Name: ON_LOAN_SSB_QTY
+    - Name: ON_LOAN_3RD_QTY
+    - Name: CLEARING_QTY
+    - Name: BLOCKED_QTY
+    - Name: CLTRL_RCVBL_QTY
+    - Name: CLTRL_DVLBL_QTY
+    - Name: BEARER_QTY
+    - Name: SOURCE_SSC
+    - Name: POS_TYPE_CD
+    - Name: SHRPAR_QTY
+    - Name: GOV_FACTOR
+    - Name: GOV_FACTR_EFF_DATE
+- Name: exchange_type
+  TableType: file
+  StorageDescriptor:
+    Location: exchange_type.csv
+    Format: csv
+    Delimiter: ","
+    SkipHeaderRows: 0
+    SkipFooterRows: 0
+- Name: country
+  TableType: file
+  StorageDescriptor:
+    Location: country.csv
+    Format: csv
+    Delimiter: ","
+    SkipHeaderRows: 0
+    SkipFooterRows: 0
+- Name: currency
+  TableType: file
+  StorageDescriptor:
+    Location: currency.csv
+    Format: csv
+    Delimiter: ","
+    SkipHeaderRows: 0
+    SkipFooterRows: 0
+- Name: holdings_txn_codes
+  TableType: file
+  StorageDescriptor:
+    Location: holdings_txn_codes.csv
+    Format: csv
+    Delimiter: ","
+    SkipHeaderRows: 0
+    SkipFooterRows: 0
+- Name: target_performance_type
+  TableType: file
+  StorageDescriptor:
+    Location: target_performance_type.csv
+    Format: csv
+    Delimiter: ","
+    SkipHeaderRows: 0
+    SkipFooterRows: 0
+- Name: target_weights
+  TableType: file
+  StorageDescriptor:
+    Location: target_fund_weights.csv
+    Format: csv
+    Delimiter: ","
+    SkipHeaderRows: 0
+    SkipFooterRows: 0

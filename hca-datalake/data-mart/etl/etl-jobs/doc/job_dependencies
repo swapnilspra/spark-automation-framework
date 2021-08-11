@@ -1,0 +1,1894 @@
+digraph ER {
+	node [shape=box]
+	"j_awd.awd_privilege_type" [label="awd.awd_privilege_type"]
+	node [shape=cylinder]
+	t_awd_privilege_type [label=awd_privilege_type]
+	"j_awd.awd_privilege_type" -> t_awd_privilege_type
+	node [shape=folder]
+	f_awd_privilege_type [label=awd_privilege_type]
+	f_awd_privilege_type -> "j_awd.awd_privilege_type"
+	node [shape=box]
+	"j_awd.awd_queue" [label="awd.awd_queue"]
+	node [shape=cylinder]
+	t_awd_queue [label=awd_queue]
+	"j_awd.awd_queue" -> t_awd_queue
+	node [shape=folder]
+	f_awd_queue [label=awd_queue]
+	f_awd_queue -> "j_awd.awd_queue"
+	node [shape=box]
+	"j_awd.awd_record_type" [label="awd.awd_record_type"]
+	node [shape=cylinder]
+	t_awd_record_type [label=awd_record_type]
+	"j_awd.awd_record_type" -> t_awd_record_type
+	node [shape=folder]
+	f_awd_record_type [label=awd_record_type]
+	f_awd_record_type -> "j_awd.awd_record_type"
+	node [shape=box]
+	"j_awd.awd_role" [label="awd.awd_role"]
+	node [shape=cylinder]
+	t_awd_role [label=awd_role]
+	"j_awd.awd_role" -> t_awd_role
+	node [shape=folder]
+	f_awd_role [label=awd_role]
+	f_awd_role -> "j_awd.awd_role"
+	node [shape=box]
+	"j_awd.awd_role_privilege" [label="awd.awd_role_privilege"]
+	node [shape=cylinder]
+	t_awd_role_privilege [label=awd_role_privilege]
+	"j_awd.awd_role_privilege" -> t_awd_role_privilege
+	node [shape=folder]
+	f_awd_role_privilege [label=awd_role_privilege]
+	f_awd_role_privilege -> "j_awd.awd_role_privilege"
+	node [shape=cylinder]
+	t_awd_record_type [label=awd_record_type]
+	t_awd_record_type -> "j_awd.awd_role_privilege"
+	node [shape=cylinder]
+	t_awd_privilege_type [label=awd_privilege_type]
+	t_awd_privilege_type -> "j_awd.awd_role_privilege"
+	node [shape=cylinder]
+	t_awd_role [label=awd_role]
+	t_awd_role -> "j_awd.awd_role_privilege"
+	node [shape=cylinder]
+	t_calendar [label=calendar]
+	t_calendar -> "j_awd.awd_role_privilege"
+	node [shape=box]
+	"j_awd.awd_user" [label="awd.awd_user"]
+	node [shape=cylinder]
+	t_awd_user [label=awd_user]
+	"j_awd.awd_user" -> t_awd_user
+	node [shape=folder]
+	f_awd_user [label=awd_user]
+	f_awd_user -> "j_awd.awd_user"
+	node [shape=box]
+	"j_awd.awd_user_queue" [label="awd.awd_user_queue"]
+	node [shape=cylinder]
+	t_awd_user_queue [label=awd_user_queue]
+	"j_awd.awd_user_queue" -> t_awd_user_queue
+	node [shape=folder]
+	f_awd_user_queue [label=awd_user_queue]
+	f_awd_user_queue -> "j_awd.awd_user_queue"
+	node [shape=cylinder]
+	t_awd_queue [label=awd_queue]
+	t_awd_queue -> "j_awd.awd_user_queue"
+	node [shape=cylinder]
+	t_calendar [label=calendar]
+	t_calendar -> "j_awd.awd_user_queue"
+	node [shape=cylinder]
+	t_awd_user [label=awd_user]
+	t_awd_user -> "j_awd.awd_user_queue"
+	node [shape=box]
+	"j_awd.awd_user_role" [label="awd.awd_user_role"]
+	node [shape=cylinder]
+	t_awd_user_role [label=awd_user_role]
+	"j_awd.awd_user_role" -> t_awd_user_role
+	node [shape=folder]
+	f_awd_user_role [label=awd_user_role]
+	f_awd_user_role -> "j_awd.awd_user_role"
+	node [shape=cylinder]
+	t_awd_role [label=awd_role]
+	t_awd_role -> "j_awd.awd_user_role"
+	node [shape=cylinder]
+	t_calendar [label=calendar]
+	t_calendar -> "j_awd.awd_user_role"
+	node [shape=cylinder]
+	t_awd_user [label=awd_user]
+	t_awd_user -> "j_awd.awd_user_role"
+	node [shape=box]
+	"j_awd.awd_user_work_type" [label="awd.awd_user_work_type"]
+	node [shape=cylinder]
+	t_awd_user_work_type [label=awd_user_work_type]
+	"j_awd.awd_user_work_type" -> t_awd_user_work_type
+	node [shape=folder]
+	f_awd_user_work_type [label=awd_user_work_type]
+	f_awd_user_work_type -> "j_awd.awd_user_work_type"
+	node [shape=cylinder]
+	t_awd_record_type [label=awd_record_type]
+	t_awd_record_type -> "j_awd.awd_user_work_type"
+	node [shape=cylinder]
+	t_calendar [label=calendar]
+	t_calendar -> "j_awd.awd_user_work_type"
+	node [shape=cylinder]
+	t_awd_work_type [label=awd_work_type]
+	t_awd_work_type -> "j_awd.awd_user_work_type"
+	node [shape=cylinder]
+	t_awd_user [label=awd_user]
+	t_awd_user -> "j_awd.awd_user_work_type"
+	node [shape=box]
+	"j_awd.awd_work_type" [label="awd.awd_work_type"]
+	node [shape=cylinder]
+	t_awd_work_type [label=awd_work_type]
+	"j_awd.awd_work_type" -> t_awd_work_type
+	node [shape=folder]
+	f_awd_work_type [label=awd_work_type]
+	f_awd_work_type -> "j_awd.awd_work_type"
+	node [shape=box]
+	"j_cashflow.cashflow_activity" [label="cashflow.cashflow_activity"]
+	node [shape=cylinder]
+	t_cashflow_activity [label=cashflow_activity]
+	"j_cashflow.cashflow_activity" -> t_cashflow_activity
+	node [shape=folder]
+	"f_DTO.HCA.SDCM.POSITION" [label="DTO.HCA.SDCM.POSITION"]
+	"f_DTO.HCA.SDCM.POSITION" -> "j_cashflow.cashflow_activity"
+	node [shape=cylinder]
+	t_calendar [label=calendar]
+	t_calendar -> "j_cashflow.cashflow_activity"
+	node [shape=cylinder]
+	t_fund [label=fund]
+	t_fund -> "j_cashflow.cashflow_activity"
+	node [shape=cylinder]
+	t_payment_method [label=payment_method]
+	t_payment_method -> "j_cashflow.cashflow_activity"
+	node [shape=cylinder]
+	t_account [label=account]
+	t_account -> "j_cashflow.cashflow_activity"
+	node [shape=cylinder]
+	t_dealer [label=dealer]
+	t_dealer -> "j_cashflow.cashflow_activity"
+	node [shape=box]
+	"j_cashflow.sdcm_cashflow_insert" [label="cashflow.sdcm_cashflow_insert"]
+	node [shape=cylinder]
+	t_sdcm_cashflow [label=sdcm_cashflow]
+	"j_cashflow.sdcm_cashflow_insert" -> t_sdcm_cashflow
+	node [shape=folder]
+	"f_DTO.HCA.SDCM.POSITION" [label="DTO.HCA.SDCM.POSITION"]
+	"f_DTO.HCA.SDCM.POSITION" -> "j_cashflow.sdcm_cashflow_insert"
+	node [shape=cylinder]
+	t_calendar [label=calendar]
+	t_calendar -> "j_cashflow.sdcm_cashflow_insert"
+	node [shape=cylinder]
+	t_fund [label=fund]
+	t_fund -> "j_cashflow.sdcm_cashflow_insert"
+	node [shape=cylinder]
+	t_payment_method [label=payment_method]
+	t_payment_method -> "j_cashflow.sdcm_cashflow_insert"
+	node [shape=cylinder]
+	t_account [label=account]
+	t_account -> "j_cashflow.sdcm_cashflow_insert"
+	node [shape=cylinder]
+	t_dealer [label=dealer]
+	t_dealer -> "j_cashflow.sdcm_cashflow_insert"
+	node [shape=box]
+	"j_cashflow.sdcm_cashflow_update" [label="cashflow.sdcm_cashflow_update"]
+	node [shape=cylinder]
+	t_sdcm_cashflow [label=sdcm_cashflow]
+	"j_cashflow.sdcm_cashflow_update" -> t_sdcm_cashflow
+	node [shape=folder]
+	"f_DTO.HCA.SDCM.POSITION" [label="DTO.HCA.SDCM.POSITION"]
+	"f_DTO.HCA.SDCM.POSITION" -> "j_cashflow.sdcm_cashflow_update"
+	node [shape=cylinder]
+	t_calendar [label=calendar]
+	t_calendar -> "j_cashflow.sdcm_cashflow_update"
+	node [shape=cylinder]
+	t_fund [label=fund]
+	t_fund -> "j_cashflow.sdcm_cashflow_update"
+	node [shape=cylinder]
+	t_payment_method [label=payment_method]
+	t_payment_method -> "j_cashflow.sdcm_cashflow_update"
+	node [shape=cylinder]
+	t_account [label=account]
+	t_account -> "j_cashflow.sdcm_cashflow_update"
+	node [shape=cylinder]
+	t_dealer [label=dealer]
+	t_dealer -> "j_cashflow.sdcm_cashflow_update"
+	node [shape=box]
+	"j_cashflow.sdcm_fund_balance" [label="cashflow.sdcm_fund_balance"]
+	node [shape=cylinder]
+	t_sdcm_fund_balance [label=sdcm_fund_balance]
+	"j_cashflow.sdcm_fund_balance" -> t_sdcm_fund_balance
+	node [shape=folder]
+	"f_DTO.HCA.SDCM.BALANCE" [label="DTO.HCA.SDCM.BALANCE"]
+	"f_DTO.HCA.SDCM.BALANCE" -> "j_cashflow.sdcm_fund_balance"
+	node [shape=cylinder]
+	t_fund [label=fund]
+	t_fund -> "j_cashflow.sdcm_fund_balance"
+	node [shape=cylinder]
+	t_fund_valuation [label=fund_valuation]
+	t_fund_valuation -> "j_cashflow.sdcm_fund_balance"
+	node [shape=cylinder]
+	t_calendar [label=calendar]
+	t_calendar -> "j_cashflow.sdcm_fund_balance"
+	node [shape=box]
+	"j_cct.cct_city_tax_list" [label="cct.cct_city_tax_list"]
+	node [shape=cylinder]
+	t_cct_city_tax_list [label=cct_city_tax_list]
+	"j_cct.cct_city_tax_list" -> t_cct_city_tax_list
+	node [shape=folder]
+	f_cct_city_tax_list [label=cct_city_tax_list]
+	f_cct_city_tax_list -> "j_cct.cct_city_tax_list"
+	node [shape=box]
+	"j_cct.cct_harbor_group" [label="cct.cct_harbor_group"]
+	node [shape=cylinder]
+	t_cct_harbor_group [label=cct_harbor_group]
+	"j_cct.cct_harbor_group" -> t_cct_harbor_group
+	node [shape=folder]
+	f_cct_harbor_group [label=cct_harbor_group]
+	f_cct_harbor_group -> "j_cct.cct_harbor_group"
+	node [shape=box]
+	"j_cct.cct_spend_category" [label="cct.cct_spend_category"]
+	node [shape=cylinder]
+	t_cct_spend_category [label=cct_spend_category]
+	"j_cct.cct_spend_category" -> t_cct_spend_category
+	node [shape=folder]
+	f_cct_spend_category [label=cct_spend_category]
+	f_cct_spend_category -> "j_cct.cct_spend_category"
+	node [shape=box]
+	"j_cct.cct_supplier" [label="cct.cct_supplier"]
+	node [shape=cylinder]
+	t_cct_supplier [label=cct_supplier]
+	"j_cct.cct_supplier" -> t_cct_supplier
+	node [shape=folder]
+	f_cct_supplier [label=cct_supplier]
+	f_cct_supplier -> "j_cct.cct_supplier"
+	node [shape=box]
+	"j_cct.cct_tax_detail" [label="cct.cct_tax_detail"]
+	node [shape=cylinder]
+	t_cct_tax_detail [label=cct_tax_detail]
+	"j_cct.cct_tax_detail" -> t_cct_tax_detail
+	node [shape=folder]
+	f_cct_tax_detail [label=cct_tax_detail]
+	f_cct_tax_detail -> "j_cct.cct_tax_detail"
+	node [shape=cylinder]
+	t_cct_tax_summary [label=cct_tax_summary]
+	t_cct_tax_summary -> "j_cct.cct_tax_detail"
+	node [shape=cylinder]
+	t_cct_city_tax_list [label=cct_city_tax_list]
+	t_cct_city_tax_list -> "j_cct.cct_tax_detail"
+	node [shape=box]
+	"j_cct.cct_tax_summary" [label="cct.cct_tax_summary"]
+	node [shape=cylinder]
+	t_cct_tax_summary [label=cct_tax_summary]
+	"j_cct.cct_tax_summary" -> t_cct_tax_summary
+	node [shape=folder]
+	f_cct_tax_summary [label=cct_tax_summary]
+	f_cct_tax_summary -> "j_cct.cct_tax_summary"
+	node [shape=cylinder]
+	t_cct_supplier [label=cct_supplier]
+	t_cct_supplier -> "j_cct.cct_tax_summary"
+	node [shape=cylinder]
+	t_cct_harbor_group [label=cct_harbor_group]
+	t_cct_harbor_group -> "j_cct.cct_tax_summary"
+	node [shape=cylinder]
+	t_cct_spend_category [label=cct_spend_category]
+	t_cct_spend_category -> "j_cct.cct_tax_summary"
+	node [shape=cylinder]
+	t_calendar [label=calendar]
+	t_calendar -> "j_cct.cct_tax_summary"
+	node [shape=box]
+	"j_fees.daily_avg_acct_position" [label="fees.daily_avg_acct_position"]
+	node [shape=cylinder]
+	t_daily_avg_acct_position [label=daily_avg_acct_position]
+	"j_fees.daily_avg_acct_position" -> t_daily_avg_acct_position
+	node [shape=cylinder]
+	t_dealer [label=dealer]
+	t_dealer -> "j_fees.daily_avg_acct_position"
+	node [shape=cylinder]
+	t_account_position [label=account_position]
+	t_account_position -> "j_fees.daily_avg_acct_position"
+	node [shape=cylinder]
+	t_calendar [label=calendar]
+	t_calendar -> "j_fees.daily_avg_acct_position"
+	node [shape=cylinder]
+	t_account [label=account]
+	t_account -> "j_fees.daily_avg_acct_position"
+	node [shape=box]
+	"j_fees.dealer_fee_schedule" [label="fees.dealer_fee_schedule"]
+	node [shape=cylinder]
+	t_dealer_fee_schedule [label=dealer_fee_schedule]
+	"j_fees.dealer_fee_schedule" -> t_dealer_fee_schedule
+	node [shape=folder]
+	f_HSG_IntermediaryPaymentInformation [label=HSG_IntermediaryPaymentInformation]
+	f_HSG_IntermediaryPaymentInformation -> "j_fees.dealer_fee_schedule"
+	node [shape=cylinder]
+	t_fund [label=fund]
+	t_fund -> "j_fees.dealer_fee_schedule"
+	node [shape=cylinder]
+	t_dealer_fee_type [label=dealer_fee_type]
+	t_dealer_fee_type -> "j_fees.dealer_fee_schedule"
+	node [shape=cylinder]
+	t_dealer [label=dealer]
+	t_dealer -> "j_fees.dealer_fee_schedule"
+	node [shape=box]
+	"j_fees.dealer_fee_type" [label="fees.dealer_fee_type"]
+	node [shape=cylinder]
+	t_dealer_fee_type [label=dealer_fee_type]
+	"j_fees.dealer_fee_type" -> t_dealer_fee_type
+	node [shape=folder]
+	f_dealer_fee_type [label=dealer_fee_type]
+	f_dealer_fee_type -> "j_fees.dealer_fee_type"
+	node [shape=box]
+	"j_fees.dealer_invoice" [label="fees.dealer_invoice"]
+	node [shape=cylinder]
+	t_dealer_invoice [label=dealer_invoice]
+	"j_fees.dealer_invoice" -> t_dealer_invoice
+	node [shape=folder]
+	f_dealer_invoice [label=dealer_invoice]
+	f_dealer_invoice -> "j_fees.dealer_invoice"
+	node [shape=cylinder]
+	t_calendar [label=calendar]
+	t_calendar -> "j_fees.dealer_invoice"
+	node [shape=cylinder]
+	t_fund [label=fund]
+	t_fund -> "j_fees.dealer_invoice"
+	node [shape=cylinder]
+	t_account [label=account]
+	t_account -> "j_fees.dealer_invoice"
+	node [shape=cylinder]
+	t_dealer_fee_type [label=dealer_fee_type]
+	t_dealer_fee_type -> "j_fees.dealer_invoice"
+	node [shape=cylinder]
+	t_dealer [label=dealer]
+	t_dealer -> "j_fees.dealer_invoice"
+	node [shape=box]
+	"j_fees.dealer_invoice_model" [label="fees.dealer_invoice_model"]
+	node [shape=cylinder]
+	t_dealer_invoice_model [label=dealer_invoice_model]
+	"j_fees.dealer_invoice_model" -> t_dealer_invoice_model
+	node [shape=cylinder]
+	t_fund [label=fund]
+	t_fund -> "j_fees.dealer_invoice_model"
+	node [shape=cylinder]
+	t_dealer_invoice [label=dealer_invoice]
+	t_dealer_invoice -> "j_fees.dealer_invoice_model"
+	node [shape=cylinder]
+	t_calendar [label=calendar]
+	t_calendar -> "j_fees.dealer_invoice_model"
+	node [shape=cylinder]
+	t_dealer_invoice_rule [label=dealer_invoice_rule]
+	t_dealer_invoice_rule -> "j_fees.dealer_invoice_model"
+	node [shape=box]
+	"j_fees.dealer_invoice_trial" [label="fees.dealer_invoice_trial"]
+	node [shape=cylinder]
+	t_dealer_invoice_trial [label=dealer_invoice_trial]
+	"j_fees.dealer_invoice_trial" -> t_dealer_invoice_trial
+	node [shape=folder]
+	f_dealer_invoice_trial [label=dealer_invoice_trial]
+	f_dealer_invoice_trial -> "j_fees.dealer_invoice_trial"
+	node [shape=cylinder]
+	t_calendar [label=calendar]
+	t_calendar -> "j_fees.dealer_invoice_trial"
+	node [shape=cylinder]
+	t_fund [label=fund]
+	t_fund -> "j_fees.dealer_invoice_trial"
+	node [shape=cylinder]
+	t_account [label=account]
+	t_account -> "j_fees.dealer_invoice_trial"
+	node [shape=cylinder]
+	t_dealer_fee_type [label=dealer_fee_type]
+	t_dealer_fee_type -> "j_fees.dealer_invoice_trial"
+	node [shape=cylinder]
+	t_dealer [label=dealer]
+	t_dealer -> "j_fees.dealer_invoice_trial"
+	node [shape=box]
+	"j_fees.dealer_payment_detail" [label="fees.dealer_payment_detail"]
+	node [shape=cylinder]
+	t_dealer_payment_detail [label=dealer_payment_detail]
+	"j_fees.dealer_payment_detail" -> t_dealer_payment_detail
+	node [shape=folder]
+	f_R00857 [label=R00857]
+	f_R00857 -> "j_fees.dealer_payment_detail"
+	node [shape=cylinder]
+	t_dealer_branch [label=dealer_branch]
+	t_dealer_branch -> "j_fees.dealer_payment_detail"
+	node [shape=cylinder]
+	t_dealer_payout_type [label=dealer_payout_type]
+	t_dealer_payout_type -> "j_fees.dealer_payment_detail"
+	node [shape=cylinder]
+	t_calendar [label=calendar]
+	t_calendar -> "j_fees.dealer_payment_detail"
+	node [shape=cylinder]
+	t_fund [label=fund]
+	t_fund -> "j_fees.dealer_payment_detail"
+	node [shape=cylinder]
+	t_dealer_payment_method [label=dealer_payment_method]
+	t_dealer_payment_method -> "j_fees.dealer_payment_detail"
+	node [shape=cylinder]
+	t_account [label=account]
+	t_account -> "j_fees.dealer_payment_detail"
+	node [shape=cylinder]
+	t_dealer_fee_type [label=dealer_fee_type]
+	t_dealer_fee_type -> "j_fees.dealer_payment_detail"
+	node [shape=cylinder]
+	t_dealer [label=dealer]
+	t_dealer -> "j_fees.dealer_payment_detail"
+	node [shape=box]
+	"j_fees.dealer_payment_summary" [label="fees.dealer_payment_summary"]
+	node [shape=cylinder]
+	t_dealer_payment_summary [label=dealer_payment_summary]
+	"j_fees.dealer_payment_summary" -> t_dealer_payment_summary
+	node [shape=folder]
+	"f_DTO.HCA.MTF.R00858" [label="DTO.HCA.MTF.R00858"]
+	"f_DTO.HCA.MTF.R00858" -> "j_fees.dealer_payment_summary"
+	node [shape=cylinder]
+	t_dealer_payment_summary [label=dealer_payment_summary]
+	t_dealer_payment_summary -> "j_fees.dealer_payment_summary"
+	node [shape=cylinder]
+	t_calendar [label=calendar]
+	t_calendar -> "j_fees.dealer_payment_summary"
+	node [shape=cylinder]
+	t_fund [label=fund]
+	t_fund -> "j_fees.dealer_payment_summary"
+	node [shape=cylinder]
+	t_dealer_payment_method [label=dealer_payment_method]
+	t_dealer_payment_method -> "j_fees.dealer_payment_summary"
+	node [shape=cylinder]
+	t_dealer_payment_detail [label=dealer_payment_detail]
+	t_dealer_payment_detail -> "j_fees.dealer_payment_summary"
+	node [shape=cylinder]
+	t_dealer_fee_type [label=dealer_fee_type]
+	t_dealer_fee_type -> "j_fees.dealer_payment_summary"
+	node [shape=cylinder]
+	t_dealer [label=dealer]
+	t_dealer -> "j_fees.dealer_payment_summary"
+	node [shape=box]
+	"j_fees.dealer_payment_trial" [label="fees.dealer_payment_trial"]
+	node [shape=cylinder]
+	t_dealer_payment_trial [label=dealer_payment_trial]
+	"j_fees.dealer_payment_trial" -> t_dealer_payment_trial
+	node [shape=folder]
+	f_R00857_TRIAL [label=R00857_TRIAL]
+	f_R00857_TRIAL -> "j_fees.dealer_payment_trial"
+	node [shape=cylinder]
+	t_dealer_branch [label=dealer_branch]
+	t_dealer_branch -> "j_fees.dealer_payment_trial"
+	node [shape=cylinder]
+	t_dealer_payout_type [label=dealer_payout_type]
+	t_dealer_payout_type -> "j_fees.dealer_payment_trial"
+	node [shape=cylinder]
+	t_calendar [label=calendar]
+	t_calendar -> "j_fees.dealer_payment_trial"
+	node [shape=cylinder]
+	t_fund [label=fund]
+	t_fund -> "j_fees.dealer_payment_trial"
+	node [shape=cylinder]
+	t_dealer_payment_method [label=dealer_payment_method]
+	t_dealer_payment_method -> "j_fees.dealer_payment_trial"
+	node [shape=cylinder]
+	t_account [label=account]
+	t_account -> "j_fees.dealer_payment_trial"
+	node [shape=cylinder]
+	t_dealer_fee_type [label=dealer_fee_type]
+	t_dealer_fee_type -> "j_fees.dealer_payment_trial"
+	node [shape=cylinder]
+	t_dealer [label=dealer]
+	t_dealer -> "j_fees.dealer_payment_trial"
+	node [shape=box]
+	"j_fees.eligible_asset_list" [label="fees.eligible_asset_list"]
+	node [shape=cylinder]
+	t_eligible_asset_list [label=eligible_asset_list]
+	"j_fees.eligible_asset_list" -> t_eligible_asset_list
+	node [shape=folder]
+	f_eligible_asset_list [label=eligible_asset_list]
+	f_eligible_asset_list -> "j_fees.eligible_asset_list"
+	node [shape=cylinder]
+	t_dealer [label=dealer]
+	t_dealer -> "j_fees.eligible_asset_list"
+	node [shape=box]
+	"j_fees.intermediary_issue_type" [label="fees.intermediary_issue_type"]
+	node [shape=cylinder]
+	t_intermediary_issue_type [label=intermediary_issue_type]
+	"j_fees.intermediary_issue_type" -> t_intermediary_issue_type
+	node [shape=folder]
+	f_intermediary_issue_type [label=intermediary_issue_type]
+	f_intermediary_issue_type -> "j_fees.intermediary_issue_type"
+	node [shape=box]
+	"j_fees.invoice_tracking_summary" [label="fees.invoice_tracking_summary"]
+	node [shape=cylinder]
+	t_invoice_tracking_summary [label=invoice_tracking_summary]
+	"j_fees.invoice_tracking_summary" -> t_invoice_tracking_summary
+	node [shape=folder]
+	f_invoice_tracking_summary [label=invoice_tracking_summary]
+	f_invoice_tracking_summary -> "j_fees.invoice_tracking_summary"
+	node [shape=cylinder]
+	t_dealer [label=dealer]
+	t_dealer -> "j_fees.invoice_tracking_summary"
+	node [shape=cylinder]
+	t_calendar [label=calendar]
+	t_calendar -> "j_fees.invoice_tracking_summary"
+	node [shape=box]
+	"j_fees.monthly_avg_position" [label="fees.monthly_avg_position"]
+	node [shape=cylinder]
+	t_monthly_avg_position [label=monthly_avg_position]
+	"j_fees.monthly_avg_position" -> t_monthly_avg_position
+	node [shape=cylinder]
+	t_account_position [label=account_position]
+	t_account_position -> "j_fees.monthly_avg_position"
+	node [shape=cylinder]
+	t_calendar [label=calendar]
+	t_calendar -> "j_fees.monthly_avg_position"
+	node [shape=cylinder]
+	t_fund [label=fund]
+	t_fund -> "j_fees.monthly_avg_position"
+	node [shape=cylinder]
+	t_eligible_asset_list [label=eligible_asset_list]
+	t_eligible_asset_list -> "j_fees.monthly_avg_position"
+	node [shape=cylinder]
+	t_account [label=account]
+	t_account -> "j_fees.monthly_avg_position"
+	node [shape=cylinder]
+	t_dealer [label=dealer]
+	t_dealer -> "j_fees.monthly_avg_position"
+	node [shape=box]
+	"j_fees.monthly_avg_posn_draft" [label="fees.monthly_avg_posn_draft"]
+	node [shape=cylinder]
+	t_monthly_avg_posn_draft [label=monthly_avg_posn_draft]
+	"j_fees.monthly_avg_posn_draft" -> t_monthly_avg_posn_draft
+	node [shape=cylinder]
+	t_account_position [label=account_position]
+	t_account_position -> "j_fees.monthly_avg_posn_draft"
+	node [shape=cylinder]
+	t_calendar [label=calendar]
+	t_calendar -> "j_fees.monthly_avg_posn_draft"
+	node [shape=cylinder]
+	t_fund [label=fund]
+	t_fund -> "j_fees.monthly_avg_posn_draft"
+	node [shape=cylinder]
+	t_eligible_asset_list [label=eligible_asset_list]
+	t_eligible_asset_list -> "j_fees.monthly_avg_posn_draft"
+	node [shape=cylinder]
+	t_account [label=account]
+	t_account -> "j_fees.monthly_avg_posn_draft"
+	node [shape=cylinder]
+	t_dealer [label=dealer]
+	t_dealer -> "j_fees.monthly_avg_posn_draft"
+	node [shape=box]
+	"j_fund.after_tax_return" [label="fund.after_tax_return"]
+	node [shape=cylinder]
+	t_after_tax_return [label=after_tax_return]
+	"j_fund.after_tax_return" -> t_after_tax_return
+	node [shape=cylinder]
+	t_after_tax_calculation [label=after_tax_calculation]
+	t_after_tax_calculation -> "j_fund.after_tax_return"
+	node [shape=cylinder]
+	t_calendar [label=calendar]
+	t_calendar -> "j_fund.after_tax_return"
+	node [shape=cylinder]
+	t_return_periods [label=return_periods]
+	t_return_periods -> "j_fund.after_tax_return"
+	node [shape=cylinder]
+	t_fund [label=fund]
+	t_fund -> "j_fund.after_tax_return"
+	node [shape=cylinder]
+	t_after_tax_wealth_index [label=after_tax_wealth_index]
+	t_after_tax_wealth_index -> "j_fund.after_tax_return"
+	node [shape=cylinder]
+	t_dividend_tax_rate [label=dividend_tax_rate]
+	t_dividend_tax_rate -> "j_fund.after_tax_return"
+	node [shape=box]
+	"j_fund.after_tax_wealth_index" [label="fund.after_tax_wealth_index"]
+	node [shape=cylinder]
+	t_after_tax_wealth_index [label=after_tax_wealth_index]
+	"j_fund.after_tax_wealth_index" -> t_after_tax_wealth_index
+	node [shape=cylinder]
+	t_fund_valuation [label=fund_valuation]
+	t_fund_valuation -> "j_fund.after_tax_wealth_index"
+	node [shape=cylinder]
+	t_calendar [label=calendar]
+	t_calendar -> "j_fund.after_tax_wealth_index"
+	node [shape=cylinder]
+	t_fund_dividend [label=fund_dividend]
+	t_fund_dividend -> "j_fund.after_tax_wealth_index"
+	node [shape=cylinder]
+	t_fund [label=fund]
+	t_fund -> "j_fund.after_tax_wealth_index"
+	node [shape=cylinder]
+	t_fund_composite [label=fund_composite]
+	t_fund_composite -> "j_fund.after_tax_wealth_index"
+	node [shape=cylinder]
+	t_dividend_tax_rate [label=dividend_tax_rate]
+	t_dividend_tax_rate -> "j_fund.after_tax_wealth_index"
+	node [shape=box]
+	"j_fund.benchmark_index" [label="fund.benchmark_index"]
+	node [shape=cylinder]
+	t_benchmark_index [label=benchmark_index]
+	"j_fund.benchmark_index" -> t_benchmark_index
+	node [shape=folder]
+	f_benchmark [label=benchmark]
+	f_benchmark -> "j_fund.benchmark_index"
+	node [shape=box]
+	"j_fund.calendar" [label="fund.calendar"]
+	node [shape=cylinder]
+	t_calendar [label=calendar]
+	"j_fund.calendar" -> t_calendar
+	node [shape=folder]
+	f_calendar [label=calendar]
+	f_calendar -> "j_fund.calendar"
+	node [shape=box]
+	"j_fund.cash_holding" [label="fund.cash_holding"]
+	node [shape=cylinder]
+	t_cash_holding [label=cash_holding]
+	"j_fund.cash_holding" -> t_cash_holding
+	node [shape=folder]
+	f_full_prc [label=full_prc]
+	f_full_prc -> "j_fund.cash_holding"
+	node [shape=folder]
+	f_pta_ssb_position [label=pta_ssb_position]
+	f_pta_ssb_position -> "j_fund.cash_holding"
+	node [shape=cylinder]
+	t_fund_composite [label=fund_composite]
+	t_fund_composite -> "j_fund.cash_holding"
+	node [shape=cylinder]
+	t_calendar [label=calendar]
+	t_calendar -> "j_fund.cash_holding"
+	node [shape=box]
+	"j_fund.dividend_tax_rate" [label="fund.dividend_tax_rate"]
+	node [shape=cylinder]
+	t_dividend_tax_rate [label=dividend_tax_rate]
+	"j_fund.dividend_tax_rate" -> t_dividend_tax_rate
+	node [shape=folder]
+	f_dividend_tax_rate [label=dividend_tax_rate]
+	f_dividend_tax_rate -> "j_fund.dividend_tax_rate"
+	node [shape=box]
+	"j_fund.expense_ratio_history" [label="fund.expense_ratio_history"]
+	node [shape=cylinder]
+	t_expense_ratio_history [label=expense_ratio_history]
+	"j_fund.expense_ratio_history" -> t_expense_ratio_history
+	node [shape=folder]
+	f_expense_ratio_history [label=expense_ratio_history]
+	f_expense_ratio_history -> "j_fund.expense_ratio_history"
+	node [shape=box]
+	"j_fund.external_fund_balance" [label="fund.external_fund_balance"]
+	node [shape=cylinder]
+	t_external_fund_balance [label=external_fund_balance]
+	"j_fund.external_fund_balance" -> t_external_fund_balance
+	node [shape=folder]
+	f_external_fund_balance [label=external_fund_balance]
+	f_external_fund_balance -> "j_fund.external_fund_balance"
+	node [shape=cylinder]
+	t_fund [label=fund]
+	t_fund -> "j_fund.external_fund_balance"
+	node [shape=cylinder]
+	t_calendar [label=calendar]
+	t_calendar -> "j_fund.external_fund_balance"
+	node [shape=box]
+	"j_fund.external_fund_list" [label="fund.external_fund_list"]
+	node [shape=cylinder]
+	t_external_fund_list [label=external_fund_list]
+	"j_fund.external_fund_list" -> t_external_fund_list
+	node [shape=folder]
+	f_external_fund_list [label=external_fund_list]
+	f_external_fund_list -> "j_fund.external_fund_list"
+	node [shape=box]
+	"j_fund.fund" [label="fund.fund"]
+	node [shape=cylinder]
+	t_fund [label=fund]
+	"j_fund.fund" -> t_fund
+	node [shape=folder]
+	f_fund [label=fund]
+	f_fund -> "j_fund.fund"
+	node [shape=cylinder]
+	t_fund_composite [label=fund_composite]
+	t_fund_composite -> "j_fund.fund"
+	node [shape=box]
+	"j_fund.fund_composite" [label="fund.fund_composite"]
+	node [shape=cylinder]
+	t_fund_composite [label=fund_composite]
+	"j_fund.fund_composite" -> t_fund_composite
+	node [shape=folder]
+	f_fund_composite [label=fund_composite]
+	f_fund_composite -> "j_fund.fund_composite"
+	node [shape=box]
+	"j_fund.fund_dividend" [label="fund.fund_dividend"]
+	node [shape=cylinder]
+	t_fund_dividend [label=fund_dividend]
+	"j_fund.fund_dividend" -> t_fund_dividend
+	node [shape=folder]
+	f_fund_dividend [label=fund_dividend]
+	f_fund_dividend -> "j_fund.fund_dividend"
+	node [shape=cylinder]
+	t_fund [label=fund]
+	t_fund -> "j_fund.fund_dividend"
+	node [shape=cylinder]
+	t_calendar [label=calendar]
+	t_calendar -> "j_fund.fund_dividend"
+	node [shape=box]
+	"j_fund.fund_expense_ratio" [label="fund.fund_expense_ratio"]
+	node [shape=cylinder]
+	t_fund_expense_ratio [label=fund_expense_ratio]
+	"j_fund.fund_expense_ratio" -> t_fund_expense_ratio
+	node [shape=folder]
+	f_fund_expense_ratio [label=fund_expense_ratio]
+	f_fund_expense_ratio -> "j_fund.fund_expense_ratio"
+	node [shape=cylinder]
+	t_fund [label=fund]
+	t_fund -> "j_fund.fund_expense_ratio"
+	node [shape=box]
+	"j_fund.fund_index_rltn" [label="fund.fund_index_rltn"]
+	node [shape=cylinder]
+	t_fund_index_rltn [label=fund_index_rltn]
+	"j_fund.fund_index_rltn" -> t_fund_index_rltn
+	node [shape=folder]
+	f_fund_index_rltn [label=fund_index_rltn]
+	f_fund_index_rltn -> "j_fund.fund_index_rltn"
+	node [shape=cylinder]
+	t_fund_composite [label=fund_composite]
+	t_fund_composite -> "j_fund.fund_index_rltn"
+	node [shape=cylinder]
+	t_perf_run_type [label=perf_run_type]
+	t_perf_run_type -> "j_fund.fund_index_rltn"
+	node [shape=cylinder]
+	t_benchmark_index [label=benchmark_index]
+	t_benchmark_index -> "j_fund.fund_index_rltn"
+	node [shape=box]
+	"j_fund.fund_manager" [label="fund.fund_manager"]
+	node [shape=cylinder]
+	t_fund_manager [label=fund_manager]
+	"j_fund.fund_manager" -> t_fund_manager
+	node [shape=folder]
+	f_fund_manager [label=fund_manager]
+	f_fund_manager -> "j_fund.fund_manager"
+	node [shape=cylinder]
+	t_sub_advisor [label=sub_advisor]
+	t_sub_advisor -> "j_fund.fund_manager"
+	node [shape=cylinder]
+	t_fund_composite [label=fund_composite]
+	t_fund_composite -> "j_fund.fund_manager"
+	node [shape=cylinder]
+	t_portfolio_manager [label=portfolio_manager]
+	t_portfolio_manager -> "j_fund.fund_manager"
+	node [shape=box]
+	"j_fund.fund_return" [label="fund.fund_return"]
+	node [shape=cylinder]
+	t_fund_return [label=fund_return]
+	"j_fund.fund_return" -> t_fund_return
+	node [shape=cylinder]
+	t_fund_valuation [label=fund_valuation]
+	t_fund_valuation -> "j_fund.fund_return"
+	node [shape=cylinder]
+	t_calendar [label=calendar]
+	t_calendar -> "j_fund.fund_return"
+	node [shape=cylinder]
+	t_fund_manager [label=fund_manager]
+	t_fund_manager -> "j_fund.fund_return"
+	node [shape=cylinder]
+	t_fund [label=fund]
+	t_fund -> "j_fund.fund_return"
+	node [shape=cylinder]
+	t_return_periods [label=return_periods]
+	t_return_periods -> "j_fund.fund_return"
+	node [shape=cylinder]
+	t_fund_composite [label=fund_composite]
+	t_fund_composite -> "j_fund.fund_return"
+	node [shape=box]
+	"j_fund.fund_valuation" [label="fund.fund_valuation"]
+	node [shape=cylinder]
+	t_fund_valuation [label=fund_valuation]
+	"j_fund.fund_valuation" -> t_fund_valuation
+	node [shape=folder]
+	f_ssbnav [label=ssbnav]
+	f_ssbnav -> "j_fund.fund_valuation"
+	node [shape=cylinder]
+	t_fund_valuation [label=fund_valuation]
+	t_fund_valuation -> "j_fund.fund_valuation"
+	node [shape=cylinder]
+	t_calendar [label=calendar]
+	t_calendar -> "j_fund.fund_valuation"
+	node [shape=cylinder]
+	t_fund_dividend [label=fund_dividend]
+	t_fund_dividend -> "j_fund.fund_valuation"
+	node [shape=cylinder]
+	t_fund [label=fund]
+	t_fund -> "j_fund.fund_valuation"
+	node [shape=cylinder]
+	t_fund_composite [label=fund_composite]
+	t_fund_composite -> "j_fund.fund_valuation"
+	node [shape=box]
+	"j_fund.fund_yield" [label="fund.fund_yield"]
+	node [shape=cylinder]
+	t_fund_yield [label=fund_yield]
+	"j_fund.fund_yield" -> t_fund_yield
+	node [shape=folder]
+	f_sec_yld [label=sec_yld]
+	f_sec_yld -> "j_fund.fund_yield"
+	node [shape=folder]
+	f_rates [label=rates]
+	f_rates -> "j_fund.fund_yield"
+	node [shape=cylinder]
+	t_yield_types [label=yield_types]
+	t_yield_types -> "j_fund.fund_yield"
+	node [shape=cylinder]
+	t_fund [label=fund]
+	t_fund -> "j_fund.fund_yield"
+	node [shape=cylinder]
+	t_calendar [label=calendar]
+	t_calendar -> "j_fund.fund_yield"
+	node [shape=box]
+	"j_fund.gross_return" [label="fund.gross_return"]
+	node [shape=cylinder]
+	t_gross_return [label=gross_return]
+	"j_fund.gross_return" -> t_gross_return
+	node [shape=cylinder]
+	t_return_periods [label=return_periods]
+	t_return_periods -> "j_fund.gross_return"
+	node [shape=cylinder]
+	t_fund [label=fund]
+	t_fund -> "j_fund.gross_return"
+	node [shape=cylinder]
+	t_fund_index_rltn [label=fund_index_rltn]
+	t_fund_index_rltn -> "j_fund.gross_return"
+	node [shape=cylinder]
+	t_benchmark_index [label=benchmark_index]
+	t_benchmark_index -> "j_fund.gross_return"
+	node [shape=box]
+	"j_fund.gross_wealth_index" [label="fund.gross_wealth_index"]
+	node [shape=cylinder]
+	t_gross_wealth_index [label=gross_wealth_index]
+	"j_fund.gross_wealth_index" -> t_gross_wealth_index
+	node [shape=cylinder]
+	t_fund_expense_ratio [label=fund_expense_ratio]
+	t_fund_expense_ratio -> "j_fund.gross_wealth_index"
+	node [shape=cylinder]
+	t_calendar [label=calendar]
+	t_calendar -> "j_fund.gross_wealth_index"
+	node [shape=cylinder]
+	t_fund_return [label=fund_return]
+	t_fund_return -> "j_fund.gross_wealth_index"
+	node [shape=cylinder]
+	t_fund [label=fund]
+	t_fund -> "j_fund.gross_wealth_index"
+	node [shape=cylinder]
+	t_expense_ratio_history [label=expense_ratio_history]
+	t_expense_ratio_history -> "j_fund.gross_wealth_index"
+	node [shape=cylinder]
+	t_return_periods [label=return_periods]
+	t_return_periods -> "j_fund.gross_wealth_index"
+	node [shape=box]
+	"j_fund.index_return" [label="fund.index_return"]
+	node [shape=cylinder]
+	t_index_return [label=index_return]
+	"j_fund.index_return" -> t_index_return
+	node [shape=cylinder]
+	t_calendar [label=calendar]
+	t_calendar -> "j_fund.index_return"
+	node [shape=cylinder]
+	t_fund_manager [label=fund_manager]
+	t_fund_manager -> "j_fund.index_return"
+	node [shape=cylinder]
+	t_fund [label=fund]
+	t_fund -> "j_fund.index_return"
+	node [shape=cylinder]
+	t_perf_run_type [label=perf_run_type]
+	t_perf_run_type -> "j_fund.index_return"
+	node [shape=cylinder]
+	t_benchmark_index [label=benchmark_index]
+	t_benchmark_index -> "j_fund.index_return"
+	node [shape=cylinder]
+	t_return_periods [label=return_periods]
+	t_return_periods -> "j_fund.index_return"
+	node [shape=cylinder]
+	t_fund_composite [label=fund_composite]
+	t_fund_composite -> "j_fund.index_return"
+	node [shape=cylinder]
+	t_fund_index_rltn [label=fund_index_rltn]
+	t_fund_index_rltn -> "j_fund.index_return"
+	node [shape=box]
+	"j_fund.index_valuation" [label="fund.index_valuation"]
+	node [shape=cylinder]
+	t_index_valuation [label=index_valuation]
+	"j_fund.index_valuation" -> t_index_valuation
+	node [shape=folder]
+	f_bloomberg_idx_data_ml [label=bloomberg_idx_data_ml]
+	f_bloomberg_idx_data_ml -> "j_fund.index_valuation"
+	node [shape=folder]
+	f_bloomberg_idx_data_final [label=bloomberg_idx_data_final]
+	f_bloomberg_idx_data_final -> "j_fund.index_valuation"
+	node [shape=cylinder]
+	t_index_valuation [label=index_valuation]
+	t_index_valuation -> "j_fund.index_valuation"
+	node [shape=cylinder]
+	t_calendar [label=calendar]
+	t_calendar -> "j_fund.index_valuation"
+	node [shape=cylinder]
+	t_benchmark_index [label=benchmark_index]
+	t_benchmark_index -> "j_fund.index_valuation"
+	node [shape=box]
+	"j_fund.money_market_activity_current_day" [label="fund.money_market_activity_current_day"]
+	node [shape=cylinder]
+	t_money_market_activity [label=money_market_activity]
+	"j_fund.money_market_activity_current_day" -> t_money_market_activity
+	node [shape=folder]
+	f_mmkt_info [label=mmkt_info]
+	f_mmkt_info -> "j_fund.money_market_activity_current_day"
+	node [shape=folder]
+	f_rates [label=rates]
+	f_rates -> "j_fund.money_market_activity_current_day"
+	node [shape=cylinder]
+	t_fund [label=fund]
+	t_fund -> "j_fund.money_market_activity_current_day"
+	node [shape=cylinder]
+	t_calendar [label=calendar]
+	t_calendar -> "j_fund.money_market_activity_current_day"
+	node [shape=box]
+	"j_fund.money_market_activity_previous_day" [label="fund.money_market_activity_previous_day"]
+	node [shape=cylinder]
+	t_money_market_activity [label=money_market_activity]
+	"j_fund.money_market_activity_previous_day" -> t_money_market_activity
+	node [shape=folder]
+	f_harbor_mm_web_disclosure [label=harbor_mm_web_disclosure]
+	f_harbor_mm_web_disclosure -> "j_fund.money_market_activity_previous_day"
+	node [shape=folder]
+	f_gb05_comparison_nav_fund_summary [label=gb05_comparison_nav_fund_summary]
+	f_gb05_comparison_nav_fund_summary -> "j_fund.money_market_activity_previous_day"
+	node [shape=cylinder]
+	t_fund [label=fund]
+	t_fund -> "j_fund.money_market_activity_previous_day"
+	node [shape=cylinder]
+	t_calendar [label=calendar]
+	t_calendar -> "j_fund.money_market_activity_previous_day"
+	node [shape=box]
+	"j_fund.perf_run_type" [label="fund.perf_run_type"]
+	node [shape=cylinder]
+	t_perf_run_type [label=perf_run_type]
+	"j_fund.perf_run_type" -> t_perf_run_type
+	node [shape=folder]
+	f_perf_run_type [label=perf_run_type]
+	f_perf_run_type -> "j_fund.perf_run_type"
+	node [shape=box]
+	"j_fund.portfolio_manager" [label="fund.portfolio_manager"]
+	node [shape=cylinder]
+	t_portfolio_manager [label=portfolio_manager]
+	"j_fund.portfolio_manager" -> t_portfolio_manager
+	node [shape=folder]
+	f_portfolio_manager [label=portfolio_manager]
+	f_portfolio_manager -> "j_fund.portfolio_manager"
+	node [shape=box]
+	"j_fund.return_periods" [label="fund.return_periods"]
+	node [shape=cylinder]
+	t_return_periods [label=return_periods]
+	"j_fund.return_periods" -> t_return_periods
+	node [shape=folder]
+	f_return_periods [label=return_periods]
+	f_return_periods -> "j_fund.return_periods"
+	node [shape=box]
+	"j_fund.sub_advisor" [label="fund.sub_advisor"]
+	node [shape=cylinder]
+	t_sub_advisor [label=sub_advisor]
+	"j_fund.sub_advisor" -> t_sub_advisor
+	node [shape=folder]
+	f_sub_advisor [label=sub_advisor]
+	f_sub_advisor -> "j_fund.sub_advisor"
+	node [shape=box]
+	"j_fund.yield_types" [label="fund.yield_types"]
+	node [shape=cylinder]
+	t_yield_types [label=yield_types]
+	"j_fund.yield_types" -> t_yield_types
+	node [shape=folder]
+	f_yield_types [label=yield_types]
+	f_yield_types -> "j_fund.yield_types"
+	node [shape=box]
+	"j_holdings.security" [label="holdings.security"]
+	node [shape=cylinder]
+	t_security [label=security]
+	"j_holdings.security" -> t_security
+	node [shape=folder]
+	f_bb_country_threshold [label=bb_country_threshold]
+	f_bb_country_threshold -> "j_holdings.security"
+	node [shape=folder]
+	f_pta_ssb_position [label=pta_ssb_position]
+	f_pta_ssb_position -> "j_holdings.security"
+	node [shape=cylinder]
+	t_fund_composite [label=fund_composite]
+	t_fund_composite -> "j_holdings.security"
+	node [shape=cylinder]
+	t_security [label=security]
+	t_security -> "j_holdings.security"
+	node [shape=box]
+	"j_holdings.security_attributes" [label="holdings.security_attributes"]
+	node [shape=cylinder]
+	t_security_attributes [label=security_attributes]
+	"j_holdings.security_attributes" -> t_security_attributes
+	node [shape=folder]
+	f_pta_ssb_position [label=pta_ssb_position]
+	f_pta_ssb_position -> "j_holdings.security_attributes"
+	node [shape=cylinder]
+	t_fund [label=fund]
+	t_fund -> "j_holdings.security_attributes"
+	node [shape=box]
+	"j_mkt_fixed_income.cst_dur_fi_duration_maturity" [label="mkt_fixed_income.cst_dur_fi_duration_maturity"]
+	node [shape=cylinder]
+	t_fi_duration_maturity [label=fi_duration_maturity]
+	"j_mkt_fixed_income.cst_dur_fi_duration_maturity" -> t_fi_duration_maturity
+	node [shape=folder]
+	f_cst_duration [label=cst_duration]
+	f_cst_duration -> "j_mkt_fixed_income.cst_dur_fi_duration_maturity"
+	node [shape=cylinder]
+	t_fund_composite [label=fund_composite]
+	t_fund_composite -> "j_mkt_fixed_income.cst_dur_fi_duration_maturity"
+	node [shape=cylinder]
+	t_calendar [label=calendar]
+	t_calendar -> "j_mkt_fixed_income.cst_dur_fi_duration_maturity"
+	node [shape=cylinder]
+	t_fi_time_period [label=fi_time_period]
+	t_fi_time_period -> "j_mkt_fixed_income.cst_dur_fi_duration_maturity"
+	node [shape=box]
+	"j_mkt_fixed_income.cst_dur_fi_time_period" [label="mkt_fixed_income.cst_dur_fi_time_period"]
+	node [shape=cylinder]
+	t_fi_time_period [label=fi_time_period]
+	"j_mkt_fixed_income.cst_dur_fi_time_period" -> t_fi_time_period
+	node [shape=folder]
+	f_cst_duration [label=cst_duration]
+	f_cst_duration -> "j_mkt_fixed_income.cst_dur_fi_time_period"
+	node [shape=box]
+	"j_mkt_fixed_income.cst_fi_characteristic_list" [label="mkt_fixed_income.cst_fi_characteristic_list"]
+	node [shape=cylinder]
+	t_fi_characteristic_list [label=fi_characteristic_list]
+	"j_mkt_fixed_income.cst_fi_characteristic_list" -> t_fi_characteristic_list
+	node [shape=folder]
+	f_cst_characteristics [label=cst_characteristics]
+	f_cst_characteristics -> "j_mkt_fixed_income.cst_fi_characteristic_list"
+	node [shape=box]
+	"j_mkt_fixed_income.cst_fi_characteristics" [label="mkt_fixed_income.cst_fi_characteristics"]
+	node [shape=cylinder]
+	t_fi_characteristics [label=fi_characteristics]
+	"j_mkt_fixed_income.cst_fi_characteristics" -> t_fi_characteristics
+	node [shape=folder]
+	f_cst_characteristics [label=cst_characteristics]
+	f_cst_characteristics -> "j_mkt_fixed_income.cst_fi_characteristics"
+	node [shape=cylinder]
+	t_fi_characteristic_list [label=fi_characteristic_list]
+	t_fi_characteristic_list -> "j_mkt_fixed_income.cst_fi_characteristics"
+	node [shape=cylinder]
+	t_fund_composite [label=fund_composite]
+	t_fund_composite -> "j_mkt_fixed_income.cst_fi_characteristics"
+	node [shape=cylinder]
+	t_calendar [label=calendar]
+	t_calendar -> "j_mkt_fixed_income.cst_fi_characteristics"
+	node [shape=box]
+	"j_mkt_fixed_income.cst_fi_country" [label="mkt_fixed_income.cst_fi_country"]
+	node [shape=cylinder]
+	t_fi_country [label=fi_country]
+	"j_mkt_fixed_income.cst_fi_country" -> t_fi_country
+	node [shape=folder]
+	f_cst_country [label=cst_country]
+	f_cst_country -> "j_mkt_fixed_income.cst_fi_country"
+	node [shape=box]
+	"j_mkt_fixed_income.cst_fi_country_allocation" [label="mkt_fixed_income.cst_fi_country_allocation"]
+	node [shape=cylinder]
+	t_fi_country_allocation [label=fi_country_allocation]
+	"j_mkt_fixed_income.cst_fi_country_allocation" -> t_fi_country_allocation
+	node [shape=folder]
+	f_cst_country [label=cst_country]
+	f_cst_country -> "j_mkt_fixed_income.cst_fi_country_allocation"
+	node [shape=cylinder]
+	t_fund_composite [label=fund_composite]
+	t_fund_composite -> "j_mkt_fixed_income.cst_fi_country_allocation"
+	node [shape=cylinder]
+	t_calendar [label=calendar]
+	t_calendar -> "j_mkt_fixed_income.cst_fi_country_allocation"
+	node [shape=cylinder]
+	t_fi_country [label=fi_country]
+	t_fi_country -> "j_mkt_fixed_income.cst_fi_country_allocation"
+	node [shape=box]
+	"j_mkt_fixed_income.cst_fi_credit_rating" [label="mkt_fixed_income.cst_fi_credit_rating"]
+	node [shape=cylinder]
+	t_fi_credit_rating [label=fi_credit_rating]
+	"j_mkt_fixed_income.cst_fi_credit_rating" -> t_fi_credit_rating
+	node [shape=folder]
+	f_cst_quality [label=cst_quality]
+	f_cst_quality -> "j_mkt_fixed_income.cst_fi_credit_rating"
+	node [shape=cylinder]
+	t_fi_credit_rating_list [label=fi_credit_rating_list]
+	t_fi_credit_rating_list -> "j_mkt_fixed_income.cst_fi_credit_rating"
+	node [shape=cylinder]
+	t_calendar [label=calendar]
+	t_calendar -> "j_mkt_fixed_income.cst_fi_credit_rating"
+	node [shape=cylinder]
+	t_fund_composite [label=fund_composite]
+	t_fund_composite -> "j_mkt_fixed_income.cst_fi_credit_rating"
+	node [shape=box]
+	"j_mkt_fixed_income.cst_fi_credit_rating_list" [label="mkt_fixed_income.cst_fi_credit_rating_list"]
+	node [shape=cylinder]
+	t_fi_credit_rating_list [label=fi_credit_rating_list]
+	"j_mkt_fixed_income.cst_fi_credit_rating_list" -> t_fi_credit_rating_list
+	node [shape=folder]
+	f_cst_quality [label=cst_quality]
+	f_cst_quality -> "j_mkt_fixed_income.cst_fi_credit_rating_list"
+	node [shape=box]
+	"j_mkt_fixed_income.cst_fi_issuer" [label="mkt_fixed_income.cst_fi_issuer"]
+	node [shape=cylinder]
+	t_fi_issuer [label=fi_issuer]
+	"j_mkt_fixed_income.cst_fi_issuer" -> t_fi_issuer
+	node [shape=folder]
+	f_cst_issuer [label=cst_issuer]
+	f_cst_issuer -> "j_mkt_fixed_income.cst_fi_issuer"
+	node [shape=box]
+	"j_mkt_fixed_income.cst_fi_top_issuers" [label="mkt_fixed_income.cst_fi_top_issuers"]
+	node [shape=cylinder]
+	t_fi_top_issuers [label=fi_top_issuers]
+	"j_mkt_fixed_income.cst_fi_top_issuers" -> t_fi_top_issuers
+	node [shape=folder]
+	f_cst_issuer [label=cst_issuer]
+	f_cst_issuer -> "j_mkt_fixed_income.cst_fi_top_issuers"
+	node [shape=cylinder]
+	t_fi_issuer [label=fi_issuer]
+	t_fi_issuer -> "j_mkt_fixed_income.cst_fi_top_issuers"
+	node [shape=cylinder]
+	t_fund_composite [label=fund_composite]
+	t_fund_composite -> "j_mkt_fixed_income.cst_fi_top_issuers"
+	node [shape=cylinder]
+	t_calendar [label=calendar]
+	t_calendar -> "j_mkt_fixed_income.cst_fi_top_issuers"
+	node [shape=box]
+	"j_mkt_fixed_income.cst_mat_fi_duration_maturity" [label="mkt_fixed_income.cst_mat_fi_duration_maturity"]
+	node [shape=cylinder]
+	t_fi_duration_maturity [label=fi_duration_maturity]
+	"j_mkt_fixed_income.cst_mat_fi_duration_maturity" -> t_fi_duration_maturity
+	node [shape=folder]
+	f_cst_maturity [label=cst_maturity]
+	f_cst_maturity -> "j_mkt_fixed_income.cst_mat_fi_duration_maturity"
+	node [shape=cylinder]
+	t_fund_composite [label=fund_composite]
+	t_fund_composite -> "j_mkt_fixed_income.cst_mat_fi_duration_maturity"
+	node [shape=cylinder]
+	t_calendar [label=calendar]
+	t_calendar -> "j_mkt_fixed_income.cst_mat_fi_duration_maturity"
+	node [shape=cylinder]
+	t_fi_time_period [label=fi_time_period]
+	t_fi_time_period -> "j_mkt_fixed_income.cst_mat_fi_duration_maturity"
+	node [shape=box]
+	"j_mkt_fixed_income.cst_mat_fi_time_period" [label="mkt_fixed_income.cst_mat_fi_time_period"]
+	node [shape=cylinder]
+	t_fi_time_period [label=fi_time_period]
+	"j_mkt_fixed_income.cst_mat_fi_time_period" -> t_fi_time_period
+	node [shape=folder]
+	f_cst_maturity [label=cst_maturity]
+	f_cst_maturity -> "j_mkt_fixed_income.cst_mat_fi_time_period"
+	node [shape=box]
+	"j_mkt_fixed_income.irm_fi_characteristic_list" [label="mkt_fixed_income.irm_fi_characteristic_list"]
+	node [shape=cylinder]
+	t_fi_characteristic_list [label=fi_characteristic_list]
+	"j_mkt_fixed_income.irm_fi_characteristic_list" -> t_fi_characteristic_list
+	node [shape=folder]
+	f_irm_characteristics [label=irm_characteristics]
+	f_irm_characteristics -> "j_mkt_fixed_income.irm_fi_characteristic_list"
+	node [shape=box]
+	"j_mkt_fixed_income.irm_fi_characteristics" [label="mkt_fixed_income.irm_fi_characteristics"]
+	node [shape=cylinder]
+	t_fi_characteristics [label=fi_characteristics]
+	"j_mkt_fixed_income.irm_fi_characteristics" -> t_fi_characteristics
+	node [shape=folder]
+	f_irm_characteristics [label=irm_characteristics]
+	f_irm_characteristics -> "j_mkt_fixed_income.irm_fi_characteristics"
+	node [shape=cylinder]
+	t_fi_characteristic_list [label=fi_characteristic_list]
+	t_fi_characteristic_list -> "j_mkt_fixed_income.irm_fi_characteristics"
+	node [shape=cylinder]
+	t_fund_composite [label=fund_composite]
+	t_fund_composite -> "j_mkt_fixed_income.irm_fi_characteristics"
+	node [shape=cylinder]
+	t_calendar [label=calendar]
+	t_calendar -> "j_mkt_fixed_income.irm_fi_characteristics"
+	node [shape=box]
+	"j_mkt_fixed_income.irm_fi_credit_rating" [label="mkt_fixed_income.irm_fi_credit_rating"]
+	node [shape=cylinder]
+	t_fi_credit_rating [label=fi_credit_rating]
+	"j_mkt_fixed_income.irm_fi_credit_rating" -> t_fi_credit_rating
+	node [shape=folder]
+	f_irm_quality [label=irm_quality]
+	f_irm_quality -> "j_mkt_fixed_income.irm_fi_credit_rating"
+	node [shape=cylinder]
+	t_fi_credit_rating_list [label=fi_credit_rating_list]
+	t_fi_credit_rating_list -> "j_mkt_fixed_income.irm_fi_credit_rating"
+	node [shape=cylinder]
+	t_calendar [label=calendar]
+	t_calendar -> "j_mkt_fixed_income.irm_fi_credit_rating"
+	node [shape=cylinder]
+	t_fund_composite [label=fund_composite]
+	t_fund_composite -> "j_mkt_fixed_income.irm_fi_credit_rating"
+	node [shape=box]
+	"j_mkt_fixed_income.irm_fi_credit_rating_list" [label="mkt_fixed_income.irm_fi_credit_rating_list"]
+	node [shape=cylinder]
+	t_fi_credit_rating_list [label=fi_credit_rating_list]
+	"j_mkt_fixed_income.irm_fi_credit_rating_list" -> t_fi_credit_rating_list
+	node [shape=folder]
+	f_irm_quality [label=irm_quality]
+	f_irm_quality -> "j_mkt_fixed_income.irm_fi_credit_rating_list"
+	node [shape=box]
+	"j_mkt_fixed_income.irm_fi_duration_maturity" [label="mkt_fixed_income.irm_fi_duration_maturity"]
+	node [shape=cylinder]
+	t_fi_duration_maturity [label=fi_duration_maturity]
+	"j_mkt_fixed_income.irm_fi_duration_maturity" -> t_fi_duration_maturity
+	node [shape=folder]
+	f_irm_duration [label=irm_duration]
+	f_irm_duration -> "j_mkt_fixed_income.irm_fi_duration_maturity"
+	node [shape=cylinder]
+	t_fund_composite [label=fund_composite]
+	t_fund_composite -> "j_mkt_fixed_income.irm_fi_duration_maturity"
+	node [shape=cylinder]
+	t_calendar [label=calendar]
+	t_calendar -> "j_mkt_fixed_income.irm_fi_duration_maturity"
+	node [shape=cylinder]
+	t_fi_time_period [label=fi_time_period]
+	t_fi_time_period -> "j_mkt_fixed_income.irm_fi_duration_maturity"
+	node [shape=box]
+	"j_mkt_fixed_income.irm_fi_issuer" [label="mkt_fixed_income.irm_fi_issuer"]
+	node [shape=cylinder]
+	t_fi_issuer [label=fi_issuer]
+	"j_mkt_fixed_income.irm_fi_issuer" -> t_fi_issuer
+	node [shape=folder]
+	f_irm_issuer [label=irm_issuer]
+	f_irm_issuer -> "j_mkt_fixed_income.irm_fi_issuer"
+	node [shape=box]
+	"j_mkt_fixed_income.irm_fi_sector" [label="mkt_fixed_income.irm_fi_sector"]
+	node [shape=cylinder]
+	t_fi_sector [label=fi_sector]
+	"j_mkt_fixed_income.irm_fi_sector" -> t_fi_sector
+	node [shape=folder]
+	f_irm_sector [label=irm_sector]
+	f_irm_sector -> "j_mkt_fixed_income.irm_fi_sector"
+	node [shape=box]
+	"j_mkt_fixed_income.irm_fi_sector_allocation" [label="mkt_fixed_income.irm_fi_sector_allocation"]
+	node [shape=cylinder]
+	t_fi_sector_allocation [label=fi_sector_allocation]
+	"j_mkt_fixed_income.irm_fi_sector_allocation" -> t_fi_sector_allocation
+	node [shape=folder]
+	f_irm_sector [label=irm_sector]
+	f_irm_sector -> "j_mkt_fixed_income.irm_fi_sector_allocation"
+	node [shape=cylinder]
+	t_fund_composite [label=fund_composite]
+	t_fund_composite -> "j_mkt_fixed_income.irm_fi_sector_allocation"
+	node [shape=cylinder]
+	t_calendar [label=calendar]
+	t_calendar -> "j_mkt_fixed_income.irm_fi_sector_allocation"
+	node [shape=cylinder]
+	t_fi_sector [label=fi_sector]
+	t_fi_sector -> "j_mkt_fixed_income.irm_fi_sector_allocation"
+	node [shape=box]
+	"j_mkt_fixed_income.irm_fi_time_period" [label="mkt_fixed_income.irm_fi_time_period"]
+	node [shape=cylinder]
+	t_fi_time_period [label=fi_time_period]
+	"j_mkt_fixed_income.irm_fi_time_period" -> t_fi_time_period
+	node [shape=folder]
+	f_irm_duration [label=irm_duration]
+	f_irm_duration -> "j_mkt_fixed_income.irm_fi_time_period"
+	node [shape=box]
+	"j_mkt_fixed_income.irm_fi_top_issuers" [label="mkt_fixed_income.irm_fi_top_issuers"]
+	node [shape=cylinder]
+	t_fi_top_issuers [label=fi_top_issuers]
+	"j_mkt_fixed_income.irm_fi_top_issuers" -> t_fi_top_issuers
+	node [shape=folder]
+	f_irm_issuer [label=irm_issuer]
+	f_irm_issuer -> "j_mkt_fixed_income.irm_fi_top_issuers"
+	node [shape=cylinder]
+	t_fi_issuer [label=fi_issuer]
+	t_fi_issuer -> "j_mkt_fixed_income.irm_fi_top_issuers"
+	node [shape=cylinder]
+	t_fund_composite [label=fund_composite]
+	t_fund_composite -> "j_mkt_fixed_income.irm_fi_top_issuers"
+	node [shape=cylinder]
+	t_calendar [label=calendar]
+	t_calendar -> "j_mkt_fixed_income.irm_fi_top_issuers"
+	node [shape=box]
+	"j_mkt_fixed_income.pimco_dur_fi_duration_maturity" [label="mkt_fixed_income.pimco_dur_fi_duration_maturity"]
+	node [shape=cylinder]
+	t_fi_duration_maturity [label=fi_duration_maturity]
+	"j_mkt_fixed_income.pimco_dur_fi_duration_maturity" -> t_fi_duration_maturity
+	node [shape=folder]
+	f_pimco_duration [label=pimco_duration]
+	f_pimco_duration -> "j_mkt_fixed_income.pimco_dur_fi_duration_maturity"
+	node [shape=cylinder]
+	t_fund_composite [label=fund_composite]
+	t_fund_composite -> "j_mkt_fixed_income.pimco_dur_fi_duration_maturity"
+	node [shape=cylinder]
+	t_calendar [label=calendar]
+	t_calendar -> "j_mkt_fixed_income.pimco_dur_fi_duration_maturity"
+	node [shape=cylinder]
+	t_fi_time_period [label=fi_time_period]
+	t_fi_time_period -> "j_mkt_fixed_income.pimco_dur_fi_duration_maturity"
+	node [shape=box]
+	"j_mkt_fixed_income.pimco_dur_fi_time_period" [label="mkt_fixed_income.pimco_dur_fi_time_period"]
+	node [shape=cylinder]
+	t_fi_time_period [label=fi_time_period]
+	"j_mkt_fixed_income.pimco_dur_fi_time_period" -> t_fi_time_period
+	node [shape=folder]
+	f_pimco_duration [label=pimco_duration]
+	f_pimco_duration -> "j_mkt_fixed_income.pimco_dur_fi_time_period"
+	node [shape=box]
+	"j_mkt_fixed_income.pimco_fi_characteristic_list" [label="mkt_fixed_income.pimco_fi_characteristic_list"]
+	node [shape=cylinder]
+	t_fi_characteristic_list [label=fi_characteristic_list]
+	"j_mkt_fixed_income.pimco_fi_characteristic_list" -> t_fi_characteristic_list
+	node [shape=box]
+	"j_mkt_fixed_income.pimco_fi_characteristics" [label="mkt_fixed_income.pimco_fi_characteristics"]
+	node [shape=cylinder]
+	t_fi_characteristics [label=fi_characteristics]
+	"j_mkt_fixed_income.pimco_fi_characteristics" -> t_fi_characteristics
+	node [shape=folder]
+	f_pimco_statistics [label=pimco_statistics]
+	f_pimco_statistics -> "j_mkt_fixed_income.pimco_fi_characteristics"
+	node [shape=cylinder]
+	t_fi_characteristic_list [label=fi_characteristic_list]
+	t_fi_characteristic_list -> "j_mkt_fixed_income.pimco_fi_characteristics"
+	node [shape=cylinder]
+	t_fund_composite [label=fund_composite]
+	t_fund_composite -> "j_mkt_fixed_income.pimco_fi_characteristics"
+	node [shape=cylinder]
+	t_calendar [label=calendar]
+	t_calendar -> "j_mkt_fixed_income.pimco_fi_characteristics"
+	node [shape=box]
+	"j_mkt_fixed_income.pimco_fi_country" [label="mkt_fixed_income.pimco_fi_country"]
+	node [shape=cylinder]
+	t_fi_country [label=fi_country]
+	"j_mkt_fixed_income.pimco_fi_country" -> t_fi_country
+	node [shape=folder]
+	f_pimco_country [label=pimco_country]
+	f_pimco_country -> "j_mkt_fixed_income.pimco_fi_country"
+	node [shape=box]
+	"j_mkt_fixed_income.pimco_fi_country_allocation" [label="mkt_fixed_income.pimco_fi_country_allocation"]
+	node [shape=cylinder]
+	t_fi_country_allocation [label=fi_country_allocation]
+	"j_mkt_fixed_income.pimco_fi_country_allocation" -> t_fi_country_allocation
+	node [shape=folder]
+	f_pimco_country [label=pimco_country]
+	f_pimco_country -> "j_mkt_fixed_income.pimco_fi_country_allocation"
+	node [shape=cylinder]
+	t_fund_composite [label=fund_composite]
+	t_fund_composite -> "j_mkt_fixed_income.pimco_fi_country_allocation"
+	node [shape=cylinder]
+	t_calendar [label=calendar]
+	t_calendar -> "j_mkt_fixed_income.pimco_fi_country_allocation"
+	node [shape=cylinder]
+	t_fi_country [label=fi_country]
+	t_fi_country -> "j_mkt_fixed_income.pimco_fi_country_allocation"
+	node [shape=box]
+	"j_mkt_fixed_income.pimco_fi_credit_rating" [label="mkt_fixed_income.pimco_fi_credit_rating"]
+	node [shape=cylinder]
+	t_fi_credit_rating [label=fi_credit_rating]
+	"j_mkt_fixed_income.pimco_fi_credit_rating" -> t_fi_credit_rating
+	node [shape=folder]
+	f_pimco_quality [label=pimco_quality]
+	f_pimco_quality -> "j_mkt_fixed_income.pimco_fi_credit_rating"
+	node [shape=cylinder]
+	t_fi_credit_rating_list [label=fi_credit_rating_list]
+	t_fi_credit_rating_list -> "j_mkt_fixed_income.pimco_fi_credit_rating"
+	node [shape=cylinder]
+	t_calendar [label=calendar]
+	t_calendar -> "j_mkt_fixed_income.pimco_fi_credit_rating"
+	node [shape=cylinder]
+	t_fund_composite [label=fund_composite]
+	t_fund_composite -> "j_mkt_fixed_income.pimco_fi_credit_rating"
+	node [shape=box]
+	"j_mkt_fixed_income.pimco_fi_credit_rating_list" [label="mkt_fixed_income.pimco_fi_credit_rating_list"]
+	node [shape=cylinder]
+	t_fi_credit_rating_list [label=fi_credit_rating_list]
+	"j_mkt_fixed_income.pimco_fi_credit_rating_list" -> t_fi_credit_rating_list
+	node [shape=folder]
+	f_pimco_quality [label=pimco_quality]
+	f_pimco_quality -> "j_mkt_fixed_income.pimco_fi_credit_rating_list"
+	node [shape=box]
+	"j_mkt_fixed_income.pimco_fi_derivative_list" [label="mkt_fixed_income.pimco_fi_derivative_list"]
+	node [shape=cylinder]
+	t_fi_derivative_list [label=fi_derivative_list]
+	"j_mkt_fixed_income.pimco_fi_derivative_list" -> t_fi_derivative_list
+	node [shape=folder]
+	f_pimco_deriv [label=pimco_deriv]
+	f_pimco_deriv -> "j_mkt_fixed_income.pimco_fi_derivative_list"
+	node [shape=box]
+	"j_mkt_fixed_income.pimco_fi_derivatives" [label="mkt_fixed_income.pimco_fi_derivatives"]
+	node [shape=cylinder]
+	t_fi_derivatives [label=fi_derivatives]
+	"j_mkt_fixed_income.pimco_fi_derivatives" -> t_fi_derivatives
+	node [shape=folder]
+	f_pimco_deriv [label=pimco_deriv]
+	f_pimco_deriv -> "j_mkt_fixed_income.pimco_fi_derivatives"
+	node [shape=cylinder]
+	t_fund_composite [label=fund_composite]
+	t_fund_composite -> "j_mkt_fixed_income.pimco_fi_derivatives"
+	node [shape=cylinder]
+	t_fi_derivative_list [label=fi_derivative_list]
+	t_fi_derivative_list -> "j_mkt_fixed_income.pimco_fi_derivatives"
+	node [shape=cylinder]
+	t_calendar [label=calendar]
+	t_calendar -> "j_mkt_fixed_income.pimco_fi_derivatives"
+	node [shape=box]
+	"j_mkt_fixed_income.pimco_fi_sector" [label="mkt_fixed_income.pimco_fi_sector"]
+	node [shape=cylinder]
+	t_fi_sector [label=fi_sector]
+	"j_mkt_fixed_income.pimco_fi_sector" -> t_fi_sector
+	node [shape=folder]
+	f_pimco_sector [label=pimco_sector]
+	f_pimco_sector -> "j_mkt_fixed_income.pimco_fi_sector"
+	node [shape=box]
+	"j_mkt_fixed_income.pimco_fi_sector_allocation" [label="mkt_fixed_income.pimco_fi_sector_allocation"]
+	node [shape=cylinder]
+	t_fi_sector_allocation [label=fi_sector_allocation]
+	"j_mkt_fixed_income.pimco_fi_sector_allocation" -> t_fi_sector_allocation
+	node [shape=folder]
+	f_pimco_sector [label=pimco_sector]
+	f_pimco_sector -> "j_mkt_fixed_income.pimco_fi_sector_allocation"
+	node [shape=cylinder]
+	t_fund_composite [label=fund_composite]
+	t_fund_composite -> "j_mkt_fixed_income.pimco_fi_sector_allocation"
+	node [shape=cylinder]
+	t_calendar [label=calendar]
+	t_calendar -> "j_mkt_fixed_income.pimco_fi_sector_allocation"
+	node [shape=cylinder]
+	t_fi_sector [label=fi_sector]
+	t_fi_sector -> "j_mkt_fixed_income.pimco_fi_sector_allocation"
+	node [shape=box]
+	"j_mkt_fixed_income.pimco_mat_fi_duration_maturity" [label="mkt_fixed_income.pimco_mat_fi_duration_maturity"]
+	node [shape=cylinder]
+	t_fi_duration_maturity [label=fi_duration_maturity]
+	"j_mkt_fixed_income.pimco_mat_fi_duration_maturity" -> t_fi_duration_maturity
+	node [shape=folder]
+	f_pimco_maturity [label=pimco_maturity]
+	f_pimco_maturity -> "j_mkt_fixed_income.pimco_mat_fi_duration_maturity"
+	node [shape=cylinder]
+	t_fund_composite [label=fund_composite]
+	t_fund_composite -> "j_mkt_fixed_income.pimco_mat_fi_duration_maturity"
+	node [shape=cylinder]
+	t_calendar [label=calendar]
+	t_calendar -> "j_mkt_fixed_income.pimco_mat_fi_duration_maturity"
+	node [shape=cylinder]
+	t_fi_time_period [label=fi_time_period]
+	t_fi_time_period -> "j_mkt_fixed_income.pimco_mat_fi_duration_maturity"
+	node [shape=box]
+	"j_mkt_fixed_income.pimco_mat_fi_time_period" [label="mkt_fixed_income.pimco_mat_fi_time_period"]
+	node [shape=cylinder]
+	t_fi_time_period [label=fi_time_period]
+	"j_mkt_fixed_income.pimco_mat_fi_time_period" -> t_fi_time_period
+	node [shape=folder]
+	f_pimco_maturity [label=pimco_maturity]
+	f_pimco_maturity -> "j_mkt_fixed_income.pimco_mat_fi_time_period"
+	node [shape=box]
+	"j_mkt_fixed_income.pimco_mkt_fi_characteristics" [label="mkt_fixed_income.pimco_mkt_fi_characteristics"]
+	node [shape=cylinder]
+	t_fi_characteristics [label=fi_characteristics]
+	"j_mkt_fixed_income.pimco_mkt_fi_characteristics" -> t_fi_characteristics
+	node [shape=folder]
+	f_pimco_mkt_statistics [label=pimco_mkt_statistics]
+	f_pimco_mkt_statistics -> "j_mkt_fixed_income.pimco_mkt_fi_characteristics"
+	node [shape=cylinder]
+	t_fi_characteristic_list [label=fi_characteristic_list]
+	t_fi_characteristic_list -> "j_mkt_fixed_income.pimco_mkt_fi_characteristics"
+	node [shape=cylinder]
+	t_fund_composite [label=fund_composite]
+	t_fund_composite -> "j_mkt_fixed_income.pimco_mkt_fi_characteristics"
+	node [shape=cylinder]
+	t_calendar [label=calendar]
+	t_calendar -> "j_mkt_fixed_income.pimco_mkt_fi_characteristics"
+	node [shape=box]
+	"j_mkt_fixed_income.pimco_mkt_fi_country" [label="mkt_fixed_income.pimco_mkt_fi_country"]
+	node [shape=cylinder]
+	t_fi_country [label=fi_country]
+	"j_mkt_fixed_income.pimco_mkt_fi_country" -> t_fi_country
+	node [shape=folder]
+	f_pimco_survey [label=pimco_survey]
+	f_pimco_survey -> "j_mkt_fixed_income.pimco_mkt_fi_country"
+	node [shape=box]
+	"j_mkt_fixed_income.pimco_mkt_fi_country_allocation" [label="mkt_fixed_income.pimco_mkt_fi_country_allocation"]
+	node [shape=cylinder]
+	t_fi_country_allocation [label=fi_country_allocation]
+	"j_mkt_fixed_income.pimco_mkt_fi_country_allocation" -> t_fi_country_allocation
+	node [shape=folder]
+	f_pimco_survey [label=pimco_survey]
+	f_pimco_survey -> "j_mkt_fixed_income.pimco_mkt_fi_country_allocation"
+	node [shape=cylinder]
+	t_fund_composite [label=fund_composite]
+	t_fund_composite -> "j_mkt_fixed_income.pimco_mkt_fi_country_allocation"
+	node [shape=cylinder]
+	t_calendar [label=calendar]
+	t_calendar -> "j_mkt_fixed_income.pimco_mkt_fi_country_allocation"
+	node [shape=cylinder]
+	t_fi_country [label=fi_country]
+	t_fi_country -> "j_mkt_fixed_income.pimco_mkt_fi_country_allocation"
+	node [shape=box]
+	"j_mkt_fixed_income.pimco_mkt_fi_credit_rating" [label="mkt_fixed_income.pimco_mkt_fi_credit_rating"]
+	node [shape=cylinder]
+	t_fi_credit_rating [label=fi_credit_rating]
+	"j_mkt_fixed_income.pimco_mkt_fi_credit_rating" -> t_fi_credit_rating
+	node [shape=folder]
+	f_pimco_mkt_quality [label=pimco_mkt_quality]
+	f_pimco_mkt_quality -> "j_mkt_fixed_income.pimco_mkt_fi_credit_rating"
+	node [shape=cylinder]
+	t_fi_credit_rating_list [label=fi_credit_rating_list]
+	t_fi_credit_rating_list -> "j_mkt_fixed_income.pimco_mkt_fi_credit_rating"
+	node [shape=cylinder]
+	t_calendar [label=calendar]
+	t_calendar -> "j_mkt_fixed_income.pimco_mkt_fi_credit_rating"
+	node [shape=cylinder]
+	t_fund_composite [label=fund_composite]
+	t_fund_composite -> "j_mkt_fixed_income.pimco_mkt_fi_credit_rating"
+	node [shape=box]
+	"j_mkt_fixed_income.pimco_mkt_fi_credit_rating_list" [label="mkt_fixed_income.pimco_mkt_fi_credit_rating_list"]
+	node [shape=cylinder]
+	t_fi_credit_rating_list [label=fi_credit_rating_list]
+	"j_mkt_fixed_income.pimco_mkt_fi_credit_rating_list" -> t_fi_credit_rating_list
+	node [shape=folder]
+	f_pimco_mkt_quality [label=pimco_mkt_quality]
+	f_pimco_mkt_quality -> "j_mkt_fixed_income.pimco_mkt_fi_credit_rating_list"
+	node [shape=box]
+	"j_mkt_fixed_income.pimco_mkt_fi_duration_maturity" [label="mkt_fixed_income.pimco_mkt_fi_duration_maturity"]
+	node [shape=cylinder]
+	t_fi_duration_maturity [label=fi_duration_maturity]
+	"j_mkt_fixed_income.pimco_mkt_fi_duration_maturity" -> t_fi_duration_maturity
+	node [shape=folder]
+	f_pimco_mkt_maturity [label=pimco_mkt_maturity]
+	f_pimco_mkt_maturity -> "j_mkt_fixed_income.pimco_mkt_fi_duration_maturity"
+	node [shape=cylinder]
+	t_fund_composite [label=fund_composite]
+	t_fund_composite -> "j_mkt_fixed_income.pimco_mkt_fi_duration_maturity"
+	node [shape=cylinder]
+	t_calendar [label=calendar]
+	t_calendar -> "j_mkt_fixed_income.pimco_mkt_fi_duration_maturity"
+	node [shape=cylinder]
+	t_fi_time_period [label=fi_time_period]
+	t_fi_time_period -> "j_mkt_fixed_income.pimco_mkt_fi_duration_maturity"
+	node [shape=box]
+	"j_mkt_fixed_income.pimco_mkt_fi_time_period" [label="mkt_fixed_income.pimco_mkt_fi_time_period"]
+	node [shape=cylinder]
+	t_fi_time_period [label=fi_time_period]
+	"j_mkt_fixed_income.pimco_mkt_fi_time_period" -> t_fi_time_period
+	node [shape=folder]
+	f_pimco_mkt_maturity [label=pimco_mkt_maturity]
+	f_pimco_mkt_maturity -> "j_mkt_fixed_income.pimco_mkt_fi_time_period"
+	node [shape=box]
+	"j_operator.facility" [label="operator.facility"]
+	node [shape=cylinder]
+	t_facility [label=facility]
+	"j_operator.facility" -> t_facility
+	node [shape=folder]
+	f_oper_status [label=oper_status]
+	f_oper_status -> "j_operator.facility"
+	node [shape=cylinder]
+	t_calendar [label=calendar]
+	t_calendar -> "j_operator.facility"
+	node [shape=box]
+	"j_operator.operator" [label="operator.operator"]
+	node [shape=cylinder]
+	t_operator [label=operator]
+	"j_operator.operator" -> t_operator
+	node [shape=folder]
+	f_oper_status [label=oper_status]
+	f_oper_status -> "j_operator.operator"
+	node [shape=cylinder]
+	t_calendar [label=calendar]
+	t_calendar -> "j_operator.operator"
+	node [shape=box]
+	"j_shareholder.account" [label="shareholder.account"]
+	node [shape=cylinder]
+	t_account [label=account]
+	"j_shareholder.account" -> t_account
+	node [shape=folder]
+	"f_DTO.HCA.AMP.TIP09" [label="DTO.HCA.AMP.TIP09"]
+	"f_DTO.HCA.AMP.TIP09" -> "j_shareholder.account"
+	node [shape=cylinder]
+	t_calendar [label=calendar]
+	t_calendar -> "j_shareholder.account"
+	node [shape=cylinder]
+	t_account_position [label=account_position]
+	t_account_position -> "j_shareholder.account"
+	node [shape=cylinder]
+	t_dealer [label=dealer]
+	t_dealer -> "j_shareholder.account"
+	node [shape=cylinder]
+	t_dealer_level_control [label=dealer_level_control]
+	t_dealer_level_control -> "j_shareholder.account"
+	node [shape=box]
+	"j_shareholder.account_category" [label="shareholder.account_category"]
+	node [shape=cylinder]
+	t_account_category [label=account_category]
+	"j_shareholder.account_category" -> t_account_category
+	node [shape=folder]
+	f_account_category [label=account_category]
+	f_account_category -> "j_shareholder.account_category"
+	node [shape=box]
+	"j_shareholder.account_position" [label="shareholder.account_position"]
+	node [shape=cylinder]
+	t_account_position [label=account_position]
+	"j_shareholder.account_position" -> t_account_position
+	node [shape=folder]
+	"f_DTO.HCA.APR.TIP03" [label="DTO.HCA.APR.TIP03"]
+	"f_DTO.HCA.APR.TIP03" -> "j_shareholder.account_position"
+	node [shape=cylinder]
+	t_dealer_branch [label=dealer_branch]
+	t_dealer_branch -> "j_shareholder.account_position"
+	node [shape=cylinder]
+	t_calendar [label=calendar]
+	t_calendar -> "j_shareholder.account_position"
+	node [shape=cylinder]
+	t_fund [label=fund]
+	t_fund -> "j_shareholder.account_position"
+	node [shape=cylinder]
+	t_account [label=account]
+	t_account -> "j_shareholder.account_position"
+	node [shape=cylinder]
+	t_dealer [label=dealer]
+	t_dealer -> "j_shareholder.account_position"
+	node [shape=box]
+	"j_shareholder.bluesky_transactions" [label="shareholder.bluesky_transactions"]
+	node [shape=cylinder]
+	t_bluesky_transactions [label=bluesky_transactions]
+	"j_shareholder.bluesky_transactions" -> t_bluesky_transactions
+	node [shape=folder]
+	"f_DTO.HCA.BSK.TIP88" [label="DTO.HCA.BSK.TIP88"]
+	"f_DTO.HCA.BSK.TIP88" -> "j_shareholder.bluesky_transactions"
+	node [shape=cylinder]
+	t_fund [label=fund]
+	t_fund -> "j_shareholder.bluesky_transactions"
+	node [shape=cylinder]
+	t_region [label=region]
+	t_region -> "j_shareholder.bluesky_transactions"
+	node [shape=cylinder]
+	t_calendar [label=calendar]
+	t_calendar -> "j_shareholder.bluesky_transactions"
+	node [shape=box]
+	"j_shareholder.cost_type" [label="shareholder.cost_type"]
+	node [shape=cylinder]
+	t_cost_type [label=cost_type]
+	"j_shareholder.cost_type" -> t_cost_type
+	node [shape=folder]
+	f_cost_type [label=cost_type]
+	f_cost_type -> "j_shareholder.cost_type"
+	node [shape=box]
+	"j_shareholder.dealer" [label="shareholder.dealer"]
+	node [shape=cylinder]
+	t_dealer [label=dealer]
+	"j_shareholder.dealer" -> t_dealer
+	node [shape=folder]
+	"f_DTO.HCA.FDP.TIP56" [label="DTO.HCA.FDP.TIP56"]
+	"f_DTO.HCA.FDP.TIP56" -> "j_shareholder.dealer"
+	node [shape=cylinder]
+	t_dealer_branch [label=dealer_branch]
+	t_dealer_branch -> "j_shareholder.dealer"
+	node [shape=box]
+	"j_shareholder.dealer_branch" [label="shareholder.dealer_branch"]
+	node [shape=cylinder]
+	t_dealer_branch [label=dealer_branch]
+	"j_shareholder.dealer_branch" -> t_dealer_branch
+	node [shape=folder]
+	"f_DTO.HCA.FBP.TIP55" [label="DTO.HCA.FBP.TIP55"]
+	"f_DTO.HCA.FBP.TIP55" -> "j_shareholder.dealer_branch"
+	node [shape=box]
+	"j_shareholder.dealer_level_control" [label="shareholder.dealer_level_control"]
+	node [shape=cylinder]
+	t_dealer_level_control [label=dealer_level_control]
+	"j_shareholder.dealer_level_control" -> t_dealer_level_control
+	node [shape=folder]
+	f_dealer_level_control [label=dealer_level_control]
+	f_dealer_level_control -> "j_shareholder.dealer_level_control"
+	node [shape=box]
+	"j_shareholder.dealer_payment_method" [label="shareholder.dealer_payment_method"]
+	node [shape=cylinder]
+	t_dealer_payment_method [label=dealer_payment_method]
+	"j_shareholder.dealer_payment_method" -> t_dealer_payment_method
+	node [shape=folder]
+	f_dealer_payment_method [label=dealer_payment_method]
+	f_dealer_payment_method -> "j_shareholder.dealer_payment_method"
+	node [shape=box]
+	"j_shareholder.dealer_payout_type" [label="shareholder.dealer_payout_type"]
+	node [shape=cylinder]
+	t_dealer_payout_type [label=dealer_payout_type]
+	"j_shareholder.dealer_payout_type" -> t_dealer_payout_type
+	node [shape=folder]
+	f_dealer_payout_type [label=dealer_payout_type]
+	f_dealer_payout_type -> "j_shareholder.dealer_payout_type"
+	node [shape=box]
+	"j_shareholder.distribution_code" [label="shareholder.distribution_code"]
+	node [shape=cylinder]
+	t_distribution_code [label=distribution_code]
+	"j_shareholder.distribution_code" -> t_distribution_code
+	node [shape=folder]
+	f_distribution_code [label=distribution_code]
+	f_distribution_code -> "j_shareholder.distribution_code"
+	node [shape=box]
+	"j_shareholder.distribution_type" [label="shareholder.distribution_type"]
+	node [shape=cylinder]
+	t_distribution_type [label=distribution_type]
+	"j_shareholder.distribution_type" -> t_distribution_type
+	node [shape=folder]
+	f_distribution_type [label=distribution_type]
+	f_distribution_type -> "j_shareholder.distribution_type"
+	node [shape=box]
+	"j_shareholder.fund_trans_hist" [label="shareholder.fund_trans_hist"]
+	node [shape=cylinder]
+	t_fund_trans_hist [label=fund_trans_hist]
+	"j_shareholder.fund_trans_hist" -> t_fund_trans_hist
+	node [shape=folder]
+	f_shareholder_bluesky_transaction [label=shareholder_bluesky_transaction]
+	f_shareholder_bluesky_transaction -> "j_shareholder.fund_trans_hist"
+	node [shape=folder]
+	"f_DTO.HCA.DFA.TIP02" [label="DTO.HCA.DFA.TIP02"]
+	"f_DTO.HCA.DFA.TIP02" -> "j_shareholder.fund_trans_hist"
+	node [shape=folder]
+	f_shareholder_tradeinfo [label=shareholder_tradeinfo]
+	f_shareholder_tradeinfo -> "j_shareholder.fund_trans_hist"
+	node [shape=cylinder]
+	t_dealer_branch [label=dealer_branch]
+	t_dealer_branch -> "j_shareholder.fund_trans_hist"
+	node [shape=cylinder]
+	t_reason_code [label=reason_code]
+	t_reason_code -> "j_shareholder.fund_trans_hist"
+	node [shape=cylinder]
+	t_transaction_type [label=transaction_type]
+	t_transaction_type -> "j_shareholder.fund_trans_hist"
+	node [shape=cylinder]
+	t_trade_origin [label=trade_origin]
+	t_trade_origin -> "j_shareholder.fund_trans_hist"
+	node [shape=cylinder]
+	t_calendar [label=calendar]
+	t_calendar -> "j_shareholder.fund_trans_hist"
+	node [shape=cylinder]
+	t_social_security_status [label=social_security_status]
+	t_social_security_status -> "j_shareholder.fund_trans_hist"
+	node [shape=cylinder]
+	t_fund [label=fund]
+	t_fund -> "j_shareholder.fund_trans_hist"
+	node [shape=cylinder]
+	t_dealer_level_control [label=dealer_level_control]
+	t_dealer_level_control -> "j_shareholder.fund_trans_hist"
+	node [shape=cylinder]
+	t_payment_method [label=payment_method]
+	t_payment_method -> "j_shareholder.fund_trans_hist"
+	node [shape=cylinder]
+	t_account [label=account]
+	t_account -> "j_shareholder.fund_trans_hist"
+	node [shape=cylinder]
+	t_dealer [label=dealer]
+	t_dealer -> "j_shareholder.fund_trans_hist"
+	node [shape=cylinder]
+	t_trade_entry_method [label=trade_entry_method]
+	t_trade_entry_method -> "j_shareholder.fund_trans_hist"
+	node [shape=box]
+	"j_shareholder.gender" [label="shareholder.gender"]
+	node [shape=cylinder]
+	t_gender [label=gender]
+	"j_shareholder.gender" -> t_gender
+	node [shape=folder]
+	f_gender [label=gender]
+	f_gender -> "j_shareholder.gender"
+	node [shape=box]
+	"j_shareholder.nscc_nav_reasons" [label="shareholder.nscc_nav_reasons"]
+	node [shape=cylinder]
+	t_nscc_nav_reasons [label=nscc_nav_reasons]
+	"j_shareholder.nscc_nav_reasons" -> t_nscc_nav_reasons
+	node [shape=folder]
+	f_nscc_nav_reasons [label=nscc_nav_reasons]
+	f_nscc_nav_reasons -> "j_shareholder.nscc_nav_reasons"
+	node [shape=box]
+	"j_shareholder.payment_method" [label="shareholder.payment_method"]
+	node [shape=cylinder]
+	t_payment_method [label=payment_method]
+	"j_shareholder.payment_method" -> t_payment_method
+	node [shape=folder]
+	f_payment_method [label=payment_method]
+	f_payment_method -> "j_shareholder.payment_method"
+	node [shape=box]
+	"j_shareholder.reason_code" [label="shareholder.reason_code"]
+	node [shape=cylinder]
+	t_reason_code [label=reason_code]
+	"j_shareholder.reason_code" -> t_reason_code
+	node [shape=folder]
+	f_reason_code [label=reason_code]
+	f_reason_code -> "j_shareholder.reason_code"
+	node [shape=box]
+	"j_shareholder.region" [label="shareholder.region"]
+	node [shape=cylinder]
+	t_region [label=region]
+	"j_shareholder.region" -> t_region
+	node [shape=folder]
+	f_region [label=region]
+	f_region -> "j_shareholder.region"
+	node [shape=box]
+	"j_shareholder.shareholder" [label="shareholder.shareholder"]
+	node [shape=cylinder]
+	t_shareholder [label=shareholder]
+	"j_shareholder.shareholder" -> t_shareholder
+	node [shape=folder]
+	"f_DTO.HCA.CLO.TIP42" [label="DTO.HCA.CLO.TIP42"]
+	"f_DTO.HCA.CLO.TIP42" -> "j_shareholder.shareholder"
+	node [shape=box]
+	"j_shareholder.shareholder_distrib" [label="shareholder.shareholder_distrib"]
+	node [shape=cylinder]
+	t_shareholder_distrib [label=shareholder_distrib]
+	"j_shareholder.shareholder_distrib" -> t_shareholder_distrib
+	node [shape=folder]
+	"f_DTO.HCA.DVRA.TIP01" [label="DTO.HCA.DVRA.TIP01"]
+	"f_DTO.HCA.DVRA.TIP01" -> "j_shareholder.shareholder_distrib"
+	node [shape=cylinder]
+	t_calendar [label=calendar]
+	t_calendar -> "j_shareholder.shareholder_distrib"
+	node [shape=cylinder]
+	t_distribution_code [label=distribution_code]
+	t_distribution_code -> "j_shareholder.shareholder_distrib"
+	node [shape=cylinder]
+	t_fund [label=fund]
+	t_fund -> "j_shareholder.shareholder_distrib"
+	node [shape=cylinder]
+	t_distribution_type [label=distribution_type]
+	t_distribution_type -> "j_shareholder.shareholder_distrib"
+	node [shape=cylinder]
+	t_account [label=account]
+	t_account -> "j_shareholder.shareholder_distrib"
+	node [shape=box]
+	"j_shareholder.shdr_acct_fund" [label="shareholder.shdr_acct_fund"]
+	node [shape=cylinder]
+	t_shdr_acct_fund [label=shdr_acct_fund]
+	"j_shareholder.shdr_acct_fund" -> t_shdr_acct_fund
+	node [shape=folder]
+	"f_DTO.HCA.AMP.TIP09" [label="DTO.HCA.AMP.TIP09"]
+	"f_DTO.HCA.AMP.TIP09" -> "j_shareholder.shdr_acct_fund"
+	node [shape=folder]
+	"f_DTO.HCA.CLO.TIP39" [label="DTO.HCA.CLO.TIP39"]
+	"f_DTO.HCA.CLO.TIP39" -> "j_shareholder.shdr_acct_fund"
+	node [shape=folder]
+	f_shareholder_consent_data [label=shareholder_consent_data]
+	f_shareholder_consent_data -> "j_shareholder.shdr_acct_fund"
+	node [shape=cylinder]
+	t_dealer_branch [label=dealer_branch]
+	t_dealer_branch -> "j_shareholder.shdr_acct_fund"
+	node [shape=cylinder]
+	t_fund [label=fund]
+	t_fund -> "j_shareholder.shdr_acct_fund"
+	node [shape=cylinder]
+	t_account [label=account]
+	t_account -> "j_shareholder.shdr_acct_fund"
+	node [shape=cylinder]
+	t_dealer [label=dealer]
+	t_dealer -> "j_shareholder.shdr_acct_fund"
+	node [shape=cylinder]
+	t_shareholder [label=shareholder]
+	t_shareholder -> "j_shareholder.shdr_acct_fund"
+	node [shape=box]
+	"j_shareholder.social_security_status" [label="shareholder.social_security_status"]
+	node [shape=cylinder]
+	t_social_security_status [label=social_security_status]
+	"j_shareholder.social_security_status" -> t_social_security_status
+	node [shape=folder]
+	f_social_security_status [label=social_security_status]
+	f_social_security_status -> "j_shareholder.social_security_status"
+	node [shape=box]
+	"j_shareholder.trade_entry_method" [label="shareholder.trade_entry_method"]
+	node [shape=cylinder]
+	t_trade_entry_method [label=trade_entry_method]
+	"j_shareholder.trade_entry_method" -> t_trade_entry_method
+	node [shape=folder]
+	f_trade_entry_method [label=trade_entry_method]
+	f_trade_entry_method -> "j_shareholder.trade_entry_method"
+	node [shape=box]
+	"j_shareholder.trade_origin" [label="shareholder.trade_origin"]
+	node [shape=cylinder]
+	t_trade_origin [label=trade_origin]
+	"j_shareholder.trade_origin" -> t_trade_origin
+	node [shape=folder]
+	f_trade_origin [label=trade_origin]
+	f_trade_origin -> "j_shareholder.trade_origin"
+	node [shape=box]
+	"j_shareholder.transaction_type" [label="shareholder.transaction_type"]
+	node [shape=cylinder]
+	t_transaction_type [label=transaction_type]
+	"j_shareholder.transaction_type" -> t_transaction_type
+	node [shape=folder]
+	f_transaction_type [label=transaction_type]
+	f_transaction_type -> "j_shareholder.transaction_type"
+	node [shape=box]
+	j_spl_hsg_quality_oversight [label=spl_hsg_quality_oversight]
+	node [shape=cylinder]
+	t_spl_hsg_quality_oversight [label=spl_hsg_quality_oversight]
+	j_spl_hsg_quality_oversight -> t_spl_hsg_quality_oversight
+	node [shape=folder]
+	f_hsg_quality_control_oversight [label=hsg_quality_control_oversight]
+	f_hsg_quality_control_oversight -> j_spl_hsg_quality_oversight
+	node [shape=folder]
+	f_ldap_users [label=ldap_users]
+	f_ldap_users -> j_spl_hsg_quality_oversight
+}

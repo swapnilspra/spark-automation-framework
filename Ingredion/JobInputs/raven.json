@@ -1,0 +1,18 @@
+{
+ "stage": {
+  "adls": "dlenterpriseanalytics.dfs.core.windows.net",
+  "adlsfolder": "",
+  "inferSchema": "True",
+  "delimiter": "\t",
+  "file_type": "JSON",
+  "tsFormat":"",
+  "dateFormat":"",
+  "quote_char": "^",
+  "replace_char": "N",
+	"createPartitionformName":"Y",
+	"moveLatestfile":"Y",
+  "escape_char": "\"",
+  "tableName": "raven",
+  "tableAppend": "N"
+ }
+}

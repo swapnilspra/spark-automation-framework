@@ -1,0 +1,2 @@
+pulumi==1.11.1
+pulumi-aws==1.23.0

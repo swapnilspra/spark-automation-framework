@@ -1,0 +1,18 @@
+# Dependent on completion of fund workflow
+# Triggered on file arrival from State Street
+# Run daily, evening
+workflow:
+  type: ON_DEMAND
+  description: 'fund pricing workflow evening'
+  tasks:
+    fund_yield:
+      job: fund.fund_yield
+    cash_holding:
+      job: fund.cash_holding
+    money_market_activity:
+      job: fund.money_market_activity_current_day
+    fund_valuation:
+      job: fund.fund_valuation
+    fund_return:
+      job: fund.fund_return
+      dependencies: [ fund_valuation ]
