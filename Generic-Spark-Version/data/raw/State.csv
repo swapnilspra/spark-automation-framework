@@ -1,0 +1,69 @@
+ST_CD,ST_ISO_CD,ST_NM,ST_FULL_NM,ST_DESC,ST_NBR_CD,ST_ABRV_NM,FFTY_FOUR_FLG,CRTY_KEY,SUNGARD_ST_CD,DST_ST_CD,IRS_ST_CD
+VI,UM-78,US Virgin Islands,,of United States Minor Outlying Islands,78,,Y,232,,81,
+AL,US-AL,Alabama,,state of United States,12945,AL,Y,232,AL,1,1
+AK,US-AK,Alaska,,state of United States,12946,AK,Y,232,AK,51,2
+AS,US-AS,American Samoa ,,outlying area of United States,19386,0,Y,232,,127,
+AZ,US-AZ,Arizona,,state of United States,12947,AZ,Y,232,AZ,2,4
+AR,US-AR,Arkansas,,state of United States,18684,Ark.,Y,232,AR,3,5
+CA,US-CA,California,,state of United States,18657,Calif.,Y,232,CA,4,6
+CO,US-CO,Colorado,,state of United States,18685,Colo.,Y,232,CO,5,8
+CT,US-CT,Connecticut,,state of United States,18658,Conn.,Y,232,CT,6,9
+DE,US-DE,Delaware,,state of United States,18686,Del.,Y,232,DE,7,10
+DC,US-DC,District of Columbia,,district of United States,18659,D.C.,Y,232,DC,8,11
+FL,US-FL,Florida,,state of United States,18687,Fla.,Y,232,FL,9,12
+GA,US-GA,Georgia,,state of United States,18660,Ga.,Y,232,GA,10,13
+GU,US-GU,Guam,,outlying area of United States,19388,Guam,Y,232,GU,325,GQ
+HI,US-HI,Hawaii,,state of United States,18688,Hawaii,Y,232,HI,52,15
+ID,US-ID,Idaho,,state of United States,18661,Idaho,Y,232,ID,11,16
+IL,US-IL,Illinois,,state of United States,18674,Ill.,Y,232,IL,12,17
+IN,US-IN,Indiana,,state of United States,18662,Ind.,Y,232,IN,13,18
+IA,US-IA,Iowa,,state of United States,18663,Iowa,Y,232,IA,14,19
+KS,US-KS,Kansas,,state of United States,18675,Kans.,Y,232,KS,15,20
+KY,US-KY,Kentucky,,state of United States,18664,Ky.,Y,232,KY,16,21
+LA,US-LA,Louisiana,,state of United States,18676,La.,Y,232,LA,17,22
+ME,US-ME,Maine,,state of United States,18665,Maine,Y,232,ME,18,23
+MD,US-MD,Maryland,,state of United States,18677,Md.,Y,232,MD,19,24
+MA,US-MA,Massachusetts,,state of United States,18666,Mass.,Y,232,MA,20,25
+MI,US-MI,Michigan,,state of United States,18678,Mich.,Y,232,MI,21,26
+MN,US-MN,Minnesota,,state of United States,18646,Minn.,Y,232,MN,22,27
+MS,US-MS,Mississippi,,state of United States,18679,Miss.,Y,232,MS,23,28
+MO,US-MO,Missouri,,state of United States,18647,Mo.,Y,232,MO,24,29
+MT,US-MT,Montana,,state of United States,18648,Mont.,Y,232,MT,25,30
+NE,US-NE,Nebraska,,state of United States,18680,Nebr.,Y,232,NE,26,31
+NV,US-NV,Nevada,,state of United States,18649,Nev.,Y,232,NV,27,32
+NH,US-NH,New Hampshire,,state of United States,18681,N.H.,Y,232,NH,28,33
+NJ,US-NJ,New Jersey,,state of United States,18650,N.J.,Y,232,NJ,29,34
+NM,US-NM,New Mexico,,state of United States,18682,N.M.,Y,232,NM,30,35
+NY,US-NY,New York,,state of United States,18651,N.Y.,Y,232,NY,31,36
+NC,US-NC,North Carolina,,state of United States,18645,N.C.,Y,232,NC,32,37
+ND,US-ND,North Dakota,,state of United States,18652,N.D.,Y,232,ND,33,38
+MP,US-MP,Northern Mariana Islands,,outlying area of United States,19390,0,Y,232,MP,247,CQ
+OH,US-OH,Ohio,,state of United States,18689,Ohio,Y,232,OH,34,39
+OK,US-OK,Oklahoma,,state of United States,18653,Okla.,Y,232,OK,35,40
+OR,US-OR,Oregon,,state of United States,18654,Ore.,Y,232,OR,36,41
+PA,US-PA,Pennsylvania,,state of United States,18644,Pa.,Y,232,PA,37,42
+PR,US-PR,Puerto Rico ,,outlying area of United States,19591,P.R.,Y,232,PR,76,RQ
+RI,US-RI,Rhode Island,,state of United States,18667,R.I.,Y,232,RI,38,44
+SC,US-SC,South Carolina,,state of United States,18690,S.C.,Y,232,SC,39,45
+SD,US-SD,South Dakota,,state of United States,18668,S.D.,Y,232,SD,40,46
+TN,US-TN,Tennessee,,state of United States,18643,Tenn.,Y,232,TN,41,47
+TX,US-TX,Texas,,state of United States,18669,Tex.,Y,232,TX,42,48
+UT,US-UT,Utah,,state of United States,18642,Utah,Y,232,UT,43,49
+VT,US-VT,Vermont,,state of United States,18670,Vt.,Y,232,VT,44,50
+VA,US-VA,Virginia,,state of United States,18641,Va.,Y,232,VA,45,51
+WA,US-WA,Washington,,state of United States,18671,Wash.,Y,232,WA,46,53
+WV,US-WV,West Virginia,,state of United States,18640,W.Va.,Y,232,WV,47,54
+WI,US-WI,Wisconsin,,state of United States,18672,Wis.,Y,232,WI,48,55
+WY,US-WY,Wyoming,,state of United States,18673,Wyo.,Y,232,WY,49,56
+81,UM-81,Baker Island,, of United States Minor Outlying Islands,0,,Y,233,,121,
+84,UM-84,Howland Island,, of United States Minor Outlying Islands,0,,Y,233,,182,
+86,UM-86,Jarvis Island,, of United States Minor Outlying Islands,0,,Y,233,,334,
+67,UM-67,Johnston Atoll,, of United States Minor Outlying Islands,0,,Y,233,,208,
+89,UM-89,Kingman Reef,, of United States Minor Outlying Islands,0,,Y,233,,212,
+71,UM-71,Midway Islands,, of United States Minor Outlying Islands,0,,Y,233,,232,
+76,UM-76,Navassa Island,, of United States Minor Outlying Islands,0,,Y,233,,239,
+95,UM-95,Palmyra Atoll,, of United States Minor Outlying Islands,0,,Y,233,,250,
+79,UM-79,Wake Island,, of United States Minor Outlying Islands,0,,Y,233,,296,
+AA,UM-AA,APO/FPO/DPO US,, of United States Minor Outlying Islands,0,,Y,232,AA,99,
+NU,CA-NU,Nunavut,,territory of Canada,12944,NU,Y,38,,,
+XX,,Foreign State,,,-1,0,N,,,,
