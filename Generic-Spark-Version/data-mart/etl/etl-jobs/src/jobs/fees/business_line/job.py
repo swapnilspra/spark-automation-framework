@@ -18,8 +18,8 @@ class Job(ETLJob):
         {"source": F.col("InvoiceFeeDesc"), "target": "invc_fee_desc"},
         {"source": F.lit("Y"), "target": "curr_row_flg"},
         {"source": F.lit(None), "target": "row_strt_dttm"},
-        {"source": F.lit(None), "target": "src_sys_id"},
-        {"source": F.lit(None), "target": "etl_load_cyc_key"}
+        {"source": F.lit(0), "target": "src_sys_id"},
+        {"source": F.lit(0), "target": "etl_load_cyc_key"}
     ]
 
     def extract(self,catalog:Dict[str,Any]) -> Dict[str,pyspark.sql.DataFrame]:

@@ -70,14 +70,14 @@ def run_job(ctx, job_name, schema, datalake, loglevel, raw_folder, spark_eventlo
     env["jdbc"]["port"] = port
     if datalake == 'local':
         # use parquet files at the job level
-        env["folders"]["datamart"] = "D:/Desktop folders/swapnilgit/hca-datalake/data-mart/etl/etl-jobs/src/jobs/%s/%s/tests/data/datamart/" % (job_name.split('.')[0],job_name.split('.')[1])
+        env["folders"]["datamart"] = "./src/jobs/%s/%s/tests/data/datamart/" % (job_name.split('.')[0],job_name.split('.')[1])
     else:
         # use parquet files at global level. defined in ini file
         env["folders"]["datamart"] = config['folders']['datamart']
 
     if raw_folder == 'local':
         # use parquet files at the job level
-        env["file_prefix"] = "D:/Desktop folders/swapnilgit/hca-datalake/data-mart/etl/etl-jobs/src/jobs/%s/%s/tests/data/" % (job_name.split('.'))
+        env["file_prefix"] = "./src/jobs/%s/%s/tests/data/" % (job_name.split('.'))
     else:
         # use parquet files at global level. defined in ini file
         env["file_prefix"] = config['folders']['raw']

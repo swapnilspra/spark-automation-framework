@@ -345,7 +345,7 @@ class ETLJob:
                 self.target_table,
                 self._env,
                 self._spark)
-        except FileNotFoundError:
+        except Exception as e:
             self._logger.info("datamart snapshot does not exist. use empty data frame")
             df_existing = self._spark.createDataFrame([], df_target.schema)
             if (set(self.business_key) != set(self.primary_key.keys())):

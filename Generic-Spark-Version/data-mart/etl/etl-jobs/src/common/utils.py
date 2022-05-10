@@ -368,8 +368,8 @@ def write_table_snapshot(df:pyspark.sql.DataFrame,table_name:str,business_keys:L
     except FileNotFoundError:
         # write a new parquet. first write.
         logger.debug(f"existing parquet file not found, writing new file to {filename}")
-        df.show()
-        df.write.mode("overwrite").parquet(filename)
+        # df.show()
+        df.repartition(1).write.mode("overwrite").parquet(filename)
 
         # if writing new parquet file to s3, add tags
         if env["folders"]["datamart"].startswith("s3"):
@@ -447,7 +447,8 @@ def upsert(spark, env,
         logger.warning(f'The following columns are missing from dataFrame but found in the DB : {temp_column_list.difference(shared_columns)}')
         # write df_union to temp table on pgsql
     df = df.withColumn("row_strt_dttm",F.current_timestamp())
-    df.show()
+
+    # df.show()
     try:
         df.write \
             .format("jdbc") \
