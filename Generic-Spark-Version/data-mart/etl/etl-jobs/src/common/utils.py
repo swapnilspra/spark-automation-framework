@@ -218,7 +218,9 @@ def get_file_locations(folder, path, limit=1, sort='last_modified', ascending=Tr
         files to process.
         all files found in folder matching regexp
     """
-    match_file = re.compile(os.path.basename(path), flags=re.IGNORECASE).match
+
+    # match_file = re.compile(os.path.basename(path), flags=re.IGNORECASE).match
+    match_file = re.compile(path, flags=re.IGNORECASE).match
     files_list: List[str] = []
     if folder.startswith("s3"):
         # load from s3
@@ -263,6 +265,7 @@ def get_file_locations(folder, path, limit=1, sort='last_modified', ascending=Tr
     # filter by regexp
     files = list(filter(match_file, files_list))
 
+
     if (len(files) > 0):
         all_matched_files = [os.path.join(folder, filename) for filename in files]
         return all_matched_files[0:limit], all_matched_files
@@ -294,6 +297,7 @@ def read_table_snapshot(table_name: str, env: Dict, spark) -> pyspark.sql.DataFr
             raise FileNotFoundError("can't find parquet file for %s table in %s" % (table_name, filename))
     else:
         # filesystem
+        print(os.path.isdir(filename))
         if not os.path.isdir(filename):
             raise FileNotFoundError("can't find parquet file for %s table in %s" % (table_name, filename))
 
@@ -364,7 +368,8 @@ def write_table_snapshot(df:pyspark.sql.DataFrame,table_name:str,business_keys:L
     except FileNotFoundError:
         # write a new parquet. first write.
         logger.debug(f"existing parquet file not found, writing new file to {filename}")
-        df.write.parquet(filename)
+        df.show()
+        df.write.mode("overwrite").parquet(filename)
 
         # if writing new parquet file to s3, add tags
         if env["folders"]["datamart"].startswith("s3"):
@@ -423,7 +428,7 @@ def upsert(spark, env,
         .option("password", env["jdbc"]["password"]) \
         .option("driver", "org.postgresql.Driver") \
         .load()
-
+    df_temp.printSchema()
     # set variables for dynamic sql queries
     temp_column_list = set(df_temp.columns)
     shared_columns = set(temp_column_list).intersection(df.columns)
@@ -440,17 +445,23 @@ def upsert(spark, env,
         raise ValueError(f'The following columns are missing from DB but found in the dataFrame {shared_columns.difference(temp_column_list)}')
     elif temp_column_list.difference(shared_columns):
         logger.warning(f'The following columns are missing from dataFrame but found in the DB : {temp_column_list.difference(shared_columns)}')
+        # write df_union to temp table on pgsql
+    df = df.withColumn("row_strt_dttm",F.current_timestamp())
+    df.show()
+    try:
+        df.write \
+            .format("jdbc") \
+            .option("truncate", True)\
+            .option("url", env["jdbc"]["url"]) \
+            .option("user", env["jdbc"]["user"]) \
+            .option("password", env["jdbc"]["password"]) \
+            .option("dbtable", "{}.{}".format(env["jdbc"]["schema"], temp_table_name)) \
+            .option("driver", "org.postgresql.Driver") \
+            .mode("overwrite") \
+            .save()
+    except Exception as e:
+        print("db write exception",e)
 
-    # write df_union to temp table on pgsql
-    df.write \
-        .format("jdbc") \
-        .mode('overwrite') \
-        .option("url", env["jdbc"]["url"]) \
-        .option("user", env["jdbc"]["user"]) \
-        .option("password", env["jdbc"]["password"]) \
-        .option("dbtable", "{}.{}".format(env["jdbc"]["schema"], temp_table_name)) \
-        .option("driver", "org.postgresql.Driver") \
-        .save()
 
     # create dynamic upsert sql script
     upsert_query = f""" insert into {env["jdbc"]["schema"]}.{target_table_name} ({columns}) select {values} from {env["jdbc"]["schema"]}.{temp_table_name} AS incoming

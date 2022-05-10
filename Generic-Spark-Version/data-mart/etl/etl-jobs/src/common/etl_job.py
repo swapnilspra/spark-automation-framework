@@ -360,7 +360,6 @@ class ETLJob:
 
         # find deltas
         self._logger.info("identifying delta")
-
         if self.load_strategy==self.LoadStrategy.TYPE2 and "curr_row_flg" in df_existing.columns:
             # we filter only existing records that are curr_row_flg=Y for update
             df_existing = df_existing.filter(F.col("curr_row_flg")==F.lit("Y"))
@@ -421,6 +420,7 @@ class ETLJob:
 
         # add any missing columns and data so we can update complete records (DB can update single column. parquet can't)
         df_merged = common.utils.upsert_dataframe(df_existing,df_new,df_updated,self.primary_key)
+        # df_merged.show()
 
         # logging
         if self._logger.isEnabledFor(logging.DEBUG):
@@ -439,6 +439,7 @@ class ETLJob:
             'hca:dataclassification': self.data_classification,
             'hca:target_table': self.target_table,
         }
+
         common.utils.write_table_snapshot(df_merged,
             self.target_table,
             self.business_key,
