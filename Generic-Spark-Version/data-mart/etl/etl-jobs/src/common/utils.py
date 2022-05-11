@@ -365,11 +365,11 @@ def write_table_snapshot(df:pyspark.sql.DataFrame,table_name:str,business_keys:L
                 shutil.rmtree(filename)
                 # Renaming the parquet folder.
                 os.rename(filename_tmp,filename)
-    except FileNotFoundError:
+    except Exception as e:
         # write a new parquet. first write.
         logger.debug(f"existing parquet file not found, writing new file to {filename}")
-        # df.show()
-        df.repartition(1).write.mode("overwrite").parquet(filename)
+        df.show()
+        df.repartition(1).write.parquet(filename)
 
         # if writing new parquet file to s3, add tags
         if env["folders"]["datamart"].startswith("s3"):
@@ -428,7 +428,7 @@ def upsert(spark, env,
         .option("password", env["jdbc"]["password"]) \
         .option("driver", "org.postgresql.Driver") \
         .load()
-    df_temp.printSchema()
+    # df_temp.printSchema()
     # set variables for dynamic sql queries
     temp_column_list = set(df_temp.columns)
     shared_columns = set(temp_column_list).intersection(df.columns)
