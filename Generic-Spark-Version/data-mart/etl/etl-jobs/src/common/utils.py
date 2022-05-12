@@ -368,7 +368,7 @@ def write_table_snapshot(df:pyspark.sql.DataFrame,table_name:str,business_keys:L
     except Exception as e:
         # write a new parquet. first write.
         logger.debug(f"existing parquet file not found, writing new file to {filename}")
-        df.show()
+        # df.show()
         df.repartition(1).write.parquet(filename)
 
         # if writing new parquet file to s3, add tags
