@@ -5,7 +5,7 @@ from common.etl_job import ETLJob # must be imported after spark has been set up
 
 class Job(ETLJob):
     target_table = "business_line"
-    business_key = ["invc_fee_desc"]
+    business_key = ["invc_fee_desc","bus_line"]
     primary_key = {"bus_line_key":"int"}
     sources:Dict[str,Dict[str,Any]] = {
         "hip": {
