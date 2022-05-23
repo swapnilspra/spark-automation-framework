@@ -12,7 +12,6 @@ numpy==1.20.2
 packaging==21.3
 pandas==1.2.3
 pg8000==1.19.2
-pip==21.0.1
 pluggy==1.0.0
 py==1.11.0
 py4j==0.10.9
@@ -23,7 +22,6 @@ python-dateutil==2.8.1
 pytz==2021.1
 s3transfer==0.3.6
 scramp==1.4.0
-setuptools==54.2.0
 six==1.15.0
 tomli==2.0.1
 urllib3==1.26.4

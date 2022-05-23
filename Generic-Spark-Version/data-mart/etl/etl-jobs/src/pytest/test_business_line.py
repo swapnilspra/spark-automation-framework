@@ -12,7 +12,7 @@ import sys
 class test_sample:
 
     @pytest.mark.usefixtures("spark_session")
-    def test_sample_transform(self):
+    def test_sample_transform():
         spark = SparkSession \
             .builder \
             .appName("etltest") \
@@ -47,15 +47,18 @@ class test_sample:
         job_module = importlib.import_module("jobs.%s.job" % 'fees.business_line')
         job_class = getattr(job_module, "Job")
         job: ETLJob = job_class(spark, env, logger, [])
-        # inputs:  pyspark.sql.DataFrame = job.extract(catalog)
+
+        # read the Raw file
         inputs: Dict[str, pyspark.sql.DataFrame] = job.extract(env["catalog"])
         # join the dataframe
         df_joined: pyspark.sql.DataFrame = job.join(inputs)
         # transform to target structure
         df_target: pyspark.sql.DataFrame = job.transform(df_joined)
+
+        #Output parquet file count
         out_df = spark.read.parquet("D:\\Spark_automation_framework\\spark-automation-framework\\Generic-Spark-Version\\data-mart\\etl\\etl-jobs\\src\\jobs\\fees\\business_line\\tests\\data\\datamart\\business_line")
-        assert (df_target.count() == out_df.count()),"Count test not passed"
+        assert (df_target.count() == out_df.count()),"Raw and target count not matching"
         print("Count test passed")
 
 
-    test_sample_transform('')
+    test_sample_transform()
