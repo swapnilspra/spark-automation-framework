@@ -1,4 +1,4 @@
-# Spark-Autoamation-framework
+# Spark-Automation-framework
 When the requirement is to prepare the data for business analytics or reporting based huge number of underlined tables. Then there should be some automated way to the process of extracting, transforming, and loading to avoid repetitive efforts for developing the huge number of pipelines for all the number of tables. If you are looking for minimizing cost, and in the lesser timelines also low code approach then these data bricks automated notebooks are best for your use case.
 
 Here consider we transferred on-premises data to the azure data lake service already and now we need to process the data and load it to the Azure data lake storage.
